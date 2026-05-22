@@ -56,4 +56,8 @@ public partial class MainScreen : Form {
     private void button4_Click(object sender, EventArgs e) {
         throw new System.NotImplementedException();
     }
+
+    private void TobBarFlowLayout_Paint(object sender, PaintEventArgs e) {
+        throw new System.NotImplementedException();
+    }
 }

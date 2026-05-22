@@ -41,18 +41,17 @@ partial class MainScreen {
         ResetButton = new System.Windows.Forms.Button();
         SaveButton = new System.Windows.Forms.Button();
         Open3DSpaceButton = new System.Windows.Forms.Button();
-        ColorsNumberLabel = new System.Windows.Forms.Label();
         ColorsNumberFlow = new System.Windows.Forms.FlowLayoutPanel();
-        ColorNumberSlider = new System.Windows.Forms.TrackBar();
         UpDownColorsNumber = new System.Windows.Forms.NumericUpDown();
-        TopBar.SuspendLayout();
+        ColorNumberSlider = new System.Windows.Forms.TrackBar();
+        ColorsNumberLabel = new System.Windows.Forms.Label();
         TobBarFlowLayout.SuspendLayout();
         TitlePanel.SuspendLayout();
         ActionButtonsPanel.SuspendLayout();
         ActionButtonsFlow.SuspendLayout();
         ColorsNumberFlow.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)ColorNumberSlider).BeginInit();
         ((System.ComponentModel.ISupportInitialize)UpDownColorsNumber).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)ColorNumberSlider).BeginInit();
         SuspendLayout();
         // 
         // panel6
@@ -101,11 +100,10 @@ partial class MainScreen {
         // TopBar
         // 
         TopBar.AutoSize = true;
-        TopBar.Controls.Add(TobBarFlowLayout);
         TopBar.Dock = System.Windows.Forms.DockStyle.Top;
         TopBar.Location = new System.Drawing.Point(0, 0);
         TopBar.Name = "TopBar";
-        TopBar.Size = new System.Drawing.Size(1000, 48);
+        TopBar.Size = new System.Drawing.Size(781, 0);
         TopBar.TabIndex = 0;
         // 
         // TobBarFlowLayout
@@ -115,17 +113,17 @@ partial class MainScreen {
         TobBarFlowLayout.Controls.Add(TitlePanel);
         TobBarFlowLayout.Controls.Add(ActionButtonsPanel);
         TobBarFlowLayout.Controls.Add(ColorsNumberFlow);
-        TobBarFlowLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+        TobBarFlowLayout.Dock = System.Windows.Forms.DockStyle.Top;
         TobBarFlowLayout.Location = new System.Drawing.Point(0, 0);
         TobBarFlowLayout.Name = "TobBarFlowLayout";
-        TobBarFlowLayout.Size = new System.Drawing.Size(1000, 48);
+        TobBarFlowLayout.Size = new System.Drawing.Size(781, 87);
         TobBarFlowLayout.TabIndex = 0;
         // 
         // TitlePanel
         // 
         TitlePanel.BackColor = System.Drawing.Color.Transparent;
         TitlePanel.Controls.Add(Title);
-        TitlePanel.Location = new System.Drawing.Point(847, 3);
+        TitlePanel.Location = new System.Drawing.Point(628, 3);
         TitlePanel.Name = "TitlePanel";
         TitlePanel.Size = new System.Drawing.Size(150, 42);
         TitlePanel.TabIndex = 0;
@@ -145,7 +143,7 @@ partial class MainScreen {
         ActionButtonsPanel.AutoSize = true;
         ActionButtonsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
         ActionButtonsPanel.Controls.Add(ActionButtonsFlow);
-        ActionButtonsPanel.Location = new System.Drawing.Point(378, 3);
+        ActionButtonsPanel.Location = new System.Drawing.Point(159, 3);
         ActionButtonsPanel.Name = "ActionButtonsPanel";
         ActionButtonsPanel.Size = new System.Drawing.Size(463, 42);
         ActionButtonsPanel.TabIndex = 1;
@@ -203,17 +201,6 @@ partial class MainScreen {
         Open3DSpaceButton.Text = "فضاء الألوان ثلاثي الأبعاد";
         Open3DSpaceButton.UseVisualStyleBackColor = true;
         // 
-        // ColorsNumberLabel
-        // 
-        ColorsNumberLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
-        ColorsNumberLabel.AutoSize = true;
-        ColorsNumberLabel.Location = new System.Drawing.Point(3, 0);
-        ColorsNumberLabel.Name = "ColorsNumberLabel";
-        ColorsNumberLabel.Size = new System.Drawing.Size(78, 33);
-        ColorsNumberLabel.TabIndex = 0;
-        ColorsNumberLabel.Text = "عدد الألوان";
-        ColorsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
         // ColorsNumberFlow
         // 
         ColorsNumberFlow.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
@@ -221,18 +208,11 @@ partial class MainScreen {
         ColorsNumberFlow.Controls.Add(UpDownColorsNumber);
         ColorsNumberFlow.Controls.Add(ColorNumberSlider);
         ColorsNumberFlow.Controls.Add(ColorsNumberLabel);
-        ColorsNumberFlow.Location = new System.Drawing.Point(65, 3);
+        ColorsNumberFlow.Location = new System.Drawing.Point(471, 51);
         ColorsNumberFlow.Name = "ColorsNumberFlow";
-        ColorsNumberFlow.Size = new System.Drawing.Size(307, 42);
+        ColorsNumberFlow.Size = new System.Drawing.Size(307, 33);
         ColorsNumberFlow.TabIndex = 3;
-        // 
-        // ColorNumberSlider
-        // 
-        ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
-        ColorNumberSlider.Location = new System.Drawing.Point(87, 3);
-        ColorNumberSlider.Name = "ColorNumberSlider";
-        ColorNumberSlider.Size = new System.Drawing.Size(158, 27);
-        ColorNumberSlider.TabIndex = 1;
+        ColorsNumberFlow.WrapContents = false;
         // 
         // UpDownColorsNumber
         // 
@@ -244,12 +224,32 @@ partial class MainScreen {
         UpDownColorsNumber.TabIndex = 2;
         UpDownColorsNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         // 
+        // ColorNumberSlider
+        // 
+        ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
+        ColorNumberSlider.Location = new System.Drawing.Point(87, 3);
+        ColorNumberSlider.Name = "ColorNumberSlider";
+        ColorNumberSlider.Size = new System.Drawing.Size(158, 27);
+        ColorNumberSlider.TabIndex = 1;
+        // 
+        // ColorsNumberLabel
+        // 
+        ColorsNumberLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
+        ColorsNumberLabel.AutoSize = true;
+        ColorsNumberLabel.Location = new System.Drawing.Point(3, 0);
+        ColorsNumberLabel.Name = "ColorsNumberLabel";
+        ColorsNumberLabel.Size = new System.Drawing.Size(78, 33);
+        ColorsNumberLabel.TabIndex = 0;
+        ColorsNumberLabel.Text = "عدد الألوان";
+        ColorsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
         // MainScreen
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(1000, 543);
+        ClientSize = new System.Drawing.Size(781, 543);
+        Controls.Add(TobBarFlowLayout);
         Controls.Add(TopBar);
         Location = new System.Drawing.Point(19, 19);
         Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -257,8 +257,6 @@ partial class MainScreen {
         RightToLeftLayout = true;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Load += MainScreen_Load;
-        TopBar.ResumeLayout(false);
-        TopBar.PerformLayout();
         TobBarFlowLayout.ResumeLayout(false);
         TobBarFlowLayout.PerformLayout();
         TitlePanel.ResumeLayout(false);
@@ -268,8 +266,8 @@ partial class MainScreen {
         ActionButtonsFlow.PerformLayout();
         ColorsNumberFlow.ResumeLayout(false);
         ColorsNumberFlow.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)ColorNumberSlider).EndInit();
         ((System.ComponentModel.ISupportInitialize)UpDownColorsNumber).EndInit();
+        ((System.ComponentModel.ISupportInitialize)ColorNumberSlider).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
