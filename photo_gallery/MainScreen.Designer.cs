@@ -49,12 +49,33 @@ partial class MainScreen {
         ColorsSystemPanel = new System.Windows.Forms.FlowLayoutPanel();
         ColorSystemLabel = new System.Windows.Forms.Label();
         ColorsSystemsGrid = new System.Windows.Forms.TableLayoutPanel();
+        YUVButton = new System.Windows.Forms.RadioButton();
+        LABButton = new System.Windows.Forms.RadioButton();
+        HLSButton = new System.Windows.Forms.RadioButton();
         CMYKButton = new System.Windows.Forms.RadioButton();
         YCbCrButton = new System.Windows.Forms.RadioButton();
         HSVButton = new System.Windows.Forms.RadioButton();
-        HLSButton = new System.Windows.Forms.RadioButton();
-        LABButton = new System.Windows.Forms.RadioButton();
-        YUVButton = new System.Windows.Forms.RadioButton();
+        CompoundsControlFlow = new System.Windows.Forms.FlowLayoutPanel();
+        CompoundsControlLabel = new System.Windows.Forms.Label();
+        ControlStacksPanel = new System.Windows.Forms.Panel();
+        RGBCompoundsPanel = new System.Windows.Forms.FlowLayoutPanel();
+        RCompoundPanel = new System.Windows.Forms.Panel();
+        RSlider = new System.Windows.Forms.TrackBar();
+        RLabels = new System.Windows.Forms.Panel();
+        RCheckBox = new System.Windows.Forms.CheckBox();
+        RColorPer = new System.Windows.Forms.Label();
+        GCompoundPanel = new System.Windows.Forms.Panel();
+        GSlider = new System.Windows.Forms.TrackBar();
+        GLabels = new System.Windows.Forms.Panel();
+        G = new System.Windows.Forms.CheckBox();
+        GColorPer = new System.Windows.Forms.Label();
+        BCompoundPanel = new System.Windows.Forms.Panel();
+        BSlider = new System.Windows.Forms.TrackBar();
+        BLabels = new System.Windows.Forms.Panel();
+        BCheckBox = new System.Windows.Forms.CheckBox();
+        BColorPer = new System.Windows.Forms.Label();
+        flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+        label1 = new System.Windows.Forms.Label();
         TobBarFlowLayout.SuspendLayout();
         TitlePanel.SuspendLayout();
         ActionButtonsPanel.SuspendLayout();
@@ -65,6 +86,18 @@ partial class MainScreen {
         RightPanel.SuspendLayout();
         ColorsSystemPanel.SuspendLayout();
         ColorsSystemsGrid.SuspendLayout();
+        CompoundsControlFlow.SuspendLayout();
+        ControlStacksPanel.SuspendLayout();
+        RGBCompoundsPanel.SuspendLayout();
+        RCompoundPanel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RSlider).BeginInit();
+        RLabels.SuspendLayout();
+        GCompoundPanel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)GSlider).BeginInit();
+        GLabels.SuspendLayout();
+        BCompoundPanel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BSlider).BeginInit();
+        BLabels.SuspendLayout();
         SuspendLayout();
         // 
         // panel6
@@ -116,7 +149,7 @@ partial class MainScreen {
         TopBar.Dock = System.Windows.Forms.DockStyle.Top;
         TopBar.Location = new System.Drawing.Point(0, 0);
         TopBar.Name = "TopBar";
-        TopBar.Size = new System.Drawing.Size(781, 0);
+        TopBar.Size = new System.Drawing.Size(940, 0);
         TopBar.TabIndex = 0;
         // 
         // TobBarFlowLayout
@@ -129,14 +162,14 @@ partial class MainScreen {
         TobBarFlowLayout.Dock = System.Windows.Forms.DockStyle.Top;
         TobBarFlowLayout.Location = new System.Drawing.Point(0, 0);
         TobBarFlowLayout.Name = "TobBarFlowLayout";
-        TobBarFlowLayout.Size = new System.Drawing.Size(781, 87);
+        TobBarFlowLayout.Size = new System.Drawing.Size(940, 48);
         TobBarFlowLayout.TabIndex = 0;
         // 
         // TitlePanel
         // 
         TitlePanel.BackColor = System.Drawing.Color.Transparent;
         TitlePanel.Controls.Add(Title);
-        TitlePanel.Location = new System.Drawing.Point(628, 3);
+        TitlePanel.Location = new System.Drawing.Point(787, 3);
         TitlePanel.Name = "TitlePanel";
         TitlePanel.Size = new System.Drawing.Size(150, 42);
         TitlePanel.TabIndex = 0;
@@ -156,7 +189,7 @@ partial class MainScreen {
         ActionButtonsPanel.AutoSize = true;
         ActionButtonsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
         ActionButtonsPanel.Controls.Add(ActionButtonsFlow);
-        ActionButtonsPanel.Location = new System.Drawing.Point(159, 3);
+        ActionButtonsPanel.Location = new System.Drawing.Point(318, 3);
         ActionButtonsPanel.Name = "ActionButtonsPanel";
         ActionButtonsPanel.Size = new System.Drawing.Size(463, 42);
         ActionButtonsPanel.TabIndex = 1;
@@ -221,9 +254,9 @@ partial class MainScreen {
         ColorsNumberFlow.Controls.Add(UpDownColorsNumber);
         ColorsNumberFlow.Controls.Add(ColorNumberSlider);
         ColorsNumberFlow.Controls.Add(ColorsNumberLabel);
-        ColorsNumberFlow.Location = new System.Drawing.Point(471, 51);
+        ColorsNumberFlow.Location = new System.Drawing.Point(5, 3);
         ColorsNumberFlow.Name = "ColorsNumberFlow";
-        ColorsNumberFlow.Size = new System.Drawing.Size(307, 33);
+        ColorsNumberFlow.Size = new System.Drawing.Size(307, 42);
         ColorsNumberFlow.TabIndex = 3;
         ColorsNumberFlow.WrapContents = false;
         // 
@@ -258,15 +291,19 @@ partial class MainScreen {
         // 
         // RightPanel
         // 
+        RightPanel.AutoScroll = true;
         RightPanel.AutoSize = true;
         RightPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)128)), ((int)((byte)255)), ((int)((byte)128)));
         RightPanel.Controls.Add(ColorsSystemPanel);
+        RightPanel.Controls.Add(CompoundsControlFlow);
+        RightPanel.Controls.Add(flowLayoutPanel1);
         RightPanel.Dock = System.Windows.Forms.DockStyle.Left;
         RightPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        RightPanel.Location = new System.Drawing.Point(0, 87);
+        RightPanel.Location = new System.Drawing.Point(0, 48);
         RightPanel.Name = "RightPanel";
-        RightPanel.Size = new System.Drawing.Size(204, 456);
+        RightPanel.Size = new System.Drawing.Size(211, 495);
         RightPanel.TabIndex = 1;
+        RightPanel.WrapContents = false;
         // 
         // ColorsSystemPanel
         // 
@@ -275,10 +312,11 @@ partial class MainScreen {
         ColorsSystemPanel.Controls.Add(ColorSystemLabel);
         ColorsSystemPanel.Controls.Add(ColorsSystemsGrid);
         ColorsSystemPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        ColorsSystemPanel.Location = new System.Drawing.Point(3, 3);
+        ColorsSystemPanel.Location = new System.Drawing.Point(10, 3);
         ColorsSystemPanel.Name = "ColorsSystemPanel";
         ColorsSystemPanel.Size = new System.Drawing.Size(198, 98);
         ColorsSystemPanel.TabIndex = 2;
+        ColorsSystemPanel.WrapContents = false;
         // 
         // ColorSystemLabel
         // 
@@ -311,7 +349,48 @@ partial class MainScreen {
         ColorsSystemsGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
         ColorsSystemsGrid.Size = new System.Drawing.Size(192, 72);
         ColorsSystemsGrid.TabIndex = 1;
-        ColorsSystemsGrid.Paint += tableLayoutPanel1_Paint;
+        // 
+        // YUVButton
+        // 
+        YUVButton.Appearance = System.Windows.Forms.Appearance.Button;
+        YUVButton.AutoSize = true;
+        YUVButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        YUVButton.Location = new System.Drawing.Point(131, 3);
+        YUVButton.Name = "YUVButton";
+        YUVButton.Size = new System.Drawing.Size(58, 30);
+        YUVButton.TabIndex = 6;
+        YUVButton.TabStop = true;
+        YUVButton.Text = "YUV";
+        YUVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        YUVButton.UseVisualStyleBackColor = true;
+        // 
+        // LABButton
+        // 
+        LABButton.Appearance = System.Windows.Forms.Appearance.Button;
+        LABButton.AutoSize = true;
+        LABButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        LABButton.Location = new System.Drawing.Point(3, 39);
+        LABButton.Name = "LABButton";
+        LABButton.Size = new System.Drawing.Size(58, 30);
+        LABButton.TabIndex = 5;
+        LABButton.TabStop = true;
+        LABButton.Text = "LAB";
+        LABButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        LABButton.UseVisualStyleBackColor = true;
+        // 
+        // HLSButton
+        // 
+        HLSButton.Appearance = System.Windows.Forms.Appearance.Button;
+        HLSButton.AutoSize = true;
+        HLSButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        HLSButton.Location = new System.Drawing.Point(131, 39);
+        HLSButton.Name = "HLSButton";
+        HLSButton.Size = new System.Drawing.Size(58, 30);
+        HLSButton.TabIndex = 4;
+        HLSButton.TabStop = true;
+        HLSButton.Text = "HLS";
+        HLSButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        HLSButton.UseVisualStyleBackColor = true;
         // 
         // CMYKButton
         // 
@@ -354,54 +433,223 @@ partial class MainScreen {
         HSVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         HSVButton.UseVisualStyleBackColor = true;
         // 
-        // HLSButton
+        // CompoundsControlFlow
         // 
-        HLSButton.Appearance = System.Windows.Forms.Appearance.Button;
-        HLSButton.AutoSize = true;
-        HLSButton.Dock = System.Windows.Forms.DockStyle.Fill;
-        HLSButton.Location = new System.Drawing.Point(131, 39);
-        HLSButton.Name = "HLSButton";
-        HLSButton.Size = new System.Drawing.Size(58, 30);
-        HLSButton.TabIndex = 4;
-        HLSButton.TabStop = true;
-        HLSButton.Text = "HLS";
-        HLSButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        HLSButton.UseVisualStyleBackColor = true;
+        CompoundsControlFlow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        CompoundsControlFlow.AutoSize = true;
+        CompoundsControlFlow.Controls.Add(CompoundsControlLabel);
+        CompoundsControlFlow.Controls.Add(ControlStacksPanel);
+        CompoundsControlFlow.Location = new System.Drawing.Point(3, 107);
+        CompoundsControlFlow.Name = "CompoundsControlFlow";
+        CompoundsControlFlow.Size = new System.Drawing.Size(205, 315);
+        CompoundsControlFlow.TabIndex = 3;
         // 
-        // LABButton
+        // CompoundsControlLabel
         // 
-        LABButton.Appearance = System.Windows.Forms.Appearance.Button;
-        LABButton.AutoSize = true;
-        LABButton.Dock = System.Windows.Forms.DockStyle.Fill;
-        LABButton.Location = new System.Drawing.Point(3, 39);
-        LABButton.Name = "LABButton";
-        LABButton.Size = new System.Drawing.Size(58, 30);
-        LABButton.TabIndex = 5;
-        LABButton.TabStop = true;
-        LABButton.Text = "LAB";
-        LABButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        LABButton.UseVisualStyleBackColor = true;
+        CompoundsControlLabel.Location = new System.Drawing.Point(55, 0);
+        CompoundsControlLabel.Name = "CompoundsControlLabel";
+        CompoundsControlLabel.Size = new System.Drawing.Size(147, 28);
+        CompoundsControlLabel.TabIndex = 0;
+        CompoundsControlLabel.Text = "تحكم بالمركبات";
         // 
-        // YUVButton
+        // ControlStacksPanel
         // 
-        YUVButton.Appearance = System.Windows.Forms.Appearance.Button;
-        YUVButton.AutoSize = true;
-        YUVButton.Dock = System.Windows.Forms.DockStyle.Fill;
-        YUVButton.Location = new System.Drawing.Point(131, 3);
-        YUVButton.Name = "YUVButton";
-        YUVButton.Size = new System.Drawing.Size(58, 30);
-        YUVButton.TabIndex = 6;
-        YUVButton.TabStop = true;
-        YUVButton.Text = "YUV";
-        YUVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        YUVButton.UseVisualStyleBackColor = true;
+        ControlStacksPanel.AutoSize = true;
+        ControlStacksPanel.Controls.Add(RGBCompoundsPanel);
+        ControlStacksPanel.Location = new System.Drawing.Point(3, 31);
+        ControlStacksPanel.Name = "ControlStacksPanel";
+        ControlStacksPanel.Size = new System.Drawing.Size(199, 281);
+        ControlStacksPanel.TabIndex = 1;
+        // 
+        // RGBCompoundsPanel
+        // 
+        RGBCompoundsPanel.AutoSize = true;
+        RGBCompoundsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        RGBCompoundsPanel.Controls.Add(RCompoundPanel);
+        RGBCompoundsPanel.Controls.Add(GCompoundPanel);
+        RGBCompoundsPanel.Controls.Add(BCompoundPanel);
+        RGBCompoundsPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        RGBCompoundsPanel.Location = new System.Drawing.Point(0, 0);
+        RGBCompoundsPanel.Name = "RGBCompoundsPanel";
+        RGBCompoundsPanel.Size = new System.Drawing.Size(196, 278);
+        RGBCompoundsPanel.TabIndex = 1;
+        RGBCompoundsPanel.WrapContents = false;
+        // 
+        // RCompoundPanel
+        // 
+        RCompoundPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+        RCompoundPanel.BackColor = System.Drawing.Color.Red;
+        RCompoundPanel.Controls.Add(RSlider);
+        RCompoundPanel.Controls.Add(RLabels);
+        RCompoundPanel.Location = new System.Drawing.Point(4, 3);
+        RCompoundPanel.Name = "RCompoundPanel";
+        RCompoundPanel.Size = new System.Drawing.Size(189, 83);
+        RCompoundPanel.TabIndex = 2;
+        // 
+        // RSlider
+        // 
+        RSlider.Dock = System.Windows.Forms.DockStyle.Bottom;
+        RSlider.Location = new System.Drawing.Point(0, 27);
+        RSlider.Name = "RSlider";
+        RSlider.Size = new System.Drawing.Size(189, 56);
+        RSlider.TabIndex = 1;
+        // 
+        // RLabels
+        // 
+        RLabels.Controls.Add(RCheckBox);
+        RLabels.Controls.Add(RColorPer);
+        RLabels.Dock = System.Windows.Forms.DockStyle.Top;
+        RLabels.Location = new System.Drawing.Point(0, 0);
+        RLabels.Name = "RLabels";
+        RLabels.Size = new System.Drawing.Size(189, 29);
+        RLabels.TabIndex = 0;
+        // 
+        // RCheckBox
+        // 
+        RCheckBox.AutoSize = true;
+        RCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
+        RCheckBox.Location = new System.Drawing.Point(0, 0);
+        RCheckBox.Name = "RCheckBox";
+        RCheckBox.Size = new System.Drawing.Size(40, 29);
+        RCheckBox.TabIndex = 1;
+        RCheckBox.Text = "R";
+        RCheckBox.UseVisualStyleBackColor = true;
+        // 
+        // RColorPer
+        // 
+        RColorPer.AutoSize = true;
+        RColorPer.Dock = System.Windows.Forms.DockStyle.Right;
+        RColorPer.Location = new System.Drawing.Point(108, 0);
+        RColorPer.Name = "RColorPer";
+        RColorPer.Size = new System.Drawing.Size(81, 20);
+        RColorPer.TabIndex = 0;
+        RColorPer.Text = "نسبة الأحمر";
+        RColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // GCompoundPanel
+        // 
+        GCompoundPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+        GCompoundPanel.BackColor = System.Drawing.Color.Lime;
+        GCompoundPanel.Controls.Add(GSlider);
+        GCompoundPanel.Controls.Add(GLabels);
+        GCompoundPanel.Location = new System.Drawing.Point(4, 92);
+        GCompoundPanel.Name = "GCompoundPanel";
+        GCompoundPanel.Size = new System.Drawing.Size(189, 87);
+        GCompoundPanel.TabIndex = 1;
+        // 
+        // GSlider
+        // 
+        GSlider.Dock = System.Windows.Forms.DockStyle.Bottom;
+        GSlider.Location = new System.Drawing.Point(0, 31);
+        GSlider.Name = "GSlider";
+        GSlider.Size = new System.Drawing.Size(189, 56);
+        GSlider.TabIndex = 1;
+        // 
+        // GLabels
+        // 
+        GLabels.Controls.Add(G);
+        GLabels.Controls.Add(GColorPer);
+        GLabels.Dock = System.Windows.Forms.DockStyle.Top;
+        GLabels.Location = new System.Drawing.Point(0, 0);
+        GLabels.Name = "GLabels";
+        GLabels.Size = new System.Drawing.Size(189, 29);
+        GLabels.TabIndex = 0;
+        // 
+        // G
+        // 
+        G.AutoSize = true;
+        G.Dock = System.Windows.Forms.DockStyle.Left;
+        G.Location = new System.Drawing.Point(0, 0);
+        G.Name = "G";
+        G.Size = new System.Drawing.Size(41, 29);
+        G.TabIndex = 1;
+        G.Text = "G";
+        G.UseVisualStyleBackColor = true;
+        // 
+        // GColorPer
+        // 
+        GColorPer.AutoSize = true;
+        GColorPer.Dock = System.Windows.Forms.DockStyle.Right;
+        GColorPer.Location = new System.Drawing.Point(103, 0);
+        GColorPer.Name = "GColorPer";
+        GColorPer.Size = new System.Drawing.Size(86, 20);
+        GColorPer.TabIndex = 0;
+        GColorPer.Text = "نسبة الأخضر";
+        GColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // BCompoundPanel
+        // 
+        BCompoundPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+        BCompoundPanel.BackColor = System.Drawing.Color.Blue;
+        BCompoundPanel.Controls.Add(BSlider);
+        BCompoundPanel.Controls.Add(BLabels);
+        BCompoundPanel.Location = new System.Drawing.Point(3, 185);
+        BCompoundPanel.Name = "BCompoundPanel";
+        BCompoundPanel.Size = new System.Drawing.Size(190, 90);
+        BCompoundPanel.TabIndex = 0;
+        // 
+        // BSlider
+        // 
+        BSlider.Dock = System.Windows.Forms.DockStyle.Bottom;
+        BSlider.Location = new System.Drawing.Point(0, 34);
+        BSlider.Name = "BSlider";
+        BSlider.Size = new System.Drawing.Size(190, 56);
+        BSlider.TabIndex = 1;
+        // 
+        // BLabels
+        // 
+        BLabels.Controls.Add(BCheckBox);
+        BLabels.Controls.Add(BColorPer);
+        BLabels.Dock = System.Windows.Forms.DockStyle.Top;
+        BLabels.Location = new System.Drawing.Point(0, 0);
+        BLabels.Name = "BLabels";
+        BLabels.Size = new System.Drawing.Size(190, 29);
+        BLabels.TabIndex = 0;
+        // 
+        // BCheckBox
+        // 
+        BCheckBox.AutoSize = true;
+        BCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
+        BCheckBox.Location = new System.Drawing.Point(0, 0);
+        BCheckBox.Name = "BCheckBox";
+        BCheckBox.Size = new System.Drawing.Size(40, 29);
+        BCheckBox.TabIndex = 1;
+        BCheckBox.Text = "B";
+        BCheckBox.UseVisualStyleBackColor = true;
+        // 
+        // BColorPer
+        // 
+        BColorPer.AutoSize = true;
+        BColorPer.Dock = System.Windows.Forms.DockStyle.Right;
+        BColorPer.Location = new System.Drawing.Point(111, 0);
+        BColorPer.Name = "BColorPer";
+        BColorPer.Size = new System.Drawing.Size(79, 20);
+        BColorPer.TabIndex = 0;
+        BColorPer.Text = "نسبة الأزرق";
+        BColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // flowLayoutPanel1
+        // 
+        flowLayoutPanel1.Location = new System.Drawing.Point(13, 428);
+        flowLayoutPanel1.Name = "flowLayoutPanel1";
+        flowLayoutPanel1.Size = new System.Drawing.Size(195, 39);
+        flowLayoutPanel1.TabIndex = 4;
+        // 
+        // label1
+        // 
+        label1.Location = new System.Drawing.Point(456, 399);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(100, 23);
+        label1.TabIndex = 2;
+        label1.Text = "label1";
         // 
         // MainScreen
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(781, 543);
+        ClientSize = new System.Drawing.Size(940, 543);
+        Controls.Add(label1);
         Controls.Add(RightPanel);
         Controls.Add(TobBarFlowLayout);
         Controls.Add(TopBar);
@@ -410,6 +658,7 @@ partial class MainScreen {
         RightToLeft = System.Windows.Forms.RightToLeft.Yes;
         RightToLeftLayout = true;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+        Text = "R";
         Load += MainScreen_Load;
         TobBarFlowLayout.ResumeLayout(false);
         TobBarFlowLayout.PerformLayout();
@@ -428,9 +677,69 @@ partial class MainScreen {
         ColorsSystemPanel.PerformLayout();
         ColorsSystemsGrid.ResumeLayout(false);
         ColorsSystemsGrid.PerformLayout();
+        CompoundsControlFlow.ResumeLayout(false);
+        CompoundsControlFlow.PerformLayout();
+        ControlStacksPanel.ResumeLayout(false);
+        ControlStacksPanel.PerformLayout();
+        RGBCompoundsPanel.ResumeLayout(false);
+        RCompoundPanel.ResumeLayout(false);
+        RCompoundPanel.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RSlider).EndInit();
+        RLabels.ResumeLayout(false);
+        RLabels.PerformLayout();
+        GCompoundPanel.ResumeLayout(false);
+        GCompoundPanel.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)GSlider).EndInit();
+        GLabels.ResumeLayout(false);
+        GLabels.PerformLayout();
+        BCompoundPanel.ResumeLayout(false);
+        BCompoundPanel.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BSlider).EndInit();
+        BLabels.ResumeLayout(false);
+        BLabels.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+    private System.Windows.Forms.Label label1;
+
+    private System.Windows.Forms.CheckBox BCheckBox;
+
+    private System.Windows.Forms.Panel BLabels;
+
+    private System.Windows.Forms.Label BColorPer;
+
+    private System.Windows.Forms.Panel BCompoundPanel;
+
+    private System.Windows.Forms.Panel GCompoundPanel;
+    private System.Windows.Forms.TrackBar GSlider;
+    private System.Windows.Forms.Panel GLabels;
+    private System.Windows.Forms.CheckBox G;
+    private System.Windows.Forms.Label GColorPer;
+    private System.Windows.Forms.Panel panel3;
+    private System.Windows.Forms.TrackBar RSlider;
+    private System.Windows.Forms.Panel panel4;
+    private System.Windows.Forms.CheckBox RCheckBox;
+    private System.Windows.Forms.Label label2;
+
+    private System.Windows.Forms.TrackBar BSlider;
+
+    private System.Windows.Forms.Panel RCompoundPanel;
+
+    private System.Windows.Forms.CheckBox checkBox1;
+
+    private System.Windows.Forms.Label RColorPer;
+
+    private System.Windows.Forms.Panel RLabels;
+
+    private System.Windows.Forms.Panel ControlStacksPanel;
+
+    private System.Windows.Forms.FlowLayoutPanel RGBCompoundsPanel;
+
+    private System.Windows.Forms.Label CompoundsControlLabel;
+
+    private System.Windows.Forms.FlowLayoutPanel CompoundsControlFlow;
 
     private System.Windows.Forms.RadioButton HLSButton;
     private System.Windows.Forms.RadioButton YUVButton;

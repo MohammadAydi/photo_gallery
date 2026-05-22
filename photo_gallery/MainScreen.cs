@@ -60,8 +60,4 @@ public partial class MainScreen : Form {
     private void TobBarFlowLayout_Paint(object sender, PaintEventArgs e) {
         throw new System.NotImplementedException();
     }
-
-    private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
 }
