@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace photo_gallery
 {
-    public class ColorQuantizer
+       public class ColorQuantizer
     {
         private readonly int _maxIterations = 100;
         private readonly double _convergenceThreshold = 0.5;
@@ -50,35 +50,31 @@ namespace photo_gallery
 
         private double[][] InitializeCentroidsKMeansPlusPlus(double[][] pixels, int k)
         {
-            var centroids = new List<double[]> { pixels[_random.Next(pixels.Length)] };
+            var centroids = new List<double[]>();
+            var distances = new double[pixels.Length];
+
+            int firstIdx = _random.Next(pixels.Length);
+            centroids.Add(pixels[firstIdx]);
+ 
+            for (int i = 0; i < pixels.Length; i++)
+                distances[i] = SquaredDist(pixels[i], centroids[0]);
 
             for (int c = 1; c < k; c++)
             {
-                var distances = pixels.Select(p =>
-                {
-                    double minDist = double.MaxValue;
-                    foreach (var cen in centroids)
-                        minDist = Math.Min(minDist, SquaredDist(p, cen));
-                    return minDist;
-                }).ToArray();
-
                 double total = distances.Sum();
                 double threshold = _random.NextDouble() * total;
                 double cumulative = 0;
+                int chosen = pixels.Length - 1;
 
                 for (int i = 0; i < pixels.Length; i++)
                 {
                     cumulative += distances[i];
-                    if (cumulative >= threshold)
-                    {
-                        centroids.Add(pixels[i]);
-                        break;
-                    }
+                    if (cumulative >= threshold) { chosen = i; break; }
                 }
-
-                // احتياط
-                if (centroids.Count <= c)
-                    centroids.Add(pixels[_random.Next(pixels.Length)]);
+                centroids.Add(pixels[chosen]);
+ 
+                for (int i = 0; i < pixels.Length; i++)
+                    distances[i] = Math.Min(distances[i], SquaredDist(pixels[i], centroids[c]));
             }
 
             return centroids.ToArray();
@@ -183,10 +179,23 @@ namespace photo_gallery
         private double[][] SamplePixels(double[][] pixels, double sampleRate)
         {
             int sampleSize = Math.Max(1, (int)(pixels.Length * sampleRate));
-            return pixels
-                .OrderBy(_ => _random.Next())
-                .Take(sampleSize)
-                .ToArray();
+            var result = new double[sampleSize][];
+     
+            var chosenIndices = new HashSet<int>(sampleSize);
+
+            for (int i = 0; i < sampleSize; i++)
+            {
+                int idx; 
+                do
+                {
+                    idx = _random.Next(pixels.Length);
+                } 
+                while (!chosenIndices.Add(idx)); 
+
+                result[i] = pixels[idx];
+            }
+
+            return result;
         }
 
         private Color[] MapPixelsToCentroids(double[][] pixels, double[][] centroids)
