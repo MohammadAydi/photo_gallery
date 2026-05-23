@@ -24,7 +24,8 @@ partial class MainScreen {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent() {
+    private void InitializeComponent()
+    {
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -309,6 +310,7 @@ partial class MainScreen {
         Open3DSpaceButton.TabIndex = 4;
         Open3DSpaceButton.Text = "فضاء الألوان ثلاثي الأبعاد";
         Open3DSpaceButton.UseVisualStyleBackColor = false;
+        Open3DSpaceButton.Click += Open3DSpaceButton_Click_1;
         // 
         // ColorsNumberFlow
         // 
@@ -317,10 +319,10 @@ partial class MainScreen {
         ColorsNumberFlow.Controls.Add(UpDownColorsNumber);
         ColorsNumberFlow.Controls.Add(ColorNumberSlider);
         ColorsNumberFlow.Controls.Add(ColorsNumberLabel);
-        ColorsNumberFlow.Location = new System.Drawing.Point(26, 21);
+        ColorsNumberFlow.Location = new System.Drawing.Point(34, 23);
         ColorsNumberFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ColorsNumberFlow.Name = "ColorsNumberFlow";
-        ColorsNumberFlow.Size = new System.Drawing.Size(407, 34);
+        ColorsNumberFlow.Size = new System.Drawing.Size(399, 30);
         ColorsNumberFlow.TabIndex = 3;
         ColorsNumberFlow.WrapContents = false;
         // 
@@ -330,10 +332,10 @@ partial class MainScreen {
         UpDownColorsNumber.BackColor = System.Drawing.Color.FromArgb(((int)((byte)31)), ((int)((byte)31)), ((int)((byte)31)));
         UpDownColorsNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         UpDownColorsNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        UpDownColorsNumber.Location = new System.Drawing.Point(347, 2);
+        UpDownColorsNumber.Location = new System.Drawing.Point(340, 2);
         UpDownColorsNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         UpDownColorsNumber.Name = "UpDownColorsNumber";
-        UpDownColorsNumber.Size = new System.Drawing.Size(57, 30);
+        UpDownColorsNumber.Size = new System.Drawing.Size(56, 26);
         UpDownColorsNumber.TabIndex = 2;
         UpDownColorsNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         UpDownColorsNumber.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
@@ -341,12 +343,12 @@ partial class MainScreen {
         // ColorNumberSlider
         // 
         ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
-        ColorNumberSlider.Location = new System.Drawing.Point(88, 2);
+        ColorNumberSlider.Location = new System.Drawing.Point(81, 2);
         ColorNumberSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ColorNumberSlider.Minimum = 2;
         ColorNumberSlider.Name = "ColorNumberSlider";
         ColorNumberSlider.RightToLeftLayout = true;
-        ColorNumberSlider.Size = new System.Drawing.Size(253, 30);
+        ColorNumberSlider.Size = new System.Drawing.Size(253, 26);
         ColorNumberSlider.TabIndex = 1;
         ColorNumberSlider.Value = 2;
         // 
@@ -357,7 +359,7 @@ partial class MainScreen {
         ColorsNumberLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         ColorsNumberLabel.Location = new System.Drawing.Point(3, 0);
         ColorsNumberLabel.Name = "ColorsNumberLabel";
-        ColorsNumberLabel.Size = new System.Drawing.Size(79, 34);
+        ColorsNumberLabel.Size = new System.Drawing.Size(72, 30);
         ColorsNumberLabel.TabIndex = 0;
         ColorsNumberLabel.Text = "عدد الألوان";
         ColorsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -398,9 +400,9 @@ partial class MainScreen {
         // 
         ColorSystemLabel.AutoSize = true;
         ColorSystemLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ColorSystemLabel.Location = new System.Drawing.Point(210, 0);
+        ColorSystemLabel.Location = new System.Drawing.Point(222, 0);
         ColorSystemLabel.Name = "ColorSystemLabel";
-        ColorSystemLabel.Size = new System.Drawing.Size(91, 23);
+        ColorSystemLabel.Size = new System.Drawing.Size(79, 20);
         ColorSystemLabel.TabIndex = 0;
         ColorSystemLabel.Text = "النظام اللوني";
         ColorSystemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,7 +420,7 @@ partial class MainScreen {
         ColorsSystemsGrid.Controls.Add(CMYKButton, 1, 0);
         ColorsSystemsGrid.Controls.Add(YCbCrButton, 0, 1);
         ColorsSystemsGrid.Controls.Add(HSVButton, 2, 0);
-        ColorsSystemsGrid.Location = new System.Drawing.Point(12, 25);
+        ColorsSystemsGrid.Location = new System.Drawing.Point(12, 22);
         ColorsSystemsGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ColorsSystemsGrid.Name = "ColorsSystemsGrid";
         ColorsSystemsGrid.RowCount = 2;
@@ -628,7 +630,7 @@ partial class MainScreen {
         RCheckBox.Location = new System.Drawing.Point(0, 0);
         RCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RCheckBox.Name = "RCheckBox";
-        RCheckBox.Size = new System.Drawing.Size(41, 27);
+        RCheckBox.Size = new System.Drawing.Size(43, 27);
         RCheckBox.TabIndex = 1;
         RCheckBox.Text = "R";
         RCheckBox.UseVisualStyleBackColor = true;
@@ -638,9 +640,9 @@ partial class MainScreen {
         RColorPer.AutoSize = true;
         RColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         RColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        RColorPer.Location = new System.Drawing.Point(168, 0);
+        RColorPer.Location = new System.Drawing.Point(175, 0);
         RColorPer.Name = "RColorPer";
-        RColorPer.Size = new System.Drawing.Size(81, 23);
+        RColorPer.Size = new System.Drawing.Size(74, 20);
         RColorPer.TabIndex = 0;
         RColorPer.Text = "نسبة الأحمر";
         RColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -684,7 +686,7 @@ partial class MainScreen {
         G.Location = new System.Drawing.Point(0, 0);
         G.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         G.Name = "G";
-        G.Size = new System.Drawing.Size(42, 28);
+        G.Size = new System.Drawing.Size(44, 28);
         G.TabIndex = 1;
         G.Text = "G";
         G.UseVisualStyleBackColor = true;
@@ -694,9 +696,9 @@ partial class MainScreen {
         GColorPer.AutoSize = true;
         GColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         GColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        GColorPer.Location = new System.Drawing.Point(165, 0);
+        GColorPer.Location = new System.Drawing.Point(168, 0);
         GColorPer.Name = "GColorPer";
-        GColorPer.Size = new System.Drawing.Size(84, 23);
+        GColorPer.Size = new System.Drawing.Size(81, 20);
         GColorPer.TabIndex = 0;
         GColorPer.Text = "نسبة الأخضر";
         GColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -741,7 +743,7 @@ partial class MainScreen {
         BCheckBox.Location = new System.Drawing.Point(0, 0);
         BCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BCheckBox.Name = "BCheckBox";
-        BCheckBox.Size = new System.Drawing.Size(41, 28);
+        BCheckBox.Size = new System.Drawing.Size(43, 28);
         BCheckBox.TabIndex = 1;
         BCheckBox.Text = "B";
         BCheckBox.UseVisualStyleBackColor = true;
@@ -751,9 +753,9 @@ partial class MainScreen {
         BColorPer.AutoSize = true;
         BColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         BColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        BColorPer.Location = new System.Drawing.Point(168, 0);
+        BColorPer.Location = new System.Drawing.Point(170, 0);
         BColorPer.Name = "BColorPer";
-        BColorPer.Size = new System.Drawing.Size(78, 23);
+        BColorPer.Size = new System.Drawing.Size(76, 20);
         BColorPer.TabIndex = 0;
         BColorPer.Text = "نسبة الأزرق";
         BColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -995,14 +997,14 @@ partial class MainScreen {
         // 
         // MainScreen
         // 
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
         BackColor = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(1427, 647);
         Controls.Add(panel1);
         Controls.Add(RightPanel);
         Controls.Add(TobBarFlowLayout);
         Controls.Add(TopBar);
-        Font = new System.Drawing.Font("Cocon modified", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Location = new System.Drawing.Point(19, 19);
         Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RightToLeft = System.Windows.Forms.RightToLeft.Yes;

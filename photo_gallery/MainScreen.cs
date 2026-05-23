@@ -49,4 +49,10 @@ public partial class MainScreen : Form {
         var form = new SpacesViewr();
         form.Show();
     }
+
+    private void Open3DSpaceButton_Click_1(object sender, EventArgs e)
+    {
+        var form = new SpacesViewr();
+        form.Show();
+    }
 }
