@@ -60,4 +60,20 @@ public partial class MainScreen : Form {
     private void TobBarFlowLayout_Paint(object sender, PaintEventArgs e) {
         throw new System.NotImplementedException();
     }
+
+    private void UpDownColorsNumber_ValueChanged(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
+
+    private void HSVButton_CheckedChanged(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
+
+    private void RSlider_Scroll(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
+
+    private void RSlider_Scroll_1(object sender, EventArgs e) {
+        throw new System.NotImplementedException();
+    }
 }
