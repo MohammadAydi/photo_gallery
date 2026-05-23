@@ -25,7 +25,6 @@ partial class MainScreen {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -930,7 +929,6 @@ partial class MainScreen {
         // ModifiedImageViewer
         // 
         ModifiedImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-        ModifiedImageViewer.Image = ((System.Drawing.Image)resources.GetObject("ModifiedImageViewer.Image"));
         ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
         ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImageViewer.Name = "ModifiedImageViewer";
@@ -975,7 +973,6 @@ partial class MainScreen {
         // OriginalImageViewer
         // 
         OriginalImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-        OriginalImageViewer.Image = ((System.Drawing.Image)resources.GetObject("OriginalImageViewer.Image"));
         OriginalImageViewer.Location = new System.Drawing.Point(0, 0);
         OriginalImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageViewer.Name = "OriginalImageViewer";
