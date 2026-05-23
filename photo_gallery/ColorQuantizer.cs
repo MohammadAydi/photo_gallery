@@ -1,4 +1,4 @@
-using System.Drawing.Imaging;
+/*using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 
 namespace photo_gallery
@@ -265,5 +265,115 @@ namespace photo_gallery
         public required Bitmap ResultBitmap { get; init; }
         public required Color[] Palette { get; init; }
         public int ColorCount { get; init; }
+    }
+}*/
+
+using OpenCvSharp; 
+
+namespace photo_gallery
+{
+    public class ColorQuantizer
+    {
+        public Mat Quantize(Mat src, int colorCount)
+        { 
+//1-تصغير الصورة             
+            using var small = new Mat();
+
+            double scale = 0.25;
+
+            Cv2.Resize(
+                src,
+                small,
+                new OpenCvSharp.Size(),
+                scale,
+                scale,
+                InterpolationFlags.Area);
+
+            int smallPixels = small.Rows * small.Cols;
+ 
+            //2- تجهيز البيانات لـ KMeans 
+
+            using var samples = small.Reshape(1, smallPixels);
+
+            using var data = new Mat();
+
+            samples.ConvertTo(data, MatType.CV_32F);
+ 
+            // 3- استخراج الـ Centers فقط 
+
+            using var labels = new Mat();
+            using var centers = new Mat();
+
+            Cv2.Kmeans(
+                data,
+                colorCount,
+                labels,
+                new TermCriteria(
+                    CriteriaTypes.Eps | CriteriaTypes.MaxIter,
+                    10,
+                    1.0),
+                1,
+                KMeansFlags.PpCenters,
+                centers);
+ 
+            centers.ConvertTo(centers, MatType.CV_8U);
+ 
+            // 4- استخراج بيانات الـ centers 
+
+            centers.GetArray(out byte[] centerData);
+ 
+            // 5- تجهيز الصورة الأصلية 
+
+            int rows = src.Rows;
+            int cols = src.Cols;
+            int totalPixels = rows * cols;
+
+            src.GetArray(out Vec3b[] originalPixels);
+
+            Vec3b[] outputPixels = new Vec3b[totalPixels];
+ 
+// 6) تطبيق أقرب Center على كل بكسل (بالتوازي)            
+
+            Parallel.For(0, totalPixels, i =>
+            {
+                Vec3b pixel = originalPixels[i];
+                int bestCenter = 0;
+                double bestDistance = double.MaxValue;
+
+                for (int c = 0; c < colorCount; c++)
+                {
+                    int idx = c * 3;
+ 
+                    int b = centerData[idx];
+                    int g = centerData[idx + 1];
+                    int r = centerData[idx + 2];
+
+                    int db = pixel.Item0 - b;
+                    int dg = pixel.Item1 - g;
+                    int dr = pixel.Item2 - r;
+ 
+                    double distance = db * db + dg * dg + dr * dr;
+
+                    if (distance < bestDistance)
+                    {
+                        bestDistance = distance;
+                        bestCenter = idx;
+                    }
+                }
+
+                outputPixels[i] = new Vec3b(
+                    centerData[bestCenter],
+                    centerData[bestCenter + 1],
+                    centerData[bestCenter + 2]);
+            });
+ 
+            // 7- بناء الصورة النهائية 
+
+            var result = new Mat(rows, cols, MatType.CV_8UC3);
+
+            result.SetArray(outputPixels);
+
+            return result;
+        }
     }
 }
