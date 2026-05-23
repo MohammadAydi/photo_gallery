@@ -73,4 +73,15 @@ public partial class MainScreen : Form {
         _controller.ResetImage();
         RefreshImage();
     }
+
+
+    private void HSVButton_CheckedChanged(object sender, EventArgs e) {
+        if (HSVButton.Checked) {
+            HSVCompoundsFlow.BringToFront();
+        }
+    }
+
+    private void RGBButton_CheckedChanged(object sender, EventArgs e) {
+      if(RGBButton.Checked){}
+    }
 }
