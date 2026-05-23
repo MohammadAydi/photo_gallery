@@ -606,6 +606,7 @@ partial class MainScreen {
         YUVButton.Text = "YUV";
         YUVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         YUVButton.UseVisualStyleBackColor = true;
+        YUVButton.CheckedChanged += YUVButton_CheckedChanged_1;
         // 
         // LABButton
         // 
@@ -624,6 +625,7 @@ partial class MainScreen {
         LABButton.Text = "LAB";
         LABButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         LABButton.UseVisualStyleBackColor = true;
+        LABButton.CheckedChanged += LABButton_CheckedChanged;
         // 
         // RGBButton
         // 
@@ -662,6 +664,7 @@ partial class MainScreen {
         CMYKButton.Text = "CMYK";
         CMYKButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         CMYKButton.UseVisualStyleBackColor = true;
+        CMYKButton.CheckedChanged += CMYKButton_CheckedChanged;
         // 
         // YCbCrButton
         // 
@@ -680,6 +683,7 @@ partial class MainScreen {
         YCbCrButton.Text = "YCbCr";
         YCbCrButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         YCbCrButton.UseVisualStyleBackColor = true;
+        YCbCrButton.CheckedChanged += YCbCrButton_CheckedChanged;
         // 
         // HSVButton
         // 

@@ -82,6 +82,32 @@ public partial class MainScreen : Form {
     }
 
     private void RGBButton_CheckedChanged(object sender, EventArgs e) {
-   
+        if (RGBButton.Checked) {
+            RGBFlow.BringToFront();
+        }
+    }
+
+    private void CMYKButton_CheckedChanged(object sender, EventArgs e) {
+        if (CMYKButton.Checked) {
+            CMYKFlow.BringToFront();
+        }
+    }
+
+    private void YUVButton_CheckedChanged_1(object sender, EventArgs e) {
+        if (YUVButton.Checked) {
+            YUVFlow.BringToFront();
+        }
+    }
+
+    private void LABButton_CheckedChanged(object sender, EventArgs e) {
+        if (LABButton.Checked) {
+            LABFlow.BringToFront();
+        }
+    }
+
+    private void YCbCrButton_CheckedChanged(object sender, EventArgs e) {
+        if (YCbCrButton.Checked) {
+            YCbCrFlow.BringToFront();
+        }
     }
 }
