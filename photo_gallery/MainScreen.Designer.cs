@@ -24,7 +24,8 @@ partial class MainScreen {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent() {
+    private void InitializeComponent()
+    {
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -181,9 +182,9 @@ partial class MainScreen {
         TopBar.AutoSize = true;
         TopBar.Dock = System.Windows.Forms.DockStyle.Top;
         TopBar.Location = new System.Drawing.Point(0, 0);
-        TopBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        TopBar.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         TopBar.Name = "TopBar";
-        TopBar.Size = new System.Drawing.Size(1427, 0);
+        TopBar.Size = new System.Drawing.Size(1924, 0);
         TopBar.TabIndex = 0;
         // 
         // TobBarFlowLayout
@@ -195,19 +196,19 @@ partial class MainScreen {
         TobBarFlowLayout.Controls.Add(ColorsNumberFlow);
         TobBarFlowLayout.Dock = System.Windows.Forms.DockStyle.Top;
         TobBarFlowLayout.Location = new System.Drawing.Point(0, 0);
-        TobBarFlowLayout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        TobBarFlowLayout.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         TobBarFlowLayout.Name = "TobBarFlowLayout";
-        TobBarFlowLayout.Size = new System.Drawing.Size(1427, 76);
+        TobBarFlowLayout.Size = new System.Drawing.Size(1924, 110);
         TobBarFlowLayout.TabIndex = 0;
         // 
         // TitlePanel
         // 
         TitlePanel.BackColor = System.Drawing.Color.Transparent;
         TitlePanel.Controls.Add(Title);
-        TitlePanel.Location = new System.Drawing.Point(1183, 2);
-        TitlePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        TitlePanel.Location = new System.Drawing.Point(1543, 2);
+        TitlePanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         TitlePanel.Name = "TitlePanel";
-        TitlePanel.Size = new System.Drawing.Size(241, 72);
+        TitlePanel.Size = new System.Drawing.Size(376, 72);
         TitlePanel.TabIndex = 0;
         // 
         // Title
@@ -215,8 +216,9 @@ partial class MainScreen {
         Title.Dock = System.Windows.Forms.DockStyle.Fill;
         Title.ForeColor = System.Drawing.SystemColors.ButtonFace;
         Title.Location = new System.Drawing.Point(0, 0);
+        Title.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         Title.Name = "Title";
-        Title.Size = new System.Drawing.Size(241, 72);
+        Title.Size = new System.Drawing.Size(376, 72);
         Title.TabIndex = 0;
         Title.Text = "مخبر الصور - PixelLab";
         Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,10 +228,10 @@ partial class MainScreen {
         ActionButtonsPanel.AutoSize = true;
         ActionButtonsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
         ActionButtonsPanel.Controls.Add(ActionButtonsFlow);
-        ActionButtonsPanel.Location = new System.Drawing.Point(439, 2);
-        ActionButtonsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ActionButtonsPanel.Location = new System.Drawing.Point(379, 2);
+        ActionButtonsPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ActionButtonsPanel.Name = "ActionButtonsPanel";
-        ActionButtonsPanel.Size = new System.Drawing.Size(738, 66);
+        ActionButtonsPanel.Size = new System.Drawing.Size(1154, 66);
         ActionButtonsPanel.TabIndex = 1;
         // 
         // ActionButtonsFlow
@@ -239,10 +241,10 @@ partial class MainScreen {
         ActionButtonsFlow.Controls.Add(ResetButton);
         ActionButtonsFlow.Controls.Add(SaveButton);
         ActionButtonsFlow.Controls.Add(Open3DSpaceButton);
-        ActionButtonsFlow.Location = new System.Drawing.Point(3, 2);
-        ActionButtonsFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ActionButtonsFlow.Location = new System.Drawing.Point(5, 2);
+        ActionButtonsFlow.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ActionButtonsFlow.Name = "ActionButtonsFlow";
-        ActionButtonsFlow.Size = new System.Drawing.Size(732, 62);
+        ActionButtonsFlow.Size = new System.Drawing.Size(1144, 62);
         ActionButtonsFlow.TabIndex = 0;
         ActionButtonsFlow.WrapContents = false;
         // 
@@ -253,14 +255,13 @@ partial class MainScreen {
         LoadButton.FlatAppearance.BorderSize = 0;
         LoadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         LoadButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        LoadButton.Location = new System.Drawing.Point(574, 2);
-        LoadButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LoadButton.Location = new System.Drawing.Point(897, 2);
+        LoadButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         LoadButton.Name = "LoadButton";
-        LoadButton.Size = new System.Drawing.Size(155, 52);
+        LoadButton.Size = new System.Drawing.Size(242, 52);
         LoadButton.TabIndex = 3;
         LoadButton.Text = "تحميل صورة";
         LoadButton.UseVisualStyleBackColor = false;
-        LoadButton.Click += LoadButton_Click;
         // 
         // ResetButton
         // 
@@ -269,10 +270,10 @@ partial class MainScreen {
         ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)200)), ((int)((byte)110)), ((int)((byte)110)));
         ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         ResetButton.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)200)), ((int)((byte)110)), ((int)((byte)110)));
-        ResetButton.Location = new System.Drawing.Point(424, 2);
-        ResetButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ResetButton.Location = new System.Drawing.Point(662, 2);
+        ResetButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ResetButton.Name = "ResetButton";
-        ResetButton.Size = new System.Drawing.Size(144, 52);
+        ResetButton.Size = new System.Drawing.Size(225, 52);
         ResetButton.TabIndex = 2;
         ResetButton.Text = "إعادة تعيين";
         ResetButton.UseVisualStyleBackColor = false;
@@ -285,14 +286,13 @@ partial class MainScreen {
         SaveButton.FlatAppearance.BorderSize = 2;
         SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)230)), ((int)((byte)230)), ((int)((byte)230)));
-        SaveButton.Location = new System.Drawing.Point(304, 2);
-        SaveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        SaveButton.Location = new System.Drawing.Point(474, 2);
+        SaveButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         SaveButton.Name = "SaveButton";
-        SaveButton.Size = new System.Drawing.Size(114, 52);
+        SaveButton.Size = new System.Drawing.Size(178, 52);
         SaveButton.TabIndex = 1;
         SaveButton.Text = "حفظ";
         SaveButton.UseVisualStyleBackColor = false;
-        SaveButton.Click += SaveButton_Click;
         // 
         // Open3DSpaceButton
         // 
@@ -302,13 +302,14 @@ partial class MainScreen {
         Open3DSpaceButton.FlatAppearance.BorderSize = 2;
         Open3DSpaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Open3DSpaceButton.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)85)), ((int)((byte)79)), ((int)((byte)179)));
-        Open3DSpaceButton.Location = new System.Drawing.Point(17, 2);
-        Open3DSpaceButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        Open3DSpaceButton.Location = new System.Drawing.Point(25, 2);
+        Open3DSpaceButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         Open3DSpaceButton.Name = "Open3DSpaceButton";
-        Open3DSpaceButton.Size = new System.Drawing.Size(281, 52);
+        Open3DSpaceButton.Size = new System.Drawing.Size(439, 52);
         Open3DSpaceButton.TabIndex = 4;
         Open3DSpaceButton.Text = "فضاء الألوان ثلاثي الأبعاد";
         Open3DSpaceButton.UseVisualStyleBackColor = false;
+        Open3DSpaceButton.Click += Open3DSpaceButton_Click;
         // 
         // ColorsNumberFlow
         // 
@@ -317,10 +318,10 @@ partial class MainScreen {
         ColorsNumberFlow.Controls.Add(UpDownColorsNumber);
         ColorsNumberFlow.Controls.Add(ColorNumberSlider);
         ColorsNumberFlow.Controls.Add(ColorsNumberLabel);
-        ColorsNumberFlow.Location = new System.Drawing.Point(26, 21);
-        ColorsNumberFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ColorsNumberFlow.Location = new System.Drawing.Point(1366, 78);
+        ColorsNumberFlow.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ColorsNumberFlow.Name = "ColorsNumberFlow";
-        ColorsNumberFlow.Size = new System.Drawing.Size(407, 34);
+        ColorsNumberFlow.Size = new System.Drawing.Size(553, 30);
         ColorsNumberFlow.TabIndex = 3;
         ColorsNumberFlow.WrapContents = false;
         // 
@@ -330,10 +331,10 @@ partial class MainScreen {
         UpDownColorsNumber.BackColor = System.Drawing.Color.FromArgb(((int)((byte)31)), ((int)((byte)31)), ((int)((byte)31)));
         UpDownColorsNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         UpDownColorsNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        UpDownColorsNumber.Location = new System.Drawing.Point(347, 2);
-        UpDownColorsNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        UpDownColorsNumber.Location = new System.Drawing.Point(492, 2);
+        UpDownColorsNumber.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         UpDownColorsNumber.Name = "UpDownColorsNumber";
-        UpDownColorsNumber.Size = new System.Drawing.Size(57, 30);
+        UpDownColorsNumber.Size = new System.Drawing.Size(56, 26);
         UpDownColorsNumber.TabIndex = 2;
         UpDownColorsNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         UpDownColorsNumber.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
@@ -341,12 +342,12 @@ partial class MainScreen {
         // ColorNumberSlider
         // 
         ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
-        ColorNumberSlider.Location = new System.Drawing.Point(88, 2);
-        ColorNumberSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ColorNumberSlider.Location = new System.Drawing.Point(87, 2);
+        ColorNumberSlider.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ColorNumberSlider.Minimum = 2;
         ColorNumberSlider.Name = "ColorNumberSlider";
         ColorNumberSlider.RightToLeftLayout = true;
-        ColorNumberSlider.Size = new System.Drawing.Size(253, 30);
+        ColorNumberSlider.Size = new System.Drawing.Size(395, 26);
         ColorNumberSlider.TabIndex = 1;
         ColorNumberSlider.Value = 2;
         // 
@@ -355,9 +356,10 @@ partial class MainScreen {
         ColorsNumberLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
         ColorsNumberLabel.AutoSize = true;
         ColorsNumberLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ColorsNumberLabel.Location = new System.Drawing.Point(3, 0);
+        ColorsNumberLabel.Location = new System.Drawing.Point(5, 0);
+        ColorsNumberLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         ColorsNumberLabel.Name = "ColorsNumberLabel";
-        ColorsNumberLabel.Size = new System.Drawing.Size(79, 34);
+        ColorsNumberLabel.Size = new System.Drawing.Size(72, 30);
         ColorsNumberLabel.TabIndex = 0;
         ColorsNumberLabel.Text = "عدد الألوان";
         ColorsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -371,11 +373,11 @@ partial class MainScreen {
         RightPanel.Controls.Add(ImageInfoFlow);
         RightPanel.Dock = System.Windows.Forms.DockStyle.Left;
         RightPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        RightPanel.Location = new System.Drawing.Point(0, 76);
+        RightPanel.Location = new System.Drawing.Point(0, 110);
         RightPanel.Margin = new System.Windows.Forms.Padding(0);
         RightPanel.Name = "RightPanel";
-        RightPanel.Padding = new System.Windows.Forms.Padding(7, 7, 0, 0);
-        RightPanel.Size = new System.Drawing.Size(320, 571);
+        RightPanel.Padding = new System.Windows.Forms.Padding(11, 7, 0, 0);
+        RightPanel.Size = new System.Drawing.Size(500, 537);
         RightPanel.TabIndex = 1;
         RightPanel.WrapContents = false;
         // 
@@ -387,10 +389,10 @@ partial class MainScreen {
         ColorsSystemPanel.Controls.Add(ColorsSystemsGrid);
         ColorsSystemPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         ColorsSystemPanel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ColorsSystemPanel.Location = new System.Drawing.Point(6, 9);
-        ColorsSystemPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ColorsSystemPanel.Location = new System.Drawing.Point(-6, 9);
+        ColorsSystemPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ColorsSystemPanel.Name = "ColorsSystemPanel";
-        ColorsSystemPanel.Size = new System.Drawing.Size(304, 147);
+        ColorsSystemPanel.Size = new System.Drawing.Size(475, 147);
         ColorsSystemPanel.TabIndex = 2;
         ColorsSystemPanel.WrapContents = false;
         // 
@@ -398,9 +400,10 @@ partial class MainScreen {
         // 
         ColorSystemLabel.AutoSize = true;
         ColorSystemLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ColorSystemLabel.Location = new System.Drawing.Point(210, 0);
+        ColorSystemLabel.Location = new System.Drawing.Point(391, 0);
+        ColorSystemLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         ColorSystemLabel.Name = "ColorSystemLabel";
-        ColorSystemLabel.Size = new System.Drawing.Size(91, 23);
+        ColorSystemLabel.Size = new System.Drawing.Size(79, 20);
         ColorSystemLabel.TabIndex = 0;
         ColorSystemLabel.Text = "النظام اللوني";
         ColorSystemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -418,14 +421,14 @@ partial class MainScreen {
         ColorsSystemsGrid.Controls.Add(CMYKButton, 1, 0);
         ColorsSystemsGrid.Controls.Add(YCbCrButton, 0, 1);
         ColorsSystemsGrid.Controls.Add(HSVButton, 2, 0);
-        ColorsSystemsGrid.Location = new System.Drawing.Point(12, 25);
-        ColorsSystemsGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ColorsSystemsGrid.Location = new System.Drawing.Point(19, 22);
+        ColorsSystemsGrid.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ColorsSystemsGrid.Name = "ColorsSystemsGrid";
         ColorsSystemsGrid.RowCount = 2;
         ColorsSystemsGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
         ColorsSystemsGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
         ColorsSystemsGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-        ColorsSystemsGrid.Size = new System.Drawing.Size(289, 104);
+        ColorsSystemsGrid.Size = new System.Drawing.Size(451, 104);
         ColorsSystemsGrid.TabIndex = 1;
         // 
         // YUVButton
@@ -437,10 +440,10 @@ partial class MainScreen {
         YUVButton.FlatAppearance.BorderSize = 2;
         YUVButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         YUVButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        YUVButton.Location = new System.Drawing.Point(196, 2);
-        YUVButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YUVButton.Location = new System.Drawing.Point(306, 2);
+        YUVButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         YUVButton.Name = "YUVButton";
-        YUVButton.Size = new System.Drawing.Size(90, 48);
+        YUVButton.Size = new System.Drawing.Size(140, 48);
         YUVButton.TabIndex = 6;
         YUVButton.TabStop = true;
         YUVButton.Text = "YUV";
@@ -455,10 +458,10 @@ partial class MainScreen {
         LABButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)130)), ((int)((byte)130)), ((int)((byte)130)));
         LABButton.FlatAppearance.BorderSize = 2;
         LABButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        LABButton.Location = new System.Drawing.Point(3, 54);
-        LABButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LABButton.Location = new System.Drawing.Point(5, 54);
+        LABButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         LABButton.Name = "LABButton";
-        LABButton.Size = new System.Drawing.Size(91, 48);
+        LABButton.Size = new System.Drawing.Size(141, 48);
         LABButton.TabIndex = 5;
         LABButton.TabStop = true;
         LABButton.Text = "LAB";
@@ -473,10 +476,10 @@ partial class MainScreen {
         HLSButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)130)), ((int)((byte)130)), ((int)((byte)130)));
         HLSButton.FlatAppearance.BorderSize = 2;
         HLSButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        HLSButton.Location = new System.Drawing.Point(196, 54);
-        HLSButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        HLSButton.Location = new System.Drawing.Point(306, 54);
+        HLSButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         HLSButton.Name = "HLSButton";
-        HLSButton.Size = new System.Drawing.Size(90, 48);
+        HLSButton.Size = new System.Drawing.Size(140, 48);
         HLSButton.TabIndex = 4;
         HLSButton.TabStop = true;
         HLSButton.Text = "HLS";
@@ -492,10 +495,10 @@ partial class MainScreen {
         CMYKButton.FlatAppearance.BorderSize = 2;
         CMYKButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         CMYKButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        CMYKButton.Location = new System.Drawing.Point(100, 2);
-        CMYKButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        CMYKButton.Location = new System.Drawing.Point(156, 2);
+        CMYKButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         CMYKButton.Name = "CMYKButton";
-        CMYKButton.Size = new System.Drawing.Size(90, 48);
+        CMYKButton.Size = new System.Drawing.Size(140, 48);
         CMYKButton.TabIndex = 3;
         CMYKButton.TabStop = true;
         CMYKButton.Text = "CMYK";
@@ -510,10 +513,10 @@ partial class MainScreen {
         YCbCrButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)130)), ((int)((byte)130)), ((int)((byte)130)));
         YCbCrButton.FlatAppearance.BorderSize = 2;
         YCbCrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        YCbCrButton.Location = new System.Drawing.Point(100, 54);
-        YCbCrButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YCbCrButton.Location = new System.Drawing.Point(156, 54);
+        YCbCrButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         YCbCrButton.Name = "YCbCrButton";
-        YCbCrButton.Size = new System.Drawing.Size(90, 48);
+        YCbCrButton.Size = new System.Drawing.Size(140, 48);
         YCbCrButton.TabIndex = 1;
         YCbCrButton.TabStop = true;
         YCbCrButton.Text = "YCbCr";
@@ -529,10 +532,10 @@ partial class MainScreen {
         HSVButton.FlatAppearance.BorderSize = 2;
         HSVButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         HSVButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        HSVButton.Location = new System.Drawing.Point(3, 2);
-        HSVButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        HSVButton.Location = new System.Drawing.Point(5, 2);
+        HSVButton.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         HSVButton.Name = "HSVButton";
-        HSVButton.Size = new System.Drawing.Size(91, 48);
+        HSVButton.Size = new System.Drawing.Size(141, 48);
         HSVButton.TabIndex = 0;
         HSVButton.TabStop = true;
         HSVButton.Text = "HSV";
@@ -547,18 +550,19 @@ partial class MainScreen {
         CompoundsControlFlow.Controls.Add(ControlStacksPanel);
         CompoundsControlFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         CompoundsControlFlow.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        CompoundsControlFlow.Location = new System.Drawing.Point(6, 160);
-        CompoundsControlFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        CompoundsControlFlow.Location = new System.Drawing.Point(-6, 160);
+        CompoundsControlFlow.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         CompoundsControlFlow.Name = "CompoundsControlFlow";
-        CompoundsControlFlow.Size = new System.Drawing.Size(304, 278);
+        CompoundsControlFlow.Size = new System.Drawing.Size(475, 278);
         CompoundsControlFlow.TabIndex = 3;
         // 
         // CompoundsControlLabel
         // 
         CompoundsControlLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        CompoundsControlLabel.Location = new System.Drawing.Point(66, 0);
+        CompoundsControlLabel.Location = new System.Drawing.Point(102, 0);
+        CompoundsControlLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         CompoundsControlLabel.Name = "CompoundsControlLabel";
-        CompoundsControlLabel.Size = new System.Drawing.Size(235, 49);
+        CompoundsControlLabel.Size = new System.Drawing.Size(368, 49);
         CompoundsControlLabel.TabIndex = 0;
         CompoundsControlLabel.Text = "تحكم بالمركبات";
         // 
@@ -566,10 +570,10 @@ partial class MainScreen {
         // 
         ControlStacksPanel.AutoSize = true;
         ControlStacksPanel.Controls.Add(RGBCompoundsPanel);
-        ControlStacksPanel.Location = new System.Drawing.Point(-1, 51);
-        ControlStacksPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ControlStacksPanel.Location = new System.Drawing.Point(-2, 51);
+        ControlStacksPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ControlStacksPanel.Name = "ControlStacksPanel";
-        ControlStacksPanel.Size = new System.Drawing.Size(302, 221);
+        ControlStacksPanel.Size = new System.Drawing.Size(472, 221);
         ControlStacksPanel.TabIndex = 1;
         // 
         // RGBCompoundsPanel
@@ -582,9 +586,9 @@ partial class MainScreen {
         RGBCompoundsPanel.Controls.Add(BCompoundPanel);
         RGBCompoundsPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         RGBCompoundsPanel.Location = new System.Drawing.Point(0, 0);
-        RGBCompoundsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RGBCompoundsPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         RGBCompoundsPanel.Name = "RGBCompoundsPanel";
-        RGBCompoundsPanel.Size = new System.Drawing.Size(291, 219);
+        RGBCompoundsPanel.Size = new System.Drawing.Size(455, 219);
         RGBCompoundsPanel.TabIndex = 1;
         RGBCompoundsPanel.WrapContents = false;
         // 
@@ -594,30 +598,31 @@ partial class MainScreen {
         RCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
         RCompoundPanel.Controls.Add(RSlider);
         RCompoundPanel.Controls.Add(RLabels);
-        RCompoundPanel.Location = new System.Drawing.Point(3, 2);
-        RCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RCompoundPanel.Location = new System.Drawing.Point(5, 2);
+        RCompoundPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         RCompoundPanel.Name = "RCompoundPanel";
-        RCompoundPanel.Size = new System.Drawing.Size(285, 66);
+        RCompoundPanel.Size = new System.Drawing.Size(445, 66);
         RCompoundPanel.TabIndex = 2;
         // 
         // RSlider
         // 
         RSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        RSlider.Location = new System.Drawing.Point(36, 25);
-        RSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RSlider.Location = new System.Drawing.Point(56, 25);
+        RSlider.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         RSlider.Name = "RSlider";
-        RSlider.Size = new System.Drawing.Size(246, 56);
+        RSlider.Size = new System.Drawing.Size(385, 56);
         RSlider.TabIndex = 1;
+        RSlider.Scroll += RSlider_Scroll_1;
         // 
         // RLabels
         // 
         RLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
         RLabels.Controls.Add(RCheckBox);
         RLabels.Controls.Add(RColorPer);
-        RLabels.Location = new System.Drawing.Point(36, 0);
-        RLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RLabels.Location = new System.Drawing.Point(56, 0);
+        RLabels.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         RLabels.Name = "RLabels";
-        RLabels.Size = new System.Drawing.Size(249, 27);
+        RLabels.Size = new System.Drawing.Size(389, 27);
         RLabels.TabIndex = 0;
         // 
         // RCheckBox
@@ -626,9 +631,9 @@ partial class MainScreen {
         RCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
         RCheckBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
         RCheckBox.Location = new System.Drawing.Point(0, 0);
-        RCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RCheckBox.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         RCheckBox.Name = "RCheckBox";
-        RCheckBox.Size = new System.Drawing.Size(41, 27);
+        RCheckBox.Size = new System.Drawing.Size(43, 27);
         RCheckBox.TabIndex = 1;
         RCheckBox.Text = "R";
         RCheckBox.UseVisualStyleBackColor = true;
@@ -638,9 +643,10 @@ partial class MainScreen {
         RColorPer.AutoSize = true;
         RColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         RColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        RColorPer.Location = new System.Drawing.Point(168, 0);
+        RColorPer.Location = new System.Drawing.Point(315, 0);
+        RColorPer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         RColorPer.Name = "RColorPer";
-        RColorPer.Size = new System.Drawing.Size(81, 23);
+        RColorPer.Size = new System.Drawing.Size(74, 20);
         RColorPer.TabIndex = 0;
         RColorPer.Text = "نسبة الأحمر";
         RColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -650,19 +656,19 @@ partial class MainScreen {
         GCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
         GCompoundPanel.Controls.Add(GSlider);
         GCompoundPanel.Controls.Add(GLabels);
-        GCompoundPanel.Location = new System.Drawing.Point(3, 72);
-        GCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GCompoundPanel.Location = new System.Drawing.Point(5, 72);
+        GCompoundPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         GCompoundPanel.Name = "GCompoundPanel";
-        GCompoundPanel.Size = new System.Drawing.Size(285, 68);
+        GCompoundPanel.Size = new System.Drawing.Size(445, 68);
         GCompoundPanel.TabIndex = 1;
         // 
         // GSlider
         // 
         GSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        GSlider.Location = new System.Drawing.Point(39, 25);
-        GSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GSlider.Location = new System.Drawing.Point(61, 25);
+        GSlider.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         GSlider.Name = "GSlider";
-        GSlider.Size = new System.Drawing.Size(249, 56);
+        GSlider.Size = new System.Drawing.Size(389, 56);
         GSlider.TabIndex = 1;
         // 
         // GLabels
@@ -670,10 +676,10 @@ partial class MainScreen {
         GLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
         GLabels.Controls.Add(G);
         GLabels.Controls.Add(GColorPer);
-        GLabels.Location = new System.Drawing.Point(36, 0);
-        GLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GLabels.Location = new System.Drawing.Point(56, 0);
+        GLabels.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         GLabels.Name = "GLabels";
-        GLabels.Size = new System.Drawing.Size(249, 28);
+        GLabels.Size = new System.Drawing.Size(389, 28);
         GLabels.TabIndex = 0;
         // 
         // G
@@ -682,9 +688,9 @@ partial class MainScreen {
         G.Dock = System.Windows.Forms.DockStyle.Left;
         G.ForeColor = System.Drawing.SystemColors.ButtonFace;
         G.Location = new System.Drawing.Point(0, 0);
-        G.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        G.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         G.Name = "G";
-        G.Size = new System.Drawing.Size(42, 28);
+        G.Size = new System.Drawing.Size(44, 28);
         G.TabIndex = 1;
         G.Text = "G";
         G.UseVisualStyleBackColor = true;
@@ -694,9 +700,10 @@ partial class MainScreen {
         GColorPer.AutoSize = true;
         GColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         GColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        GColorPer.Location = new System.Drawing.Point(165, 0);
+        GColorPer.Location = new System.Drawing.Point(308, 0);
+        GColorPer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         GColorPer.Name = "GColorPer";
-        GColorPer.Size = new System.Drawing.Size(84, 23);
+        GColorPer.Size = new System.Drawing.Size(81, 20);
         GColorPer.TabIndex = 0;
         GColorPer.Text = "نسبة الأخضر";
         GColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -707,19 +714,19 @@ partial class MainScreen {
         BCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
         BCompoundPanel.Controls.Add(BSlider);
         BCompoundPanel.Controls.Add(BLabels);
-        BCompoundPanel.Location = new System.Drawing.Point(3, 144);
-        BCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BCompoundPanel.Location = new System.Drawing.Point(5, 144);
+        BCompoundPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         BCompoundPanel.Name = "BCompoundPanel";
-        BCompoundPanel.Size = new System.Drawing.Size(285, 73);
+        BCompoundPanel.Size = new System.Drawing.Size(445, 73);
         BCompoundPanel.TabIndex = 0;
         // 
         // BSlider
         // 
         BSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        BSlider.Location = new System.Drawing.Point(39, 31);
-        BSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BSlider.Location = new System.Drawing.Point(61, 31);
+        BSlider.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         BSlider.Name = "BSlider";
-        BSlider.Size = new System.Drawing.Size(246, 56);
+        BSlider.Size = new System.Drawing.Size(385, 56);
         BSlider.TabIndex = 1;
         // 
         // BLabels
@@ -727,10 +734,10 @@ partial class MainScreen {
         BLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
         BLabels.Controls.Add(BCheckBox);
         BLabels.Controls.Add(BColorPer);
-        BLabels.Location = new System.Drawing.Point(39, 0);
-        BLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BLabels.Location = new System.Drawing.Point(61, 0);
+        BLabels.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         BLabels.Name = "BLabels";
-        BLabels.Size = new System.Drawing.Size(246, 28);
+        BLabels.Size = new System.Drawing.Size(385, 28);
         BLabels.TabIndex = 0;
         // 
         // BCheckBox
@@ -739,9 +746,9 @@ partial class MainScreen {
         BCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
         BCheckBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
         BCheckBox.Location = new System.Drawing.Point(0, 0);
-        BCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BCheckBox.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         BCheckBox.Name = "BCheckBox";
-        BCheckBox.Size = new System.Drawing.Size(41, 28);
+        BCheckBox.Size = new System.Drawing.Size(43, 28);
         BCheckBox.TabIndex = 1;
         BCheckBox.Text = "B";
         BCheckBox.UseVisualStyleBackColor = true;
@@ -751,9 +758,10 @@ partial class MainScreen {
         BColorPer.AutoSize = true;
         BColorPer.Dock = System.Windows.Forms.DockStyle.Right;
         BColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        BColorPer.Location = new System.Drawing.Point(168, 0);
+        BColorPer.Location = new System.Drawing.Point(309, 0);
+        BColorPer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         BColorPer.Name = "BColorPer";
-        BColorPer.Size = new System.Drawing.Size(78, 23);
+        BColorPer.Size = new System.Drawing.Size(76, 20);
         BColorPer.TabIndex = 0;
         BColorPer.Text = "نسبة الأزرق";
         BColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -767,10 +775,10 @@ partial class MainScreen {
         ImageInfoFlow.Controls.Add(BitDepthPanel);
         ImageInfoFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         ImageInfoFlow.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ImageInfoFlow.Location = new System.Drawing.Point(8, 442);
-        ImageInfoFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageInfoFlow.Location = new System.Drawing.Point(-3, 442);
+        ImageInfoFlow.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ImageInfoFlow.Name = "ImageInfoFlow";
-        ImageInfoFlow.Size = new System.Drawing.Size(301, 124);
+        ImageInfoFlow.Size = new System.Drawing.Size(470, 124);
         ImageInfoFlow.TabIndex = 4;
         ImageInfoFlow.WrapContents = false;
         // 
@@ -779,29 +787,31 @@ partial class MainScreen {
         DimensionsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
         DimensionsPanel.Controls.Add(label6);
         DimensionsPanel.Controls.Add(DimensionsLabel);
-        DimensionsPanel.Location = new System.Drawing.Point(12, 2);
-        DimensionsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        DimensionsPanel.Location = new System.Drawing.Point(17, 2);
+        DimensionsPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         DimensionsPanel.Name = "DimensionsPanel";
-        DimensionsPanel.Size = new System.Drawing.Size(286, 37);
+        DimensionsPanel.Size = new System.Drawing.Size(448, 37);
         DimensionsPanel.TabIndex = 3;
         // 
         // label6
         // 
         label6.Dock = System.Windows.Forms.DockStyle.Left;
         label6.Location = new System.Drawing.Point(0, 0);
+        label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         label6.Name = "label6";
         label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label6.Size = new System.Drawing.Size(159, 37);
+        label6.Size = new System.Drawing.Size(249, 37);
         label6.TabIndex = 3;
         label6.Text = "200 x 244";
         // 
         // DimensionsLabel
         // 
         DimensionsLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        DimensionsLabel.Location = new System.Drawing.Point(127, 0);
+        DimensionsLabel.Location = new System.Drawing.Point(199, 0);
+        DimensionsLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         DimensionsLabel.Name = "DimensionsLabel";
         DimensionsLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        DimensionsLabel.Size = new System.Drawing.Size(159, 37);
+        DimensionsLabel.Size = new System.Drawing.Size(249, 37);
         DimensionsLabel.TabIndex = 2;
         DimensionsLabel.Text = "Dimensions";
         DimensionsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -811,29 +821,31 @@ partial class MainScreen {
         FileFormatPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
         FileFormatPanel.Controls.Add(label4);
         FileFormatPanel.Controls.Add(FileFormatLabel);
-        FileFormatPanel.Location = new System.Drawing.Point(12, 43);
-        FileFormatPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        FileFormatPanel.Location = new System.Drawing.Point(17, 43);
+        FileFormatPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         FileFormatPanel.Name = "FileFormatPanel";
-        FileFormatPanel.Size = new System.Drawing.Size(286, 37);
+        FileFormatPanel.Size = new System.Drawing.Size(448, 37);
         FileFormatPanel.TabIndex = 2;
         // 
         // label4
         // 
         label4.Dock = System.Windows.Forms.DockStyle.Left;
         label4.Location = new System.Drawing.Point(0, 0);
+        label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         label4.Name = "label4";
         label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label4.Size = new System.Drawing.Size(159, 37);
+        label4.Size = new System.Drawing.Size(249, 37);
         label4.TabIndex = 3;
         label4.Text = "200 x 244";
         // 
         // FileFormatLabel
         // 
         FileFormatLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        FileFormatLabel.Location = new System.Drawing.Point(127, 0);
+        FileFormatLabel.Location = new System.Drawing.Point(199, 0);
+        FileFormatLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         FileFormatLabel.Name = "FileFormatLabel";
         FileFormatLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        FileFormatLabel.Size = new System.Drawing.Size(159, 37);
+        FileFormatLabel.Size = new System.Drawing.Size(249, 37);
         FileFormatLabel.TabIndex = 2;
         FileFormatLabel.Text = "File Format";
         FileFormatLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -843,29 +855,31 @@ partial class MainScreen {
         BitDepthPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
         BitDepthPanel.Controls.Add(label1);
         BitDepthPanel.Controls.Add(BitDepthLabel);
-        BitDepthPanel.Location = new System.Drawing.Point(12, 84);
-        BitDepthPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BitDepthPanel.Location = new System.Drawing.Point(17, 84);
+        BitDepthPanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         BitDepthPanel.Name = "BitDepthPanel";
-        BitDepthPanel.Size = new System.Drawing.Size(286, 37);
+        BitDepthPanel.Size = new System.Drawing.Size(448, 37);
         BitDepthPanel.TabIndex = 1;
         // 
         // label1
         // 
         label1.Dock = System.Windows.Forms.DockStyle.Left;
         label1.Location = new System.Drawing.Point(0, 0);
+        label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         label1.Name = "label1";
         label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label1.Size = new System.Drawing.Size(159, 37);
+        label1.Size = new System.Drawing.Size(249, 37);
         label1.TabIndex = 3;
         label1.Text = "200 x 244";
         // 
         // BitDepthLabel
         // 
         BitDepthLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        BitDepthLabel.Location = new System.Drawing.Point(127, 0);
+        BitDepthLabel.Location = new System.Drawing.Point(199, 0);
+        BitDepthLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         BitDepthLabel.Name = "BitDepthLabel";
         BitDepthLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        BitDepthLabel.Size = new System.Drawing.Size(159, 37);
+        BitDepthLabel.Size = new System.Drawing.Size(249, 37);
         BitDepthLabel.TabIndex = 2;
         BitDepthLabel.Text = "Bit Depth";
         BitDepthLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -875,19 +889,19 @@ partial class MainScreen {
         panel1.BackColor = System.Drawing.Color.FromArgb(((int)((byte)19)), ((int)((byte)19)), ((int)((byte)19)));
         panel1.Controls.Add(EditorSceneSplitter);
         panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-        panel1.Location = new System.Drawing.Point(320, 76);
-        panel1.Margin = new System.Windows.Forms.Padding(20, 21, 20, 21);
+        panel1.Location = new System.Drawing.Point(500, 110);
+        panel1.Margin = new System.Windows.Forms.Padding(31, 21, 31, 21);
         panel1.Name = "panel1";
-        panel1.Padding = new System.Windows.Forms.Padding(20, 21, 20, 21);
-        panel1.Size = new System.Drawing.Size(1107, 571);
+        panel1.Padding = new System.Windows.Forms.Padding(31, 21, 31, 21);
+        panel1.Size = new System.Drawing.Size(1424, 537);
         panel1.TabIndex = 2;
         // 
         // EditorSceneSplitter
         // 
         EditorSceneSplitter.BackColor = System.Drawing.Color.FromArgb(((int)((byte)21)), ((int)((byte)21)), ((int)((byte)21)));
         EditorSceneSplitter.Dock = System.Windows.Forms.DockStyle.Fill;
-        EditorSceneSplitter.Location = new System.Drawing.Point(20, 21);
-        EditorSceneSplitter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        EditorSceneSplitter.Location = new System.Drawing.Point(31, 21);
+        EditorSceneSplitter.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         EditorSceneSplitter.Name = "EditorSceneSplitter";
         // 
         // EditorSceneSplitter.Panel1
@@ -899,9 +913,9 @@ partial class MainScreen {
         // 
         EditorSceneSplitter.Panel2.Controls.Add(OriginalImageSplit);
         EditorSceneSplitter.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-        EditorSceneSplitter.Size = new System.Drawing.Size(1067, 529);
-        EditorSceneSplitter.SplitterDistance = 533;
-        EditorSceneSplitter.SplitterWidth = 22;
+        EditorSceneSplitter.Size = new System.Drawing.Size(1362, 495);
+        EditorSceneSplitter.SplitterDistance = 679;
+        EditorSceneSplitter.SplitterWidth = 35;
         EditorSceneSplitter.TabIndex = 3;
         EditorSceneSplitter.Text = "splitContainer1";
         // 
@@ -912,9 +926,9 @@ partial class MainScreen {
         ModifiedImageSplit.Controls.Add(ModifiedImageLabel);
         ModifiedImageSplit.Dock = System.Windows.Forms.DockStyle.Fill;
         ModifiedImageSplit.Location = new System.Drawing.Point(0, 0);
-        ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ModifiedImageSplit.Name = "ModifiedImageSplit";
-        ModifiedImageSplit.Size = new System.Drawing.Size(533, 529);
+        ModifiedImageSplit.Size = new System.Drawing.Size(679, 495);
         ModifiedImageSplit.TabIndex = 0;
         // 
         // ModifiedImagePanel
@@ -922,18 +936,18 @@ partial class MainScreen {
         ModifiedImagePanel.Controls.Add(ModifiedImageViewer);
         ModifiedImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
         ModifiedImagePanel.Location = new System.Drawing.Point(0, 69);
-        ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ModifiedImagePanel.Name = "ModifiedImagePanel";
-        ModifiedImagePanel.Size = new System.Drawing.Size(533, 460);
+        ModifiedImagePanel.Size = new System.Drawing.Size(679, 426);
         ModifiedImagePanel.TabIndex = 1;
         // 
         // ModifiedImageViewer
         // 
         ModifiedImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
         ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
-        ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         ModifiedImageViewer.Name = "ModifiedImageViewer";
-        ModifiedImageViewer.Size = new System.Drawing.Size(533, 460);
+        ModifiedImageViewer.Size = new System.Drawing.Size(679, 426);
         ModifiedImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         ModifiedImageViewer.TabIndex = 0;
         ModifiedImageViewer.TabStop = false;
@@ -943,8 +957,9 @@ partial class MainScreen {
         ModifiedImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
         ModifiedImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         ModifiedImageLabel.Location = new System.Drawing.Point(0, 0);
+        ModifiedImageLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         ModifiedImageLabel.Name = "ModifiedImageLabel";
-        ModifiedImageLabel.Size = new System.Drawing.Size(533, 69);
+        ModifiedImageLabel.Size = new System.Drawing.Size(679, 69);
         ModifiedImageLabel.TabIndex = 0;
         ModifiedImageLabel.Text = "نظام HSV";
         ModifiedImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -956,9 +971,9 @@ partial class MainScreen {
         OriginalImageSplit.Controls.Add(OriginalImageLabel);
         OriginalImageSplit.Dock = System.Windows.Forms.DockStyle.Fill;
         OriginalImageSplit.Location = new System.Drawing.Point(0, 0);
-        OriginalImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        OriginalImageSplit.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         OriginalImageSplit.Name = "OriginalImageSplit";
-        OriginalImageSplit.Size = new System.Drawing.Size(512, 529);
+        OriginalImageSplit.Size = new System.Drawing.Size(648, 495);
         OriginalImageSplit.TabIndex = 1;
         // 
         // OriginalImagePanel
@@ -966,18 +981,18 @@ partial class MainScreen {
         OriginalImagePanel.Controls.Add(OriginalImageViewer);
         OriginalImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
         OriginalImagePanel.Location = new System.Drawing.Point(0, 69);
-        OriginalImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        OriginalImagePanel.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         OriginalImagePanel.Name = "OriginalImagePanel";
-        OriginalImagePanel.Size = new System.Drawing.Size(512, 460);
+        OriginalImagePanel.Size = new System.Drawing.Size(648, 426);
         OriginalImagePanel.TabIndex = 2;
         // 
         // OriginalImageViewer
         // 
         OriginalImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
         OriginalImageViewer.Location = new System.Drawing.Point(0, 0);
-        OriginalImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        OriginalImageViewer.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
         OriginalImageViewer.Name = "OriginalImageViewer";
-        OriginalImageViewer.Size = new System.Drawing.Size(512, 460);
+        OriginalImageViewer.Size = new System.Drawing.Size(648, 426);
         OriginalImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         OriginalImageViewer.TabIndex = 0;
         OriginalImageViewer.TabStop = false;
@@ -987,29 +1002,31 @@ partial class MainScreen {
         OriginalImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
         OriginalImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         OriginalImageLabel.Location = new System.Drawing.Point(0, 0);
+        OriginalImageLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
         OriginalImageLabel.Name = "OriginalImageLabel";
-        OriginalImageLabel.Size = new System.Drawing.Size(512, 69);
+        OriginalImageLabel.Size = new System.Drawing.Size(648, 69);
         OriginalImageLabel.TabIndex = 1;
         OriginalImageLabel.Text = "الصورة الأصلية - RGB";
         OriginalImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // MainScreen
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+        AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(1427, 647);
+        ClientSize = new System.Drawing.Size(1924, 647);
         Controls.Add(panel1);
         Controls.Add(RightPanel);
         Controls.Add(TobBarFlowLayout);
         Controls.Add(TopBar);
-        Font = new System.Drawing.Font("Cocon modified", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Location = new System.Drawing.Point(19, 19);
         Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RightToLeft = System.Windows.Forms.RightToLeft.Yes;
         RightToLeftLayout = true;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "مختبر الصور - PixelLab";
+        Load += MainScreen_Load;
         TobBarFlowLayout.ResumeLayout(false);
         TobBarFlowLayout.PerformLayout();
         TitlePanel.ResumeLayout(false);

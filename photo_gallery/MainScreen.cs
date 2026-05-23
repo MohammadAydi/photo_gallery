@@ -1,3 +1,5 @@
+using PixelLab;
+
 using Emgu.CV;
 
 namespace photo_gallery;
@@ -41,5 +43,10 @@ public partial class MainScreen : Form {
         ModifiedImageViewer.Image = _controller.CurrentImage.ToBitmap();
     }
 
-
+    
+ private void Open3DSpaceButton_Click(object sender, EventArgs e)
+    {
+        var form = new SpacesViewr();
+        form.Show();
+    }
 }
