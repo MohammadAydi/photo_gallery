@@ -22,7 +22,6 @@ public partial class MainScreen : Form {
             _controller.LoadImage(dialog.FileName);
             OriginalImageViewer.Image?.Dispose();
             OriginalImageViewer.Image = _controller.OriginalImage.ToBitmap();
-            _controller.QuantizeColors(ColorNumberSlider.Value);
             RefreshImage();
         }
     }
@@ -52,26 +51,18 @@ public partial class MainScreen : Form {
         var form = new SpacesViewr();
         form.Show();
     }
-  private bool _isSyncing = false;
+
 
     private void ColorNumberSlider_ValueChanged(object sender, EventArgs e)
     {
-        if (_isSyncing) return;
-        _isSyncing = true;
         UpDownColorsNumber.Value = ColorNumberSlider.Value;
-        _isSyncing = false;
-
         _controller.QuantizeColors(ColorNumberSlider.Value);
         RefreshImage();
     }
 
     private void UpDownColorsNumber_ValueChanged(object sender, EventArgs e)
     {
-        if (_isSyncing) return;
-        _isSyncing = true;
         ColorNumberSlider.Value = (int)UpDownColorsNumber.Value;
-        _isSyncing = false;
-
         _controller.QuantizeColors((int)UpDownColorsNumber.Value);
         RefreshImage();
     }

@@ -256,8 +256,5 @@ namespace photo_gallery
         public required Bitmap ResultBitmap { get; init; }
         public required Color[] Palette { get; init; }
         public int ColorCount { get; init; }
-
-        public void Save(string path, ImageFormat? format = null)
-            => ResultBitmap.Save(path, format ?? ImageFormat.Png);
     }
 }
