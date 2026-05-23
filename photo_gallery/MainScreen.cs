@@ -1,79 +1,45 @@
+using Emgu.CV;
+
 namespace photo_gallery;
 
 public partial class MainScreen : Form {
+    
+    private readonly ImageController _controller;
+    
     public MainScreen() {
         InitializeComponent();
+        _controller = new ImageController();
     }
 
-    private void Form1_Load(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
+    private void LoadButton_Click(object sender, EventArgs e) {
+        OpenFileDialog dialog = new OpenFileDialog();
+        dialog.Filter = @"Images|*.png;*.jpg;*.jpeg";
+        if (dialog.ShowDialog() == DialogResult.OK) {
+            _controller.LoadImage(dialog.FileName);
+            OriginalImageViewer.Image?.Dispose();
+            OriginalImageViewer.Image = _controller.OriginalImage.ToBitmap();
+            RefreshImage();
+        }
+    }
+    
+    private void SaveButton_Click(object sender, EventArgs e) {
+        if (!_controller.HasImage) 
+            return;
+        SaveFileDialog dialog = new SaveFileDialog();
+        dialog.Filter = @"Images|*.png;*.jpg;*.jpeg";
+        if (dialog.ShowDialog() == DialogResult.OK) {
+            _controller.SaveImage(dialog.FileName);
+        }
+    }
+    
+
+    private void RefreshImage() {
+        if (_controller.CurrentImage == null) {
+            return;
+        }
+        ModifiedImageViewer.Image?.Dispose();
+        ModifiedImageViewer.Image = _controller.CurrentImage.ToBitmap();
     }
 
-    private void MainScreen_Load_1(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
 
-    private void MainScreen_Load(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void panel1_Paint_1(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void panel1_Paint(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void panel1_Paint_2(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void panel1_Paint_3(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void label1_Click(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void label1_Click_1(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void button1_Click(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void button4_Click(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void TobBarFlowLayout_Paint(object sender, PaintEventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void UpDownColorsNumber_ValueChanged(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void HSVButton_CheckedChanged(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void RSlider_Scroll(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
-
-    private void RSlider_Scroll_1(object sender, EventArgs e) {
-        throw new System.NotImplementedException();
-    }
 }
