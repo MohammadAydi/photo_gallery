@@ -26,4 +26,15 @@ public class ImageController {
             CvInvoke.Imwrite(path, _model.EditedImage);
         }
     }
+    private readonly ColorQuantizer _quantizer = new();
+    private Bitmap? _quantizedBitmap;
+
+    public void QuantizeColors(int colorCount)
+    {
+        if (!HasImage) return;
+        var result = _quantizer.Quantize(_model.OriginalImage.ToBitmap(), colorCount);
+        _quantizedBitmap = result.ResultBitmap;
+        _model.EditedImage = result.ResultBitmap.ToMat();
+    }
+
 }

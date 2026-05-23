@@ -12,7 +12,6 @@ namespace photo_gallery
         public QuantizationResult Quantize(Bitmap sourceBitmap, int colorCount)
         {
             if (sourceBitmap == null) throw new ArgumentNullException(nameof(sourceBitmap));
-            if (colorCount < 1) throw new ArgumentException("The number of color should be >=1", nameof(colorCount));
 
             var pixels = ExtractPixels(sourceBitmap);
             var sampledPixels = SamplePixels(pixels, sampleRate: 0.15);
@@ -30,16 +29,16 @@ namespace photo_gallery
         }
 
         private double[][] RunKMeans(double[][] pixels, int k)
-        { 
+        {
             var centroids = InitializeCentroidsKMeansPlusPlus(pixels, k);
 
             for (int iter = 0; iter < _maxIterations; iter++)
-            { 
+            {
                 var assignments = AssignPixelsToCentroids(pixels, centroids);
- 
+
                 var newCentroids = ComputeNewCentroids(pixels, assignments, k);
- 
-                double shift = ComputeTotalShift(centroids, newCentroids);
+
+                double shift = Enumerable.Range(0, k).Sum(i => Math.Sqrt(SquaredDist(centroids[i], newCentroids[i])));
                 centroids = newCentroids;
 
                 if (shift < _convergenceThreshold)
@@ -49,9 +48,6 @@ namespace photo_gallery
             return centroids;
         }
 
-        /// <summary>
-        /// K-Means++ Initialization: تختار مراكز أكثر تفرقاً لتسريع التقارب وتحسين الجودة.
-        /// </summary>
         private double[][] InitializeCentroidsKMeansPlusPlus(double[][] pixels, int k)
         {
             var centroids = new List<double[]> { pixels[_random.Next(pixels.Length)] };
@@ -62,11 +58,10 @@ namespace photo_gallery
                 {
                     double minDist = double.MaxValue;
                     foreach (var cen in centroids)
-                        minDist = Math.Min(minDist, SquaredDistance(p, cen));
+                        minDist = Math.Min(minDist, SquaredDist(p, cen));
                     return minDist;
                 }).ToArray();
 
-                // اختيار البكسل التالي باحتمالية تناسب مع المسافة
                 double total = distances.Sum();
                 double threshold = _random.NextDouble() * total;
                 double cumulative = 0;
@@ -81,7 +76,7 @@ namespace photo_gallery
                     }
                 }
 
-                // احتياط: إذا لم يُختر أي بكسل
+                // احتياط
                 if (centroids.Count <= c)
                     centroids.Add(pixels[_random.Next(pixels.Length)]);
             }
@@ -92,7 +87,7 @@ namespace photo_gallery
         private int[] AssignPixelsToCentroids(double[][] pixels, double[][] centroids)
         {
             var assignments = new int[pixels.Length];
- 
+
             Parallel.For(0, pixels.Length, i =>
             {
                 double minDist = double.MaxValue;
@@ -100,13 +95,14 @@ namespace photo_gallery
 
                 for (int c = 0; c < centroids.Length; c++)
                 {
-                    double dist = SquaredDistance(pixels[i], centroids[c]);
+                    double dist = SquaredDist(pixels[i], centroids[c]);
                     if (dist < minDist)
                     {
                         minDist = dist;
                         best = c;
                     }
                 }
+
                 assignments[i] = best;
             });
             return assignments;
@@ -146,8 +142,10 @@ namespace photo_gallery
                     ];
                 }
             }
+
             return centroids;
-        } 
+        }
+
         private double[][] ExtractPixels(Bitmap bitmap)
         {
             int width = bitmap.Width;
@@ -202,7 +200,7 @@ namespace photo_gallery
 
                 for (int c = 0; c < centroids.Length; c++)
                 {
-                    double dist = SquaredDistance(pixels[i], centroids[c]);
+                    double dist = SquaredDist(pixels[i], centroids[c]);
                     if (dist < minDist)
                     {
                         minDist = dist;
@@ -210,9 +208,7 @@ namespace photo_gallery
                     }
                 }
 
-                result[i] = Color.FromArgb(
-                    Clamp(centroids[best][0]),
-                    Clamp(centroids[best][1]),
+                result[i] = Color.FromArgb(Clamp(centroids[best][0]), Clamp(centroids[best][1]),
                     Clamp(centroids[best][2]));
             });
 
@@ -248,16 +244,8 @@ namespace photo_gallery
             return bitmap;
         }
 
-        private static double SquaredDistance(double[] a, double[] b)
+        private static double SquaredDist(double[] a, double[] b)
             => (a[0] - b[0]) * (a[0] - b[0]) + (a[1] - b[1]) * (a[1] - b[1]) + (a[2] - b[2]) * (a[2] - b[2]);
-
-        private static double ComputeTotalShift(double[][] oldC, double[][] newC)
-        {
-            double total = 0;
-            for (int i = 0; i < oldC.Length; i++)
-                total += Math.Sqrt(SquaredDistance(oldC[i], newC[i]));
-            return total;
-        }
 
         private static int Clamp(double value)
             => Math.Max(0, Math.Min(255, (int)Math.Round(value)));
@@ -265,13 +253,11 @@ namespace photo_gallery
 
     public class QuantizationResult
     {
-        public Bitmap ResultBitmap { get; set; }
- 
-        public Color[] Palette { get; set; }
- 
-        public int ColorCount { get; set; }
+        public required Bitmap ResultBitmap { get; init; }
+        public required Color[] Palette { get; init; }
+        public int ColorCount { get; init; }
 
-        public void Save(string path, ImageFormat format = null)
+        public void Save(string path, ImageFormat? format = null)
             => ResultBitmap.Save(path, format ?? ImageFormat.Png);
     }
 }
