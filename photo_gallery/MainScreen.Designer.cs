@@ -606,7 +606,6 @@ partial class MainScreen {
         RSlider.Name = "RSlider";
         RSlider.Size = new System.Drawing.Size(246, 56);
         RSlider.TabIndex = 1;
-        RSlider.Scroll += RSlider_Scroll_1;
         // 
         // RLabels
         // 
@@ -1009,7 +1008,6 @@ partial class MainScreen {
         RightToLeftLayout = true;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "مختبر الصور - PixelLab";
-        Load += MainScreen_Load;
         TobBarFlowLayout.ResumeLayout(false);
         TobBarFlowLayout.PerformLayout();
         TitlePanel.ResumeLayout(false);
