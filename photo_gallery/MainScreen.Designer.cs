@@ -995,8 +995,7 @@ partial class MainScreen {
         // 
         // MainScreen
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
         BackColor = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(1427, 647);
         Controls.Add(panel1);
