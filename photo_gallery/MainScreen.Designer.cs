@@ -58,6 +58,86 @@ partial class MainScreen {
         CompoundsControlFlow = new System.Windows.Forms.FlowLayoutPanel();
         CompoundsControlLabel = new System.Windows.Forms.Label();
         ControlStacksPanel = new System.Windows.Forms.Panel();
+        HSVCompoundsFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel2 = new System.Windows.Forms.Panel();
+        trackBar1 = new System.Windows.Forms.TrackBar();
+        panel3 = new System.Windows.Forms.Panel();
+        checkBox1 = new System.Windows.Forms.CheckBox();
+        label1 = new System.Windows.Forms.Label();
+        panel4 = new System.Windows.Forms.Panel();
+        trackBar2 = new System.Windows.Forms.TrackBar();
+        panel5 = new System.Windows.Forms.Panel();
+        checkBox2 = new System.Windows.Forms.CheckBox();
+        label2 = new System.Windows.Forms.Label();
+        panel7 = new System.Windows.Forms.Panel();
+        trackBar3 = new System.Windows.Forms.TrackBar();
+        panel8 = new System.Windows.Forms.Panel();
+        checkBox3 = new System.Windows.Forms.CheckBox();
+        label3 = new System.Windows.Forms.Label();
+        YCbCrFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel23 = new System.Windows.Forms.Panel();
+        YLumaSlider = new System.Windows.Forms.TrackBar();
+        panel24 = new System.Windows.Forms.Panel();
+        YLumaCheck = new System.Windows.Forms.CheckBox();
+        label11 = new System.Windows.Forms.Label();
+        panel25 = new System.Windows.Forms.Panel();
+        BlueDiffSlider = new System.Windows.Forms.TrackBar();
+        panel26 = new System.Windows.Forms.Panel();
+        BlueDiffCheck = new System.Windows.Forms.CheckBox();
+        label12 = new System.Windows.Forms.Label();
+        panel27 = new System.Windows.Forms.Panel();
+        RedDiffSlider = new System.Windows.Forms.TrackBar();
+        panel28 = new System.Windows.Forms.Panel();
+        RedDiffCheck = new System.Windows.Forms.CheckBox();
+        label13 = new System.Windows.Forms.Label();
+        RGBFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel17 = new System.Windows.Forms.Panel();
+        RedSlider = new System.Windows.Forms.TrackBar();
+        panel18 = new System.Windows.Forms.Panel();
+        RedCheckbox = new System.Windows.Forms.CheckBox();
+        label8 = new System.Windows.Forms.Label();
+        panel19 = new System.Windows.Forms.Panel();
+        GreenSlider = new System.Windows.Forms.TrackBar();
+        panel20 = new System.Windows.Forms.Panel();
+        GreenCheckbox = new System.Windows.Forms.CheckBox();
+        label9 = new System.Windows.Forms.Label();
+        panel21 = new System.Windows.Forms.Panel();
+        BlueSlider = new System.Windows.Forms.TrackBar();
+        panel22 = new System.Windows.Forms.Panel();
+        BlueCheckbox = new System.Windows.Forms.CheckBox();
+        label10 = new System.Windows.Forms.Label();
+        LABFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel29 = new System.Windows.Forms.Panel();
+        LightnessSlider = new System.Windows.Forms.TrackBar();
+        panel30 = new System.Windows.Forms.Panel();
+        LightnessCheck = new System.Windows.Forms.CheckBox();
+        label14 = new System.Windows.Forms.Label();
+        panel31 = new System.Windows.Forms.Panel();
+        GreenAxisSlider = new System.Windows.Forms.TrackBar();
+        panel32 = new System.Windows.Forms.Panel();
+        GreenAxisCheck = new System.Windows.Forms.CheckBox();
+        label15 = new System.Windows.Forms.Label();
+        panel33 = new System.Windows.Forms.Panel();
+        BlueAxisSlider = new System.Windows.Forms.TrackBar();
+        panel34 = new System.Windows.Forms.Panel();
+        BlueAxisCheck = new System.Windows.Forms.CheckBox();
+        label16 = new System.Windows.Forms.Label();
+        YUVFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel35 = new System.Windows.Forms.Panel();
+        YYUVLumaSlider = new System.Windows.Forms.TrackBar();
+        panel36 = new System.Windows.Forms.Panel();
+        YYUVLumaCheckbox = new System.Windows.Forms.CheckBox();
+        label17 = new System.Windows.Forms.Label();
+        panel37 = new System.Windows.Forms.Panel();
+        BlueProjectionSlider = new System.Windows.Forms.TrackBar();
+        panel38 = new System.Windows.Forms.Panel();
+        BlueProjectionCheckbox = new System.Windows.Forms.CheckBox();
+        label18 = new System.Windows.Forms.Label();
+        panel39 = new System.Windows.Forms.Panel();
+        RedPorjectionSlider = new System.Windows.Forms.TrackBar();
+        panel40 = new System.Windows.Forms.Panel();
+        RedPorjectionCheckbox = new System.Windows.Forms.CheckBox();
+        label19 = new System.Windows.Forms.Label();
         CMYKFlow = new System.Windows.Forms.FlowLayoutPanel();
         panel15 = new System.Windows.Forms.Panel();
         CyanSlider = new System.Windows.Forms.TrackBar();
@@ -114,86 +194,6 @@ partial class MainScreen {
         OriginalImagePanel = new System.Windows.Forms.Panel();
         OriginalImageViewer = new System.Windows.Forms.PictureBox();
         OriginalImageLabel = new System.Windows.Forms.Label();
-        HSVCompoundsFlow = new System.Windows.Forms.FlowLayoutPanel();
-        panel2 = new System.Windows.Forms.Panel();
-        trackBar1 = new System.Windows.Forms.TrackBar();
-        panel3 = new System.Windows.Forms.Panel();
-        checkBox1 = new System.Windows.Forms.CheckBox();
-        label1 = new System.Windows.Forms.Label();
-        panel4 = new System.Windows.Forms.Panel();
-        trackBar2 = new System.Windows.Forms.TrackBar();
-        panel5 = new System.Windows.Forms.Panel();
-        checkBox2 = new System.Windows.Forms.CheckBox();
-        label2 = new System.Windows.Forms.Label();
-        panel7 = new System.Windows.Forms.Panel();
-        trackBar3 = new System.Windows.Forms.TrackBar();
-        panel8 = new System.Windows.Forms.Panel();
-        checkBox3 = new System.Windows.Forms.CheckBox();
-        label3 = new System.Windows.Forms.Label();
-        flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-        panel17 = new System.Windows.Forms.Panel();
-        trackBar4 = new System.Windows.Forms.TrackBar();
-        panel18 = new System.Windows.Forms.Panel();
-        checkBox4 = new System.Windows.Forms.CheckBox();
-        label8 = new System.Windows.Forms.Label();
-        panel19 = new System.Windows.Forms.Panel();
-        trackBar5 = new System.Windows.Forms.TrackBar();
-        panel20 = new System.Windows.Forms.Panel();
-        checkBox5 = new System.Windows.Forms.CheckBox();
-        label9 = new System.Windows.Forms.Label();
-        panel21 = new System.Windows.Forms.Panel();
-        trackBar6 = new System.Windows.Forms.TrackBar();
-        panel22 = new System.Windows.Forms.Panel();
-        checkBox6 = new System.Windows.Forms.CheckBox();
-        label10 = new System.Windows.Forms.Label();
-        flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-        panel23 = new System.Windows.Forms.Panel();
-        trackBar7 = new System.Windows.Forms.TrackBar();
-        panel24 = new System.Windows.Forms.Panel();
-        checkBox7 = new System.Windows.Forms.CheckBox();
-        label11 = new System.Windows.Forms.Label();
-        panel25 = new System.Windows.Forms.Panel();
-        trackBar8 = new System.Windows.Forms.TrackBar();
-        panel26 = new System.Windows.Forms.Panel();
-        checkBox8 = new System.Windows.Forms.CheckBox();
-        label12 = new System.Windows.Forms.Label();
-        panel27 = new System.Windows.Forms.Panel();
-        trackBar9 = new System.Windows.Forms.TrackBar();
-        panel28 = new System.Windows.Forms.Panel();
-        checkBox9 = new System.Windows.Forms.CheckBox();
-        label13 = new System.Windows.Forms.Label();
-        flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-        panel29 = new System.Windows.Forms.Panel();
-        trackBar10 = new System.Windows.Forms.TrackBar();
-        panel30 = new System.Windows.Forms.Panel();
-        checkBox10 = new System.Windows.Forms.CheckBox();
-        label14 = new System.Windows.Forms.Label();
-        panel31 = new System.Windows.Forms.Panel();
-        trackBar11 = new System.Windows.Forms.TrackBar();
-        panel32 = new System.Windows.Forms.Panel();
-        checkBox11 = new System.Windows.Forms.CheckBox();
-        label15 = new System.Windows.Forms.Label();
-        panel33 = new System.Windows.Forms.Panel();
-        trackBar12 = new System.Windows.Forms.TrackBar();
-        panel34 = new System.Windows.Forms.Panel();
-        checkBox12 = new System.Windows.Forms.CheckBox();
-        label16 = new System.Windows.Forms.Label();
-        flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-        panel35 = new System.Windows.Forms.Panel();
-        trackBar13 = new System.Windows.Forms.TrackBar();
-        panel36 = new System.Windows.Forms.Panel();
-        checkBox13 = new System.Windows.Forms.CheckBox();
-        label17 = new System.Windows.Forms.Label();
-        panel37 = new System.Windows.Forms.Panel();
-        trackBar14 = new System.Windows.Forms.TrackBar();
-        panel38 = new System.Windows.Forms.Panel();
-        checkBox14 = new System.Windows.Forms.CheckBox();
-        label18 = new System.Windows.Forms.Label();
-        panel39 = new System.Windows.Forms.Panel();
-        trackBar15 = new System.Windows.Forms.TrackBar();
-        panel40 = new System.Windows.Forms.Panel();
-        checkBox15 = new System.Windows.Forms.CheckBox();
-        label19 = new System.Windows.Forms.Label();
         TobBarFlowLayout.SuspendLayout();
         TitlePanel.SuspendLayout();
         ActionButtonsPanel.SuspendLayout();
@@ -206,6 +206,56 @@ partial class MainScreen {
         ColorsSystemsGrid.SuspendLayout();
         CompoundsControlFlow.SuspendLayout();
         ControlStacksPanel.SuspendLayout();
+        HSVCompoundsFlow.SuspendLayout();
+        panel2.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+        panel3.SuspendLayout();
+        panel4.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
+        panel5.SuspendLayout();
+        panel7.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar3).BeginInit();
+        panel8.SuspendLayout();
+        YCbCrFlow.SuspendLayout();
+        panel23.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)YLumaSlider).BeginInit();
+        panel24.SuspendLayout();
+        panel25.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueDiffSlider).BeginInit();
+        panel26.SuspendLayout();
+        panel27.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedDiffSlider).BeginInit();
+        panel28.SuspendLayout();
+        RGBFlow.SuspendLayout();
+        panel17.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedSlider).BeginInit();
+        panel18.SuspendLayout();
+        panel19.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenSlider).BeginInit();
+        panel20.SuspendLayout();
+        panel21.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueSlider).BeginInit();
+        panel22.SuspendLayout();
+        LABFlow.SuspendLayout();
+        panel29.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)LightnessSlider).BeginInit();
+        panel30.SuspendLayout();
+        panel31.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenAxisSlider).BeginInit();
+        panel32.SuspendLayout();
+        panel33.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueAxisSlider).BeginInit();
+        panel34.SuspendLayout();
+        YUVFlow.SuspendLayout();
+        panel35.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)YYUVLumaSlider).BeginInit();
+        panel36.SuspendLayout();
+        panel37.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueProjectionSlider).BeginInit();
+        panel38.SuspendLayout();
+        panel39.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedPorjectionSlider).BeginInit();
+        panel40.SuspendLayout();
         CMYKFlow.SuspendLayout();
         panel15.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)CyanSlider).BeginInit();
@@ -239,56 +289,6 @@ partial class MainScreen {
         OriginalImageSplit.SuspendLayout();
         OriginalImagePanel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)OriginalImageViewer).BeginInit();
-        HSVCompoundsFlow.SuspendLayout();
-        panel2.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
-        panel3.SuspendLayout();
-        panel4.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
-        panel5.SuspendLayout();
-        panel7.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar3).BeginInit();
-        panel8.SuspendLayout();
-        flowLayoutPanel1.SuspendLayout();
-        panel17.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar4).BeginInit();
-        panel18.SuspendLayout();
-        panel19.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar5).BeginInit();
-        panel20.SuspendLayout();
-        panel21.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar6).BeginInit();
-        panel22.SuspendLayout();
-        flowLayoutPanel2.SuspendLayout();
-        panel23.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar7).BeginInit();
-        panel24.SuspendLayout();
-        panel25.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar8).BeginInit();
-        panel26.SuspendLayout();
-        panel27.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar9).BeginInit();
-        panel28.SuspendLayout();
-        flowLayoutPanel3.SuspendLayout();
-        panel29.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar10).BeginInit();
-        panel30.SuspendLayout();
-        panel31.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar11).BeginInit();
-        panel32.SuspendLayout();
-        panel33.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar12).BeginInit();
-        panel34.SuspendLayout();
-        flowLayoutPanel4.SuspendLayout();
-        panel35.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar13).BeginInit();
-        panel36.SuspendLayout();
-        panel37.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar14).BeginInit();
-        panel38.SuspendLayout();
-        panel39.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar15).BeginInit();
-        panel40.SuspendLayout();
         SuspendLayout();
         // 
         // panel6
@@ -728,17 +728,947 @@ partial class MainScreen {
         // ControlStacksPanel
         // 
         ControlStacksPanel.AutoSize = true;
-        ControlStacksPanel.Controls.Add(flowLayoutPanel4);
-        ControlStacksPanel.Controls.Add(flowLayoutPanel3);
-        ControlStacksPanel.Controls.Add(flowLayoutPanel2);
-        ControlStacksPanel.Controls.Add(flowLayoutPanel1);
         ControlStacksPanel.Controls.Add(HSVCompoundsFlow);
+        ControlStacksPanel.Controls.Add(YCbCrFlow);
+        ControlStacksPanel.Controls.Add(RGBFlow);
+        ControlStacksPanel.Controls.Add(LABFlow);
+        ControlStacksPanel.Controls.Add(YUVFlow);
         ControlStacksPanel.Controls.Add(CMYKFlow);
-        ControlStacksPanel.Location = new System.Drawing.Point(-64, 51);
+        ControlStacksPanel.Location = new System.Drawing.Point(-1154, 51);
         ControlStacksPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ControlStacksPanel.Name = "ControlStacksPanel";
-        ControlStacksPanel.Size = new System.Drawing.Size(365, 298);
+        ControlStacksPanel.Size = new System.Drawing.Size(1455, 1095);
         ControlStacksPanel.TabIndex = 1;
+        // 
+        // HSVCompoundsFlow
+        // 
+        HSVCompoundsFlow.AutoSize = true;
+        HSVCompoundsFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        HSVCompoundsFlow.Controls.Add(panel2);
+        HSVCompoundsFlow.Controls.Add(panel4);
+        HSVCompoundsFlow.Controls.Add(panel7);
+        HSVCompoundsFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        HSVCompoundsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        HSVCompoundsFlow.Location = new System.Drawing.Point(0, 0);
+        HSVCompoundsFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        HSVCompoundsFlow.Name = "HSVCompoundsFlow";
+        HSVCompoundsFlow.Size = new System.Drawing.Size(1455, 1095);
+        HSVCompoundsFlow.TabIndex = 16;
+        HSVCompoundsFlow.WrapContents = false;
+        // 
+        // panel2
+        // 
+        panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel2.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel2.Controls.Add(trackBar1);
+        panel2.Controls.Add(panel3);
+        panel2.Location = new System.Drawing.Point(1167, 2);
+        panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel2.Name = "panel2";
+        panel2.Size = new System.Drawing.Size(285, 66);
+        panel2.TabIndex = 2;
+        // 
+        // trackBar1
+        // 
+        trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar1.Location = new System.Drawing.Point(36, 25);
+        trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar1.Name = "trackBar1";
+        trackBar1.Size = new System.Drawing.Size(240, 56);
+        trackBar1.TabIndex = 1;
+        // 
+        // panel3
+        // 
+        panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel3.Controls.Add(checkBox1);
+        panel3.Controls.Add(label1);
+        panel3.Location = new System.Drawing.Point(36, 0);
+        panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel3.Name = "panel3";
+        panel3.Size = new System.Drawing.Size(243, 27);
+        panel3.TabIndex = 0;
+        // 
+        // checkBox1
+        // 
+        checkBox1.AutoSize = true;
+        checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox1.Location = new System.Drawing.Point(0, 0);
+        checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox1.Name = "checkBox1";
+        checkBox1.Size = new System.Drawing.Size(44, 27);
+        checkBox1.TabIndex = 1;
+        checkBox1.Text = "H";
+        checkBox1.UseVisualStyleBackColor = true;
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Dock = System.Windows.Forms.DockStyle.Right;
+        label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label1.Location = new System.Drawing.Point(176, 0);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(67, 20);
+        label1.TabIndex = 0;
+        label1.Text = "نسبة الـ H";
+        label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel4
+        // 
+        panel4.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel4.Controls.Add(trackBar2);
+        panel4.Controls.Add(panel5);
+        panel4.Location = new System.Drawing.Point(1167, 72);
+        panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel4.Name = "panel4";
+        panel4.Size = new System.Drawing.Size(285, 68);
+        panel4.TabIndex = 1;
+        // 
+        // trackBar2
+        // 
+        trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar2.Location = new System.Drawing.Point(39, 25);
+        trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar2.Name = "trackBar2";
+        trackBar2.Size = new System.Drawing.Size(249, 56);
+        trackBar2.TabIndex = 1;
+        // 
+        // panel5
+        // 
+        panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel5.Controls.Add(checkBox2);
+        panel5.Controls.Add(label2);
+        panel5.Location = new System.Drawing.Point(36, 0);
+        panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel5.Name = "panel5";
+        panel5.Size = new System.Drawing.Size(249, 28);
+        panel5.TabIndex = 0;
+        // 
+        // checkBox2
+        // 
+        checkBox2.AutoSize = true;
+        checkBox2.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox2.Location = new System.Drawing.Point(0, 0);
+        checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox2.Name = "checkBox2";
+        checkBox2.Size = new System.Drawing.Size(42, 28);
+        checkBox2.TabIndex = 1;
+        checkBox2.Text = "S";
+        checkBox2.UseVisualStyleBackColor = true;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Dock = System.Windows.Forms.DockStyle.Right;
+        label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label2.Location = new System.Drawing.Point(184, 0);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(65, 20);
+        label2.TabIndex = 0;
+        label2.Text = "نسبة الـ S";
+        label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel7
+        // 
+        panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel7.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel7.Controls.Add(trackBar3);
+        panel7.Controls.Add(panel8);
+        panel7.Location = new System.Drawing.Point(1167, 144);
+        panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel7.Name = "panel7";
+        panel7.Size = new System.Drawing.Size(285, 73);
+        panel7.TabIndex = 0;
+        // 
+        // trackBar3
+        // 
+        trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar3.Location = new System.Drawing.Point(39, 31);
+        trackBar3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar3.Name = "trackBar3";
+        trackBar3.Size = new System.Drawing.Size(240, 56);
+        trackBar3.TabIndex = 1;
+        // 
+        // panel8
+        // 
+        panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel8.Controls.Add(checkBox3);
+        panel8.Controls.Add(label3);
+        panel8.Location = new System.Drawing.Point(39, 0);
+        panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel8.Name = "panel8";
+        panel8.Size = new System.Drawing.Size(240, 28);
+        panel8.TabIndex = 0;
+        // 
+        // checkBox3
+        // 
+        checkBox3.AutoSize = true;
+        checkBox3.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox3.Location = new System.Drawing.Point(0, 0);
+        checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox3.Name = "checkBox3";
+        checkBox3.Size = new System.Drawing.Size(42, 28);
+        checkBox3.TabIndex = 1;
+        checkBox3.Text = "V";
+        checkBox3.UseVisualStyleBackColor = true;
+        // 
+        // label3
+        // 
+        label3.AutoSize = true;
+        label3.Dock = System.Windows.Forms.DockStyle.Right;
+        label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label3.Location = new System.Drawing.Point(175, 0);
+        label3.Name = "label3";
+        label3.Size = new System.Drawing.Size(65, 20);
+        label3.TabIndex = 0;
+        label3.Text = "نسبة الـ V";
+        label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // YCbCrFlow
+        // 
+        YCbCrFlow.AutoSize = true;
+        YCbCrFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        YCbCrFlow.Controls.Add(panel23);
+        YCbCrFlow.Controls.Add(panel25);
+        YCbCrFlow.Controls.Add(panel27);
+        YCbCrFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        YCbCrFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        YCbCrFlow.Location = new System.Drawing.Point(0, 0);
+        YCbCrFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YCbCrFlow.Name = "YCbCrFlow";
+        YCbCrFlow.Size = new System.Drawing.Size(1455, 1095);
+        YCbCrFlow.TabIndex = 15;
+        YCbCrFlow.WrapContents = false;
+        // 
+        // panel23
+        // 
+        panel23.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel23.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel23.Controls.Add(YLumaSlider);
+        panel23.Controls.Add(panel24);
+        panel23.Location = new System.Drawing.Point(1167, 2);
+        panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel23.Name = "panel23";
+        panel23.Size = new System.Drawing.Size(285, 66);
+        panel23.TabIndex = 2;
+        // 
+        // YLumaSlider
+        // 
+        YLumaSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        YLumaSlider.Location = new System.Drawing.Point(36, 25);
+        YLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YLumaSlider.Name = "YLumaSlider";
+        YLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YLumaSlider.TabIndex = 1;
+        // 
+        // panel24
+        // 
+        panel24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel24.Controls.Add(YLumaCheck);
+        panel24.Controls.Add(label11);
+        panel24.Location = new System.Drawing.Point(36, 0);
+        panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel24.Name = "panel24";
+        panel24.Size = new System.Drawing.Size(246, 27);
+        panel24.TabIndex = 0;
+        // 
+        // YLumaCheck
+        // 
+        YLumaCheck.AutoSize = true;
+        YLumaCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        YLumaCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        YLumaCheck.Location = new System.Drawing.Point(0, 0);
+        YLumaCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YLumaCheck.Name = "YLumaCheck";
+        YLumaCheck.Size = new System.Drawing.Size(41, 27);
+        YLumaCheck.TabIndex = 1;
+        YLumaCheck.Text = "Y";
+        YLumaCheck.UseVisualStyleBackColor = true;
+        // 
+        // label11
+        // 
+        label11.AutoSize = true;
+        label11.Dock = System.Windows.Forms.DockStyle.Right;
+        label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label11.Location = new System.Drawing.Point(182, 0);
+        label11.Name = "label11";
+        label11.Size = new System.Drawing.Size(64, 20);
+        label11.TabIndex = 0;
+        label11.Text = "نسبة الـ Y";
+        label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel25
+        // 
+        panel25.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel25.Controls.Add(BlueDiffSlider);
+        panel25.Controls.Add(panel26);
+        panel25.Location = new System.Drawing.Point(1167, 72);
+        panel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel25.Name = "panel25";
+        panel25.Size = new System.Drawing.Size(285, 68);
+        panel25.TabIndex = 1;
+        // 
+        // BlueDiffSlider
+        // 
+        BlueDiffSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueDiffSlider.Location = new System.Drawing.Point(39, 25);
+        BlueDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueDiffSlider.Name = "BlueDiffSlider";
+        BlueDiffSlider.Size = new System.Drawing.Size(249, 56);
+        BlueDiffSlider.TabIndex = 1;
+        // 
+        // panel26
+        // 
+        panel26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel26.Controls.Add(BlueDiffCheck);
+        panel26.Controls.Add(label12);
+        panel26.Location = new System.Drawing.Point(36, 0);
+        panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel26.Name = "panel26";
+        panel26.Size = new System.Drawing.Size(249, 28);
+        panel26.TabIndex = 0;
+        // 
+        // BlueDiffCheck
+        // 
+        BlueDiffCheck.AutoSize = true;
+        BlueDiffCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueDiffCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueDiffCheck.Location = new System.Drawing.Point(0, 0);
+        BlueDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueDiffCheck.Name = "BlueDiffCheck";
+        BlueDiffCheck.Size = new System.Drawing.Size(52, 28);
+        BlueDiffCheck.TabIndex = 1;
+        BlueDiffCheck.Text = "Cb";
+        BlueDiffCheck.UseVisualStyleBackColor = true;
+        // 
+        // label12
+        // 
+        label12.AutoSize = true;
+        label12.Dock = System.Windows.Forms.DockStyle.Right;
+        label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label12.Location = new System.Drawing.Point(174, 0);
+        label12.Name = "label12";
+        label12.Size = new System.Drawing.Size(75, 20);
+        label12.TabIndex = 0;
+        label12.Text = "نسبة الـ Cb";
+        label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel27
+        // 
+        panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel27.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel27.Controls.Add(RedDiffSlider);
+        panel27.Controls.Add(panel28);
+        panel27.Location = new System.Drawing.Point(1167, 144);
+        panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel27.Name = "panel27";
+        panel27.Size = new System.Drawing.Size(285, 73);
+        panel27.TabIndex = 0;
+        // 
+        // RedDiffSlider
+        // 
+        RedDiffSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedDiffSlider.Location = new System.Drawing.Point(39, 31);
+        RedDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedDiffSlider.Name = "RedDiffSlider";
+        RedDiffSlider.Size = new System.Drawing.Size(246, 56);
+        RedDiffSlider.TabIndex = 1;
+        // 
+        // panel28
+        // 
+        panel28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel28.Controls.Add(RedDiffCheck);
+        panel28.Controls.Add(label13);
+        panel28.Location = new System.Drawing.Point(39, 0);
+        panel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel28.Name = "panel28";
+        panel28.Size = new System.Drawing.Size(246, 28);
+        panel28.TabIndex = 0;
+        // 
+        // RedDiffCheck
+        // 
+        RedDiffCheck.AutoSize = true;
+        RedDiffCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        RedDiffCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedDiffCheck.Location = new System.Drawing.Point(0, 0);
+        RedDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedDiffCheck.Name = "RedDiffCheck";
+        RedDiffCheck.Size = new System.Drawing.Size(49, 28);
+        RedDiffCheck.TabIndex = 1;
+        RedDiffCheck.Text = "Cr";
+        RedDiffCheck.UseVisualStyleBackColor = true;
+        // 
+        // label13
+        // 
+        label13.AutoSize = true;
+        label13.Dock = System.Windows.Forms.DockStyle.Right;
+        label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label13.Location = new System.Drawing.Point(174, 0);
+        label13.Name = "label13";
+        label13.Size = new System.Drawing.Size(72, 20);
+        label13.TabIndex = 0;
+        label13.Text = "نسبة الـ Cr";
+        label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // RGBFlow
+        // 
+        RGBFlow.AutoSize = true;
+        RGBFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        RGBFlow.Controls.Add(panel17);
+        RGBFlow.Controls.Add(panel19);
+        RGBFlow.Controls.Add(panel21);
+        RGBFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        RGBFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        RGBFlow.Location = new System.Drawing.Point(0, 0);
+        RGBFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RGBFlow.Name = "RGBFlow";
+        RGBFlow.Size = new System.Drawing.Size(1455, 1095);
+        RGBFlow.TabIndex = 14;
+        RGBFlow.WrapContents = false;
+        // 
+        // panel17
+        // 
+        panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel17.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel17.Controls.Add(RedSlider);
+        panel17.Controls.Add(panel18);
+        panel17.Location = new System.Drawing.Point(1167, 2);
+        panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel17.Name = "panel17";
+        panel17.Size = new System.Drawing.Size(285, 66);
+        panel17.TabIndex = 2;
+        // 
+        // RedSlider
+        // 
+        RedSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedSlider.Location = new System.Drawing.Point(36, 25);
+        RedSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedSlider.Name = "RedSlider";
+        RedSlider.Size = new System.Drawing.Size(240, 56);
+        RedSlider.TabIndex = 1;
+        // 
+        // panel18
+        // 
+        panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel18.Controls.Add(RedCheckbox);
+        panel18.Controls.Add(label8);
+        panel18.Location = new System.Drawing.Point(36, 0);
+        panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel18.Name = "panel18";
+        panel18.Size = new System.Drawing.Size(243, 27);
+        panel18.TabIndex = 0;
+        // 
+        // RedCheckbox
+        // 
+        RedCheckbox.AutoSize = true;
+        RedCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        RedCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedCheckbox.Location = new System.Drawing.Point(0, 0);
+        RedCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedCheckbox.Name = "RedCheckbox";
+        RedCheckbox.Size = new System.Drawing.Size(43, 27);
+        RedCheckbox.TabIndex = 1;
+        RedCheckbox.Text = "R";
+        RedCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label8
+        // 
+        label8.AutoSize = true;
+        label8.Dock = System.Windows.Forms.DockStyle.Right;
+        label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label8.Location = new System.Drawing.Point(177, 0);
+        label8.Name = "label8";
+        label8.Size = new System.Drawing.Size(66, 20);
+        label8.TabIndex = 0;
+        label8.Text = "نسبة الـ R";
+        label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel19
+        // 
+        panel19.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel19.Controls.Add(GreenSlider);
+        panel19.Controls.Add(panel20);
+        panel19.Location = new System.Drawing.Point(1167, 72);
+        panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel19.Name = "panel19";
+        panel19.Size = new System.Drawing.Size(285, 68);
+        panel19.TabIndex = 1;
+        // 
+        // GreenSlider
+        // 
+        GreenSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        GreenSlider.Location = new System.Drawing.Point(39, 25);
+        GreenSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenSlider.Name = "GreenSlider";
+        GreenSlider.Size = new System.Drawing.Size(249, 56);
+        GreenSlider.TabIndex = 1;
+        // 
+        // panel20
+        // 
+        panel20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel20.Controls.Add(GreenCheckbox);
+        panel20.Controls.Add(label9);
+        panel20.Location = new System.Drawing.Point(36, 0);
+        panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel20.Name = "panel20";
+        panel20.Size = new System.Drawing.Size(249, 28);
+        panel20.TabIndex = 0;
+        // 
+        // GreenCheckbox
+        // 
+        GreenCheckbox.AutoSize = true;
+        GreenCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        GreenCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        GreenCheckbox.Location = new System.Drawing.Point(0, 0);
+        GreenCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenCheckbox.Name = "GreenCheckbox";
+        GreenCheckbox.Size = new System.Drawing.Size(44, 28);
+        GreenCheckbox.TabIndex = 1;
+        GreenCheckbox.Text = "G";
+        GreenCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label9
+        // 
+        label9.AutoSize = true;
+        label9.Dock = System.Windows.Forms.DockStyle.Right;
+        label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label9.Location = new System.Drawing.Point(182, 0);
+        label9.Name = "label9";
+        label9.Size = new System.Drawing.Size(67, 20);
+        label9.TabIndex = 0;
+        label9.Text = "نسبة الـ G";
+        label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel21
+        // 
+        panel21.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel21.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel21.Controls.Add(BlueSlider);
+        panel21.Controls.Add(panel22);
+        panel21.Location = new System.Drawing.Point(1167, 144);
+        panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel21.Name = "panel21";
+        panel21.Size = new System.Drawing.Size(285, 73);
+        panel21.TabIndex = 0;
+        // 
+        // BlueSlider
+        // 
+        BlueSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueSlider.Location = new System.Drawing.Point(39, 31);
+        BlueSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueSlider.Name = "BlueSlider";
+        BlueSlider.Size = new System.Drawing.Size(240, 56);
+        BlueSlider.TabIndex = 1;
+        // 
+        // panel22
+        // 
+        panel22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel22.Controls.Add(BlueCheckbox);
+        panel22.Controls.Add(label10);
+        panel22.Location = new System.Drawing.Point(39, 0);
+        panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel22.Name = "panel22";
+        panel22.Size = new System.Drawing.Size(240, 28);
+        panel22.TabIndex = 0;
+        // 
+        // BlueCheckbox
+        // 
+        BlueCheckbox.AutoSize = true;
+        BlueCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueCheckbox.Location = new System.Drawing.Point(0, 0);
+        BlueCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueCheckbox.Name = "BlueCheckbox";
+        BlueCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueCheckbox.TabIndex = 1;
+        BlueCheckbox.Text = "B";
+        BlueCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label10
+        // 
+        label10.AutoSize = true;
+        label10.Dock = System.Windows.Forms.DockStyle.Right;
+        label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label10.Location = new System.Drawing.Point(174, 0);
+        label10.Name = "label10";
+        label10.Size = new System.Drawing.Size(66, 20);
+        label10.TabIndex = 0;
+        label10.Text = "نسبة الـ B";
+        label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // LABFlow
+        // 
+        LABFlow.AutoSize = true;
+        LABFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        LABFlow.Controls.Add(panel29);
+        LABFlow.Controls.Add(panel31);
+        LABFlow.Controls.Add(panel33);
+        LABFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        LABFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        LABFlow.Location = new System.Drawing.Point(0, 0);
+        LABFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LABFlow.Name = "LABFlow";
+        LABFlow.Size = new System.Drawing.Size(1455, 1095);
+        LABFlow.TabIndex = 13;
+        LABFlow.WrapContents = false;
+        // 
+        // panel29
+        // 
+        panel29.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel29.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel29.Controls.Add(LightnessSlider);
+        panel29.Controls.Add(panel30);
+        panel29.Location = new System.Drawing.Point(1167, 2);
+        panel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel29.Name = "panel29";
+        panel29.Size = new System.Drawing.Size(285, 66);
+        panel29.TabIndex = 2;
+        // 
+        // LightnessSlider
+        // 
+        LightnessSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        LightnessSlider.Location = new System.Drawing.Point(36, 25);
+        LightnessSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LightnessSlider.Name = "LightnessSlider";
+        LightnessSlider.Size = new System.Drawing.Size(240, 56);
+        LightnessSlider.TabIndex = 1;
+        // 
+        // panel30
+        // 
+        panel30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel30.Controls.Add(LightnessCheck);
+        panel30.Controls.Add(label14);
+        panel30.Location = new System.Drawing.Point(36, 0);
+        panel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel30.Name = "panel30";
+        panel30.Size = new System.Drawing.Size(243, 27);
+        panel30.TabIndex = 0;
+        // 
+        // LightnessCheck
+        // 
+        LightnessCheck.AutoSize = true;
+        LightnessCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        LightnessCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        LightnessCheck.Location = new System.Drawing.Point(0, 0);
+        LightnessCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LightnessCheck.Name = "LightnessCheck";
+        LightnessCheck.Size = new System.Drawing.Size(41, 27);
+        LightnessCheck.TabIndex = 1;
+        LightnessCheck.Text = "L";
+        LightnessCheck.UseVisualStyleBackColor = true;
+        // 
+        // label14
+        // 
+        label14.AutoSize = true;
+        label14.Dock = System.Windows.Forms.DockStyle.Right;
+        label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label14.Location = new System.Drawing.Point(179, 0);
+        label14.Name = "label14";
+        label14.Size = new System.Drawing.Size(64, 20);
+        label14.TabIndex = 0;
+        label14.Text = "نسبة الـ L";
+        label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel31
+        // 
+        panel31.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel31.Controls.Add(GreenAxisSlider);
+        panel31.Controls.Add(panel32);
+        panel31.Location = new System.Drawing.Point(1167, 72);
+        panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel31.Name = "panel31";
+        panel31.Size = new System.Drawing.Size(285, 68);
+        panel31.TabIndex = 1;
+        // 
+        // GreenAxisSlider
+        // 
+        GreenAxisSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        GreenAxisSlider.Location = new System.Drawing.Point(39, 25);
+        GreenAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenAxisSlider.Name = "GreenAxisSlider";
+        GreenAxisSlider.Size = new System.Drawing.Size(249, 56);
+        GreenAxisSlider.TabIndex = 1;
+        // 
+        // panel32
+        // 
+        panel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel32.Controls.Add(GreenAxisCheck);
+        panel32.Controls.Add(label15);
+        panel32.Location = new System.Drawing.Point(36, 0);
+        panel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel32.Name = "panel32";
+        panel32.Size = new System.Drawing.Size(249, 28);
+        panel32.TabIndex = 0;
+        // 
+        // GreenAxisCheck
+        // 
+        GreenAxisCheck.AutoSize = true;
+        GreenAxisCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        GreenAxisCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        GreenAxisCheck.Location = new System.Drawing.Point(0, 0);
+        GreenAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenAxisCheck.Name = "GreenAxisCheck";
+        GreenAxisCheck.Size = new System.Drawing.Size(42, 28);
+        GreenAxisCheck.TabIndex = 1;
+        GreenAxisCheck.Text = "A";
+        GreenAxisCheck.UseVisualStyleBackColor = true;
+        // 
+        // label15
+        // 
+        label15.AutoSize = true;
+        label15.Dock = System.Windows.Forms.DockStyle.Right;
+        label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label15.Location = new System.Drawing.Point(184, 0);
+        label15.Name = "label15";
+        label15.Size = new System.Drawing.Size(65, 20);
+        label15.TabIndex = 0;
+        label15.Text = "نسبة الـ A";
+        label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel33
+        // 
+        panel33.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel33.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel33.Controls.Add(BlueAxisSlider);
+        panel33.Controls.Add(panel34);
+        panel33.Location = new System.Drawing.Point(1167, 144);
+        panel33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel33.Name = "panel33";
+        panel33.Size = new System.Drawing.Size(285, 73);
+        panel33.TabIndex = 0;
+        // 
+        // BlueAxisSlider
+        // 
+        BlueAxisSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueAxisSlider.Location = new System.Drawing.Point(39, 31);
+        BlueAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueAxisSlider.Name = "BlueAxisSlider";
+        BlueAxisSlider.Size = new System.Drawing.Size(240, 56);
+        BlueAxisSlider.TabIndex = 1;
+        // 
+        // panel34
+        // 
+        panel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel34.Controls.Add(BlueAxisCheck);
+        panel34.Controls.Add(label16);
+        panel34.Location = new System.Drawing.Point(39, 0);
+        panel34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel34.Name = "panel34";
+        panel34.Size = new System.Drawing.Size(240, 28);
+        panel34.TabIndex = 0;
+        // 
+        // BlueAxisCheck
+        // 
+        BlueAxisCheck.AutoSize = true;
+        BlueAxisCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueAxisCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueAxisCheck.Location = new System.Drawing.Point(0, 0);
+        BlueAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueAxisCheck.Name = "BlueAxisCheck";
+        BlueAxisCheck.Size = new System.Drawing.Size(43, 28);
+        BlueAxisCheck.TabIndex = 1;
+        BlueAxisCheck.Text = "B";
+        BlueAxisCheck.UseVisualStyleBackColor = true;
+        // 
+        // label16
+        // 
+        label16.AutoSize = true;
+        label16.Dock = System.Windows.Forms.DockStyle.Right;
+        label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label16.Location = new System.Drawing.Point(174, 0);
+        label16.Name = "label16";
+        label16.Size = new System.Drawing.Size(66, 20);
+        label16.TabIndex = 0;
+        label16.Text = "نسبة الـ B";
+        label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // YUVFlow
+        // 
+        YUVFlow.AutoSize = true;
+        YUVFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        YUVFlow.Controls.Add(panel35);
+        YUVFlow.Controls.Add(panel37);
+        YUVFlow.Controls.Add(panel39);
+        YUVFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        YUVFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        YUVFlow.Location = new System.Drawing.Point(0, 0);
+        YUVFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YUVFlow.Name = "YUVFlow";
+        YUVFlow.Size = new System.Drawing.Size(1455, 1095);
+        YUVFlow.TabIndex = 12;
+        YUVFlow.WrapContents = false;
+        // 
+        // panel35
+        // 
+        panel35.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel35.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel35.Controls.Add(YYUVLumaSlider);
+        panel35.Controls.Add(panel36);
+        panel35.Location = new System.Drawing.Point(1167, 2);
+        panel35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel35.Name = "panel35";
+        panel35.Size = new System.Drawing.Size(285, 66);
+        panel35.TabIndex = 2;
+        // 
+        // YYUVLumaSlider
+        // 
+        YYUVLumaSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        YYUVLumaSlider.Location = new System.Drawing.Point(36, 25);
+        YYUVLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YYUVLumaSlider.Name = "YYUVLumaSlider";
+        YYUVLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YYUVLumaSlider.TabIndex = 1;
+        // 
+        // panel36
+        // 
+        panel36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel36.Controls.Add(YYUVLumaCheckbox);
+        panel36.Controls.Add(label17);
+        panel36.Location = new System.Drawing.Point(36, 0);
+        panel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel36.Name = "panel36";
+        panel36.Size = new System.Drawing.Size(249, 27);
+        panel36.TabIndex = 0;
+        // 
+        // YYUVLumaCheckbox
+        // 
+        YYUVLumaCheckbox.AutoSize = true;
+        YYUVLumaCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        YYUVLumaCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        YYUVLumaCheckbox.Location = new System.Drawing.Point(0, 0);
+        YYUVLumaCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YYUVLumaCheckbox.Name = "YYUVLumaCheckbox";
+        YYUVLumaCheckbox.Size = new System.Drawing.Size(41, 27);
+        YYUVLumaCheckbox.TabIndex = 1;
+        YYUVLumaCheckbox.Text = "Y";
+        YYUVLumaCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label17
+        // 
+        label17.AutoSize = true;
+        label17.Dock = System.Windows.Forms.DockStyle.Right;
+        label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label17.Location = new System.Drawing.Point(185, 0);
+        label17.Name = "label17";
+        label17.Size = new System.Drawing.Size(64, 20);
+        label17.TabIndex = 0;
+        label17.Text = "نسبة الـ Y";
+        label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel37
+        // 
+        panel37.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel37.Controls.Add(BlueProjectionSlider);
+        panel37.Controls.Add(panel38);
+        panel37.Location = new System.Drawing.Point(1167, 72);
+        panel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel37.Name = "panel37";
+        panel37.Size = new System.Drawing.Size(285, 68);
+        panel37.TabIndex = 1;
+        // 
+        // BlueProjectionSlider
+        // 
+        BlueProjectionSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueProjectionSlider.Location = new System.Drawing.Point(39, 25);
+        BlueProjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueProjectionSlider.Name = "BlueProjectionSlider";
+        BlueProjectionSlider.Size = new System.Drawing.Size(249, 56);
+        BlueProjectionSlider.TabIndex = 1;
+        // 
+        // panel38
+        // 
+        panel38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel38.Controls.Add(BlueProjectionCheckbox);
+        panel38.Controls.Add(label18);
+        panel38.Location = new System.Drawing.Point(36, 0);
+        panel38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel38.Name = "panel38";
+        panel38.Size = new System.Drawing.Size(249, 28);
+        panel38.TabIndex = 0;
+        // 
+        // BlueProjectionCheckbox
+        // 
+        BlueProjectionCheckbox.AutoSize = true;
+        BlueProjectionCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueProjectionCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueProjectionCheckbox.Location = new System.Drawing.Point(0, 0);
+        BlueProjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueProjectionCheckbox.Name = "BlueProjectionCheckbox";
+        BlueProjectionCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueProjectionCheckbox.TabIndex = 1;
+        BlueProjectionCheckbox.Text = "U";
+        BlueProjectionCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label18
+        // 
+        label18.AutoSize = true;
+        label18.Dock = System.Windows.Forms.DockStyle.Right;
+        label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label18.Location = new System.Drawing.Point(183, 0);
+        label18.Name = "label18";
+        label18.Size = new System.Drawing.Size(66, 20);
+        label18.TabIndex = 0;
+        label18.Text = "نسبة الـ U";
+        label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel39
+        // 
+        panel39.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel39.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel39.Controls.Add(RedPorjectionSlider);
+        panel39.Controls.Add(panel40);
+        panel39.Location = new System.Drawing.Point(1167, 144);
+        panel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel39.Name = "panel39";
+        panel39.Size = new System.Drawing.Size(285, 73);
+        panel39.TabIndex = 0;
+        // 
+        // RedPorjectionSlider
+        // 
+        RedPorjectionSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedPorjectionSlider.Location = new System.Drawing.Point(39, 31);
+        RedPorjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedPorjectionSlider.Name = "RedPorjectionSlider";
+        RedPorjectionSlider.Size = new System.Drawing.Size(246, 56);
+        RedPorjectionSlider.TabIndex = 1;
+        // 
+        // panel40
+        // 
+        panel40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel40.Controls.Add(RedPorjectionCheckbox);
+        panel40.Controls.Add(label19);
+        panel40.Location = new System.Drawing.Point(39, 0);
+        panel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel40.Name = "panel40";
+        panel40.Size = new System.Drawing.Size(246, 28);
+        panel40.TabIndex = 0;
+        // 
+        // RedPorjectionCheckbox
+        // 
+        RedPorjectionCheckbox.AutoSize = true;
+        RedPorjectionCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        RedPorjectionCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedPorjectionCheckbox.Location = new System.Drawing.Point(0, 0);
+        RedPorjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedPorjectionCheckbox.Name = "RedPorjectionCheckbox";
+        RedPorjectionCheckbox.Size = new System.Drawing.Size(42, 28);
+        RedPorjectionCheckbox.TabIndex = 1;
+        RedPorjectionCheckbox.Text = "V";
+        RedPorjectionCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label19
+        // 
+        label19.AutoSize = true;
+        label19.Dock = System.Windows.Forms.DockStyle.Right;
+        label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label19.Location = new System.Drawing.Point(181, 0);
+        label19.Name = "label19";
+        label19.Size = new System.Drawing.Size(65, 20);
+        label19.TabIndex = 0;
+        label19.Text = "نسبة الـ V";
+        label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // CMYKFlow
         // 
@@ -748,11 +1678,11 @@ partial class MainScreen {
         CMYKFlow.Controls.Add(panel11);
         CMYKFlow.Controls.Add(panel13);
         CMYKFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        CMYKFlow.Location = new System.Drawing.Point(65, 0);
+        CMYKFlow.Location = new System.Drawing.Point(243, -1);
         CMYKFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         CMYKFlow.Name = "CMYKFlow";
         CMYKFlow.Size = new System.Drawing.Size(291, 296);
-        CMYKFlow.TabIndex = 5;
+        CMYKFlow.TabIndex = 11;
         CMYKFlow.WrapContents = false;
         // 
         // panel15
@@ -1281,7 +2211,7 @@ partial class MainScreen {
         EditorSceneSplitter.Panel2.Controls.Add(OriginalImageSplit);
         EditorSceneSplitter.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
         EditorSceneSplitter.Size = new System.Drawing.Size(1067, 855);
-        EditorSceneSplitter.SplitterDistance = 533;
+        EditorSceneSplitter.SplitterDistance = 532;
         EditorSceneSplitter.SplitterWidth = 22;
         EditorSceneSplitter.TabIndex = 3;
         EditorSceneSplitter.Text = "splitContainer1";
@@ -1295,7 +2225,7 @@ partial class MainScreen {
         ModifiedImageSplit.Location = new System.Drawing.Point(0, 0);
         ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImageSplit.Name = "ModifiedImageSplit";
-        ModifiedImageSplit.Size = new System.Drawing.Size(533, 855);
+        ModifiedImageSplit.Size = new System.Drawing.Size(532, 855);
         ModifiedImageSplit.TabIndex = 0;
         // 
         // ModifiedImagePanel
@@ -1305,7 +2235,7 @@ partial class MainScreen {
         ModifiedImagePanel.Location = new System.Drawing.Point(0, 69);
         ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImagePanel.Name = "ModifiedImagePanel";
-        ModifiedImagePanel.Size = new System.Drawing.Size(533, 786);
+        ModifiedImagePanel.Size = new System.Drawing.Size(532, 786);
         ModifiedImagePanel.TabIndex = 1;
         // 
         // ModifiedImageViewer
@@ -1314,7 +2244,7 @@ partial class MainScreen {
         ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
         ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImageViewer.Name = "ModifiedImageViewer";
-        ModifiedImageViewer.Size = new System.Drawing.Size(533, 786);
+        ModifiedImageViewer.Size = new System.Drawing.Size(532, 786);
         ModifiedImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         ModifiedImageViewer.TabIndex = 0;
         ModifiedImageViewer.TabStop = false;
@@ -1325,7 +2255,7 @@ partial class MainScreen {
         ModifiedImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         ModifiedImageLabel.Location = new System.Drawing.Point(0, 0);
         ModifiedImageLabel.Name = "ModifiedImageLabel";
-        ModifiedImageLabel.Size = new System.Drawing.Size(533, 69);
+        ModifiedImageLabel.Size = new System.Drawing.Size(532, 69);
         ModifiedImageLabel.TabIndex = 0;
         ModifiedImageLabel.Text = "نظام HSV";
         ModifiedImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1339,7 +2269,7 @@ partial class MainScreen {
         OriginalImageSplit.Location = new System.Drawing.Point(0, 0);
         OriginalImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageSplit.Name = "OriginalImageSplit";
-        OriginalImageSplit.Size = new System.Drawing.Size(512, 855);
+        OriginalImageSplit.Size = new System.Drawing.Size(513, 855);
         OriginalImageSplit.TabIndex = 1;
         // 
         // OriginalImagePanel
@@ -1349,7 +2279,7 @@ partial class MainScreen {
         OriginalImagePanel.Location = new System.Drawing.Point(0, 69);
         OriginalImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImagePanel.Name = "OriginalImagePanel";
-        OriginalImagePanel.Size = new System.Drawing.Size(512, 786);
+        OriginalImagePanel.Size = new System.Drawing.Size(513, 786);
         OriginalImagePanel.TabIndex = 2;
         // 
         // OriginalImageViewer
@@ -1358,7 +2288,7 @@ partial class MainScreen {
         OriginalImageViewer.Location = new System.Drawing.Point(0, 0);
         OriginalImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageViewer.Name = "OriginalImageViewer";
-        OriginalImageViewer.Size = new System.Drawing.Size(512, 786);
+        OriginalImageViewer.Size = new System.Drawing.Size(513, 786);
         OriginalImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         OriginalImageViewer.TabIndex = 0;
         OriginalImageViewer.TabStop = false;
@@ -1369,940 +2299,10 @@ partial class MainScreen {
         OriginalImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         OriginalImageLabel.Location = new System.Drawing.Point(0, 0);
         OriginalImageLabel.Name = "OriginalImageLabel";
-        OriginalImageLabel.Size = new System.Drawing.Size(512, 69);
+        OriginalImageLabel.Size = new System.Drawing.Size(513, 69);
         OriginalImageLabel.TabIndex = 1;
         OriginalImageLabel.Text = "الصورة الأصلية - RGB";
         OriginalImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // HSVCompoundsFlow
-        // 
-        HSVCompoundsFlow.AutoSize = true;
-        HSVCompoundsFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        HSVCompoundsFlow.Controls.Add(panel2);
-        HSVCompoundsFlow.Controls.Add(panel4);
-        HSVCompoundsFlow.Controls.Add(panel7);
-        HSVCompoundsFlow.Dock = System.Windows.Forms.DockStyle.Fill;
-        HSVCompoundsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        HSVCompoundsFlow.Location = new System.Drawing.Point(0, 0);
-        HSVCompoundsFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        HSVCompoundsFlow.Name = "HSVCompoundsFlow";
-        HSVCompoundsFlow.Size = new System.Drawing.Size(365, 298);
-        HSVCompoundsFlow.TabIndex = 6;
-        HSVCompoundsFlow.WrapContents = false;
-        // 
-        // panel2
-        // 
-        panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel2.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel2.Controls.Add(trackBar1);
-        panel2.Controls.Add(panel3);
-        panel2.Location = new System.Drawing.Point(77, 2);
-        panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel2.Name = "panel2";
-        panel2.Size = new System.Drawing.Size(285, 66);
-        panel2.TabIndex = 2;
-        // 
-        // trackBar1
-        // 
-        trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar1.Location = new System.Drawing.Point(36, 25);
-        trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar1.Name = "trackBar1";
-        trackBar1.Size = new System.Drawing.Size(246, 56);
-        trackBar1.TabIndex = 1;
-        // 
-        // panel3
-        // 
-        panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel3.Controls.Add(checkBox1);
-        panel3.Controls.Add(label1);
-        panel3.Location = new System.Drawing.Point(36, 0);
-        panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel3.Name = "panel3";
-        panel3.Size = new System.Drawing.Size(249, 27);
-        panel3.TabIndex = 0;
-        // 
-        // checkBox1
-        // 
-        checkBox1.AutoSize = true;
-        checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox1.Location = new System.Drawing.Point(0, 0);
-        checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox1.Name = "checkBox1";
-        checkBox1.Size = new System.Drawing.Size(44, 27);
-        checkBox1.TabIndex = 1;
-        checkBox1.Text = "H";
-        checkBox1.UseVisualStyleBackColor = true;
-        // 
-        // label1
-        // 
-        label1.AutoSize = true;
-        label1.Dock = System.Windows.Forms.DockStyle.Right;
-        label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label1.Location = new System.Drawing.Point(182, 0);
-        label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(67, 20);
-        label1.TabIndex = 0;
-        label1.Text = "نسبة الـ H";
-        label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel4
-        // 
-        panel4.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel4.Controls.Add(trackBar2);
-        panel4.Controls.Add(panel5);
-        panel4.Location = new System.Drawing.Point(77, 72);
-        panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel4.Name = "panel4";
-        panel4.Size = new System.Drawing.Size(285, 68);
-        panel4.TabIndex = 1;
-        // 
-        // trackBar2
-        // 
-        trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar2.Location = new System.Drawing.Point(39, 25);
-        trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar2.Name = "trackBar2";
-        trackBar2.Size = new System.Drawing.Size(249, 56);
-        trackBar2.TabIndex = 1;
-        // 
-        // panel5
-        // 
-        panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel5.Controls.Add(checkBox2);
-        panel5.Controls.Add(label2);
-        panel5.Location = new System.Drawing.Point(36, 0);
-        panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel5.Name = "panel5";
-        panel5.Size = new System.Drawing.Size(249, 28);
-        panel5.TabIndex = 0;
-        // 
-        // checkBox2
-        // 
-        checkBox2.AutoSize = true;
-        checkBox2.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox2.Location = new System.Drawing.Point(0, 0);
-        checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox2.Name = "checkBox2";
-        checkBox2.Size = new System.Drawing.Size(42, 28);
-        checkBox2.TabIndex = 1;
-        checkBox2.Text = "S";
-        checkBox2.UseVisualStyleBackColor = true;
-        // 
-        // label2
-        // 
-        label2.AutoSize = true;
-        label2.Dock = System.Windows.Forms.DockStyle.Right;
-        label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label2.Location = new System.Drawing.Point(184, 0);
-        label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(65, 20);
-        label2.TabIndex = 0;
-        label2.Text = "نسبة الـ S";
-        label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel7
-        // 
-        panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel7.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel7.Controls.Add(trackBar3);
-        panel7.Controls.Add(panel8);
-        panel7.Location = new System.Drawing.Point(77, 144);
-        panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel7.Name = "panel7";
-        panel7.Size = new System.Drawing.Size(285, 73);
-        panel7.TabIndex = 0;
-        // 
-        // trackBar3
-        // 
-        trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar3.Location = new System.Drawing.Point(39, 31);
-        trackBar3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar3.Name = "trackBar3";
-        trackBar3.Size = new System.Drawing.Size(246, 56);
-        trackBar3.TabIndex = 1;
-        // 
-        // panel8
-        // 
-        panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel8.Controls.Add(checkBox3);
-        panel8.Controls.Add(label3);
-        panel8.Location = new System.Drawing.Point(39, 0);
-        panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel8.Name = "panel8";
-        panel8.Size = new System.Drawing.Size(246, 28);
-        panel8.TabIndex = 0;
-        // 
-        // checkBox3
-        // 
-        checkBox3.AutoSize = true;
-        checkBox3.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox3.Location = new System.Drawing.Point(0, 0);
-        checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox3.Name = "checkBox3";
-        checkBox3.Size = new System.Drawing.Size(42, 28);
-        checkBox3.TabIndex = 1;
-        checkBox3.Text = "V";
-        checkBox3.UseVisualStyleBackColor = true;
-        // 
-        // label3
-        // 
-        label3.AutoSize = true;
-        label3.Dock = System.Windows.Forms.DockStyle.Right;
-        label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label3.Location = new System.Drawing.Point(181, 0);
-        label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(65, 20);
-        label3.TabIndex = 0;
-        label3.Text = "نسبة الـ V";
-        label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // flowLayoutPanel1
-        // 
-        flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        flowLayoutPanel1.AutoSize = true;
-        flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        flowLayoutPanel1.Controls.Add(panel17);
-        flowLayoutPanel1.Controls.Add(panel19);
-        flowLayoutPanel1.Controls.Add(panel21);
-        flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        flowLayoutPanel1.Location = new System.Drawing.Point(70, 4);
-        flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        flowLayoutPanel1.Name = "flowLayoutPanel1";
-        flowLayoutPanel1.Size = new System.Drawing.Size(291, 219);
-        flowLayoutPanel1.TabIndex = 7;
-        flowLayoutPanel1.WrapContents = false;
-        // 
-        // panel17
-        // 
-        panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel17.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel17.Controls.Add(trackBar4);
-        panel17.Controls.Add(panel18);
-        panel17.Location = new System.Drawing.Point(3, 2);
-        panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel17.Name = "panel17";
-        panel17.Size = new System.Drawing.Size(285, 66);
-        panel17.TabIndex = 2;
-        // 
-        // trackBar4
-        // 
-        trackBar4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar4.Location = new System.Drawing.Point(36, 25);
-        trackBar4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar4.Name = "trackBar4";
-        trackBar4.Size = new System.Drawing.Size(246, 56);
-        trackBar4.TabIndex = 1;
-        // 
-        // panel18
-        // 
-        panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel18.Controls.Add(checkBox4);
-        panel18.Controls.Add(label8);
-        panel18.Location = new System.Drawing.Point(36, 0);
-        panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel18.Name = "panel18";
-        panel18.Size = new System.Drawing.Size(249, 27);
-        panel18.TabIndex = 0;
-        // 
-        // checkBox4
-        // 
-        checkBox4.AutoSize = true;
-        checkBox4.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox4.Location = new System.Drawing.Point(0, 0);
-        checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox4.Name = "checkBox4";
-        checkBox4.Size = new System.Drawing.Size(44, 27);
-        checkBox4.TabIndex = 1;
-        checkBox4.Text = "H";
-        checkBox4.UseVisualStyleBackColor = true;
-        // 
-        // label8
-        // 
-        label8.AutoSize = true;
-        label8.Dock = System.Windows.Forms.DockStyle.Right;
-        label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label8.Location = new System.Drawing.Point(182, 0);
-        label8.Name = "label8";
-        label8.Size = new System.Drawing.Size(67, 20);
-        label8.TabIndex = 0;
-        label8.Text = "نسبة الـ H";
-        label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel19
-        // 
-        panel19.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel19.Controls.Add(trackBar5);
-        panel19.Controls.Add(panel20);
-        panel19.Location = new System.Drawing.Point(3, 72);
-        panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel19.Name = "panel19";
-        panel19.Size = new System.Drawing.Size(285, 68);
-        panel19.TabIndex = 1;
-        // 
-        // trackBar5
-        // 
-        trackBar5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar5.Location = new System.Drawing.Point(39, 25);
-        trackBar5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar5.Name = "trackBar5";
-        trackBar5.Size = new System.Drawing.Size(249, 56);
-        trackBar5.TabIndex = 1;
-        // 
-        // panel20
-        // 
-        panel20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel20.Controls.Add(checkBox5);
-        panel20.Controls.Add(label9);
-        panel20.Location = new System.Drawing.Point(36, 0);
-        panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel20.Name = "panel20";
-        panel20.Size = new System.Drawing.Size(249, 28);
-        panel20.TabIndex = 0;
-        // 
-        // checkBox5
-        // 
-        checkBox5.AutoSize = true;
-        checkBox5.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox5.Location = new System.Drawing.Point(0, 0);
-        checkBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox5.Name = "checkBox5";
-        checkBox5.Size = new System.Drawing.Size(42, 28);
-        checkBox5.TabIndex = 1;
-        checkBox5.Text = "S";
-        checkBox5.UseVisualStyleBackColor = true;
-        // 
-        // label9
-        // 
-        label9.AutoSize = true;
-        label9.Dock = System.Windows.Forms.DockStyle.Right;
-        label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label9.Location = new System.Drawing.Point(184, 0);
-        label9.Name = "label9";
-        label9.Size = new System.Drawing.Size(65, 20);
-        label9.TabIndex = 0;
-        label9.Text = "نسبة الـ S";
-        label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel21
-        // 
-        panel21.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel21.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel21.Controls.Add(trackBar6);
-        panel21.Controls.Add(panel22);
-        panel21.Location = new System.Drawing.Point(3, 144);
-        panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel21.Name = "panel21";
-        panel21.Size = new System.Drawing.Size(285, 73);
-        panel21.TabIndex = 0;
-        // 
-        // trackBar6
-        // 
-        trackBar6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar6.Location = new System.Drawing.Point(39, 31);
-        trackBar6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar6.Name = "trackBar6";
-        trackBar6.Size = new System.Drawing.Size(246, 56);
-        trackBar6.TabIndex = 1;
-        // 
-        // panel22
-        // 
-        panel22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel22.Controls.Add(checkBox6);
-        panel22.Controls.Add(label10);
-        panel22.Location = new System.Drawing.Point(39, 0);
-        panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel22.Name = "panel22";
-        panel22.Size = new System.Drawing.Size(246, 28);
-        panel22.TabIndex = 0;
-        // 
-        // checkBox6
-        // 
-        checkBox6.AutoSize = true;
-        checkBox6.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox6.Location = new System.Drawing.Point(0, 0);
-        checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox6.Name = "checkBox6";
-        checkBox6.Size = new System.Drawing.Size(42, 28);
-        checkBox6.TabIndex = 1;
-        checkBox6.Text = "V";
-        checkBox6.UseVisualStyleBackColor = true;
-        // 
-        // label10
-        // 
-        label10.AutoSize = true;
-        label10.Dock = System.Windows.Forms.DockStyle.Right;
-        label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label10.Location = new System.Drawing.Point(181, 0);
-        label10.Name = "label10";
-        label10.Size = new System.Drawing.Size(65, 20);
-        label10.TabIndex = 0;
-        label10.Text = "نسبة الـ V";
-        label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // flowLayoutPanel2
-        // 
-        flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        flowLayoutPanel2.AutoSize = true;
-        flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        flowLayoutPanel2.Controls.Add(panel23);
-        flowLayoutPanel2.Controls.Add(panel25);
-        flowLayoutPanel2.Controls.Add(panel27);
-        flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        flowLayoutPanel2.Location = new System.Drawing.Point(71, 9);
-        flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        flowLayoutPanel2.Name = "flowLayoutPanel2";
-        flowLayoutPanel2.Size = new System.Drawing.Size(291, 219);
-        flowLayoutPanel2.TabIndex = 8;
-        flowLayoutPanel2.WrapContents = false;
-        // 
-        // panel23
-        // 
-        panel23.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel23.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel23.Controls.Add(trackBar7);
-        panel23.Controls.Add(panel24);
-        panel23.Location = new System.Drawing.Point(3, 2);
-        panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel23.Name = "panel23";
-        panel23.Size = new System.Drawing.Size(285, 66);
-        panel23.TabIndex = 2;
-        // 
-        // trackBar7
-        // 
-        trackBar7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar7.Location = new System.Drawing.Point(36, 25);
-        trackBar7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar7.Name = "trackBar7";
-        trackBar7.Size = new System.Drawing.Size(246, 56);
-        trackBar7.TabIndex = 1;
-        // 
-        // panel24
-        // 
-        panel24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel24.Controls.Add(checkBox7);
-        panel24.Controls.Add(label11);
-        panel24.Location = new System.Drawing.Point(36, 0);
-        panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel24.Name = "panel24";
-        panel24.Size = new System.Drawing.Size(249, 27);
-        panel24.TabIndex = 0;
-        // 
-        // checkBox7
-        // 
-        checkBox7.AutoSize = true;
-        checkBox7.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox7.Location = new System.Drawing.Point(0, 0);
-        checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox7.Name = "checkBox7";
-        checkBox7.Size = new System.Drawing.Size(44, 27);
-        checkBox7.TabIndex = 1;
-        checkBox7.Text = "H";
-        checkBox7.UseVisualStyleBackColor = true;
-        // 
-        // label11
-        // 
-        label11.AutoSize = true;
-        label11.Dock = System.Windows.Forms.DockStyle.Right;
-        label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label11.Location = new System.Drawing.Point(182, 0);
-        label11.Name = "label11";
-        label11.Size = new System.Drawing.Size(67, 20);
-        label11.TabIndex = 0;
-        label11.Text = "نسبة الـ H";
-        label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel25
-        // 
-        panel25.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel25.Controls.Add(trackBar8);
-        panel25.Controls.Add(panel26);
-        panel25.Location = new System.Drawing.Point(3, 72);
-        panel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel25.Name = "panel25";
-        panel25.Size = new System.Drawing.Size(285, 68);
-        panel25.TabIndex = 1;
-        // 
-        // trackBar8
-        // 
-        trackBar8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar8.Location = new System.Drawing.Point(39, 25);
-        trackBar8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar8.Name = "trackBar8";
-        trackBar8.Size = new System.Drawing.Size(249, 56);
-        trackBar8.TabIndex = 1;
-        // 
-        // panel26
-        // 
-        panel26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel26.Controls.Add(checkBox8);
-        panel26.Controls.Add(label12);
-        panel26.Location = new System.Drawing.Point(36, 0);
-        panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel26.Name = "panel26";
-        panel26.Size = new System.Drawing.Size(249, 28);
-        panel26.TabIndex = 0;
-        // 
-        // checkBox8
-        // 
-        checkBox8.AutoSize = true;
-        checkBox8.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox8.Location = new System.Drawing.Point(0, 0);
-        checkBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox8.Name = "checkBox8";
-        checkBox8.Size = new System.Drawing.Size(42, 28);
-        checkBox8.TabIndex = 1;
-        checkBox8.Text = "S";
-        checkBox8.UseVisualStyleBackColor = true;
-        // 
-        // label12
-        // 
-        label12.AutoSize = true;
-        label12.Dock = System.Windows.Forms.DockStyle.Right;
-        label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label12.Location = new System.Drawing.Point(184, 0);
-        label12.Name = "label12";
-        label12.Size = new System.Drawing.Size(65, 20);
-        label12.TabIndex = 0;
-        label12.Text = "نسبة الـ S";
-        label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel27
-        // 
-        panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel27.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel27.Controls.Add(trackBar9);
-        panel27.Controls.Add(panel28);
-        panel27.Location = new System.Drawing.Point(3, 144);
-        panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel27.Name = "panel27";
-        panel27.Size = new System.Drawing.Size(285, 73);
-        panel27.TabIndex = 0;
-        // 
-        // trackBar9
-        // 
-        trackBar9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar9.Location = new System.Drawing.Point(39, 31);
-        trackBar9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar9.Name = "trackBar9";
-        trackBar9.Size = new System.Drawing.Size(246, 56);
-        trackBar9.TabIndex = 1;
-        // 
-        // panel28
-        // 
-        panel28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel28.Controls.Add(checkBox9);
-        panel28.Controls.Add(label13);
-        panel28.Location = new System.Drawing.Point(39, 0);
-        panel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel28.Name = "panel28";
-        panel28.Size = new System.Drawing.Size(246, 28);
-        panel28.TabIndex = 0;
-        // 
-        // checkBox9
-        // 
-        checkBox9.AutoSize = true;
-        checkBox9.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox9.Location = new System.Drawing.Point(0, 0);
-        checkBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox9.Name = "checkBox9";
-        checkBox9.Size = new System.Drawing.Size(42, 28);
-        checkBox9.TabIndex = 1;
-        checkBox9.Text = "V";
-        checkBox9.UseVisualStyleBackColor = true;
-        // 
-        // label13
-        // 
-        label13.AutoSize = true;
-        label13.Dock = System.Windows.Forms.DockStyle.Right;
-        label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label13.Location = new System.Drawing.Point(181, 0);
-        label13.Name = "label13";
-        label13.Size = new System.Drawing.Size(65, 20);
-        label13.TabIndex = 0;
-        label13.Text = "نسبة الـ V";
-        label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // flowLayoutPanel3
-        // 
-        flowLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        flowLayoutPanel3.AutoSize = true;
-        flowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        flowLayoutPanel3.Controls.Add(panel29);
-        flowLayoutPanel3.Controls.Add(panel31);
-        flowLayoutPanel3.Controls.Add(panel33);
-        flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        flowLayoutPanel3.Location = new System.Drawing.Point(71, 13);
-        flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        flowLayoutPanel3.Name = "flowLayoutPanel3";
-        flowLayoutPanel3.Size = new System.Drawing.Size(291, 219);
-        flowLayoutPanel3.TabIndex = 9;
-        flowLayoutPanel3.WrapContents = false;
-        // 
-        // panel29
-        // 
-        panel29.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel29.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel29.Controls.Add(trackBar10);
-        panel29.Controls.Add(panel30);
-        panel29.Location = new System.Drawing.Point(3, 2);
-        panel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel29.Name = "panel29";
-        panel29.Size = new System.Drawing.Size(285, 66);
-        panel29.TabIndex = 2;
-        // 
-        // trackBar10
-        // 
-        trackBar10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar10.Location = new System.Drawing.Point(36, 25);
-        trackBar10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar10.Name = "trackBar10";
-        trackBar10.Size = new System.Drawing.Size(246, 56);
-        trackBar10.TabIndex = 1;
-        // 
-        // panel30
-        // 
-        panel30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel30.Controls.Add(checkBox10);
-        panel30.Controls.Add(label14);
-        panel30.Location = new System.Drawing.Point(36, 0);
-        panel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel30.Name = "panel30";
-        panel30.Size = new System.Drawing.Size(249, 27);
-        panel30.TabIndex = 0;
-        // 
-        // checkBox10
-        // 
-        checkBox10.AutoSize = true;
-        checkBox10.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox10.Location = new System.Drawing.Point(0, 0);
-        checkBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox10.Name = "checkBox10";
-        checkBox10.Size = new System.Drawing.Size(44, 27);
-        checkBox10.TabIndex = 1;
-        checkBox10.Text = "H";
-        checkBox10.UseVisualStyleBackColor = true;
-        // 
-        // label14
-        // 
-        label14.AutoSize = true;
-        label14.Dock = System.Windows.Forms.DockStyle.Right;
-        label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label14.Location = new System.Drawing.Point(182, 0);
-        label14.Name = "label14";
-        label14.Size = new System.Drawing.Size(67, 20);
-        label14.TabIndex = 0;
-        label14.Text = "نسبة الـ H";
-        label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel31
-        // 
-        panel31.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel31.Controls.Add(trackBar11);
-        panel31.Controls.Add(panel32);
-        panel31.Location = new System.Drawing.Point(3, 72);
-        panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel31.Name = "panel31";
-        panel31.Size = new System.Drawing.Size(285, 68);
-        panel31.TabIndex = 1;
-        // 
-        // trackBar11
-        // 
-        trackBar11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar11.Location = new System.Drawing.Point(39, 25);
-        trackBar11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar11.Name = "trackBar11";
-        trackBar11.Size = new System.Drawing.Size(249, 56);
-        trackBar11.TabIndex = 1;
-        // 
-        // panel32
-        // 
-        panel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel32.Controls.Add(checkBox11);
-        panel32.Controls.Add(label15);
-        panel32.Location = new System.Drawing.Point(36, 0);
-        panel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel32.Name = "panel32";
-        panel32.Size = new System.Drawing.Size(249, 28);
-        panel32.TabIndex = 0;
-        // 
-        // checkBox11
-        // 
-        checkBox11.AutoSize = true;
-        checkBox11.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox11.Location = new System.Drawing.Point(0, 0);
-        checkBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox11.Name = "checkBox11";
-        checkBox11.Size = new System.Drawing.Size(42, 28);
-        checkBox11.TabIndex = 1;
-        checkBox11.Text = "S";
-        checkBox11.UseVisualStyleBackColor = true;
-        // 
-        // label15
-        // 
-        label15.AutoSize = true;
-        label15.Dock = System.Windows.Forms.DockStyle.Right;
-        label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label15.Location = new System.Drawing.Point(184, 0);
-        label15.Name = "label15";
-        label15.Size = new System.Drawing.Size(65, 20);
-        label15.TabIndex = 0;
-        label15.Text = "نسبة الـ S";
-        label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel33
-        // 
-        panel33.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel33.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel33.Controls.Add(trackBar12);
-        panel33.Controls.Add(panel34);
-        panel33.Location = new System.Drawing.Point(3, 144);
-        panel33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel33.Name = "panel33";
-        panel33.Size = new System.Drawing.Size(285, 73);
-        panel33.TabIndex = 0;
-        // 
-        // trackBar12
-        // 
-        trackBar12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar12.Location = new System.Drawing.Point(39, 31);
-        trackBar12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar12.Name = "trackBar12";
-        trackBar12.Size = new System.Drawing.Size(246, 56);
-        trackBar12.TabIndex = 1;
-        // 
-        // panel34
-        // 
-        panel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel34.Controls.Add(checkBox12);
-        panel34.Controls.Add(label16);
-        panel34.Location = new System.Drawing.Point(39, 0);
-        panel34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel34.Name = "panel34";
-        panel34.Size = new System.Drawing.Size(246, 28);
-        panel34.TabIndex = 0;
-        // 
-        // checkBox12
-        // 
-        checkBox12.AutoSize = true;
-        checkBox12.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox12.Location = new System.Drawing.Point(0, 0);
-        checkBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox12.Name = "checkBox12";
-        checkBox12.Size = new System.Drawing.Size(42, 28);
-        checkBox12.TabIndex = 1;
-        checkBox12.Text = "V";
-        checkBox12.UseVisualStyleBackColor = true;
-        // 
-        // label16
-        // 
-        label16.AutoSize = true;
-        label16.Dock = System.Windows.Forms.DockStyle.Right;
-        label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label16.Location = new System.Drawing.Point(181, 0);
-        label16.Name = "label16";
-        label16.Size = new System.Drawing.Size(65, 20);
-        label16.TabIndex = 0;
-        label16.Text = "نسبة الـ V";
-        label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // flowLayoutPanel4
-        // 
-        flowLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        flowLayoutPanel4.AutoSize = true;
-        flowLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        flowLayoutPanel4.Controls.Add(panel35);
-        flowLayoutPanel4.Controls.Add(panel37);
-        flowLayoutPanel4.Controls.Add(panel39);
-        flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        flowLayoutPanel4.Location = new System.Drawing.Point(71, 15);
-        flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        flowLayoutPanel4.Name = "flowLayoutPanel4";
-        flowLayoutPanel4.Size = new System.Drawing.Size(291, 219);
-        flowLayoutPanel4.TabIndex = 10;
-        flowLayoutPanel4.WrapContents = false;
-        // 
-        // panel35
-        // 
-        panel35.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel35.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel35.Controls.Add(trackBar13);
-        panel35.Controls.Add(panel36);
-        panel35.Location = new System.Drawing.Point(3, 2);
-        panel35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel35.Name = "panel35";
-        panel35.Size = new System.Drawing.Size(285, 66);
-        panel35.TabIndex = 2;
-        // 
-        // trackBar13
-        // 
-        trackBar13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar13.Location = new System.Drawing.Point(36, 25);
-        trackBar13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar13.Name = "trackBar13";
-        trackBar13.Size = new System.Drawing.Size(246, 56);
-        trackBar13.TabIndex = 1;
-        // 
-        // panel36
-        // 
-        panel36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel36.Controls.Add(checkBox13);
-        panel36.Controls.Add(label17);
-        panel36.Location = new System.Drawing.Point(36, 0);
-        panel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel36.Name = "panel36";
-        panel36.Size = new System.Drawing.Size(249, 27);
-        panel36.TabIndex = 0;
-        // 
-        // checkBox13
-        // 
-        checkBox13.AutoSize = true;
-        checkBox13.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox13.Location = new System.Drawing.Point(0, 0);
-        checkBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox13.Name = "checkBox13";
-        checkBox13.Size = new System.Drawing.Size(44, 27);
-        checkBox13.TabIndex = 1;
-        checkBox13.Text = "H";
-        checkBox13.UseVisualStyleBackColor = true;
-        // 
-        // label17
-        // 
-        label17.AutoSize = true;
-        label17.Dock = System.Windows.Forms.DockStyle.Right;
-        label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label17.Location = new System.Drawing.Point(182, 0);
-        label17.Name = "label17";
-        label17.Size = new System.Drawing.Size(67, 20);
-        label17.TabIndex = 0;
-        label17.Text = "نسبة الـ H";
-        label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel37
-        // 
-        panel37.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel37.Controls.Add(trackBar14);
-        panel37.Controls.Add(panel38);
-        panel37.Location = new System.Drawing.Point(3, 72);
-        panel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel37.Name = "panel37";
-        panel37.Size = new System.Drawing.Size(285, 68);
-        panel37.TabIndex = 1;
-        // 
-        // trackBar14
-        // 
-        trackBar14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar14.Location = new System.Drawing.Point(39, 25);
-        trackBar14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar14.Name = "trackBar14";
-        trackBar14.Size = new System.Drawing.Size(249, 56);
-        trackBar14.TabIndex = 1;
-        // 
-        // panel38
-        // 
-        panel38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel38.Controls.Add(checkBox14);
-        panel38.Controls.Add(label18);
-        panel38.Location = new System.Drawing.Point(36, 0);
-        panel38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel38.Name = "panel38";
-        panel38.Size = new System.Drawing.Size(249, 28);
-        panel38.TabIndex = 0;
-        // 
-        // checkBox14
-        // 
-        checkBox14.AutoSize = true;
-        checkBox14.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox14.Location = new System.Drawing.Point(0, 0);
-        checkBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox14.Name = "checkBox14";
-        checkBox14.Size = new System.Drawing.Size(42, 28);
-        checkBox14.TabIndex = 1;
-        checkBox14.Text = "S";
-        checkBox14.UseVisualStyleBackColor = true;
-        // 
-        // label18
-        // 
-        label18.AutoSize = true;
-        label18.Dock = System.Windows.Forms.DockStyle.Right;
-        label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label18.Location = new System.Drawing.Point(184, 0);
-        label18.Name = "label18";
-        label18.Size = new System.Drawing.Size(65, 20);
-        label18.TabIndex = 0;
-        label18.Text = "نسبة الـ S";
-        label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // panel39
-        // 
-        panel39.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        panel39.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        panel39.Controls.Add(trackBar15);
-        panel39.Controls.Add(panel40);
-        panel39.Location = new System.Drawing.Point(3, 144);
-        panel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel39.Name = "panel39";
-        panel39.Size = new System.Drawing.Size(285, 73);
-        panel39.TabIndex = 0;
-        // 
-        // trackBar15
-        // 
-        trackBar15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        trackBar15.Location = new System.Drawing.Point(39, 31);
-        trackBar15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        trackBar15.Name = "trackBar15";
-        trackBar15.Size = new System.Drawing.Size(246, 56);
-        trackBar15.TabIndex = 1;
-        // 
-        // panel40
-        // 
-        panel40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        panel40.Controls.Add(checkBox15);
-        panel40.Controls.Add(label19);
-        panel40.Location = new System.Drawing.Point(39, 0);
-        panel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        panel40.Name = "panel40";
-        panel40.Size = new System.Drawing.Size(246, 28);
-        panel40.TabIndex = 0;
-        // 
-        // checkBox15
-        // 
-        checkBox15.AutoSize = true;
-        checkBox15.Dock = System.Windows.Forms.DockStyle.Left;
-        checkBox15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        checkBox15.Location = new System.Drawing.Point(0, 0);
-        checkBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        checkBox15.Name = "checkBox15";
-        checkBox15.Size = new System.Drawing.Size(42, 28);
-        checkBox15.TabIndex = 1;
-        checkBox15.Text = "V";
-        checkBox15.UseVisualStyleBackColor = true;
-        // 
-        // label19
-        // 
-        label19.AutoSize = true;
-        label19.Dock = System.Windows.Forms.DockStyle.Right;
-        label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label19.Location = new System.Drawing.Point(181, 0);
-        label19.Name = "label19";
-        label19.Size = new System.Drawing.Size(65, 20);
-        label19.TabIndex = 0;
-        label19.Text = "نسبة الـ V";
-        label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // MainScreen
         // 
@@ -2340,6 +2340,86 @@ partial class MainScreen {
         CompoundsControlFlow.PerformLayout();
         ControlStacksPanel.ResumeLayout(false);
         ControlStacksPanel.PerformLayout();
+        HSVCompoundsFlow.ResumeLayout(false);
+        panel2.ResumeLayout(false);
+        panel2.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+        panel3.ResumeLayout(false);
+        panel3.PerformLayout();
+        panel4.ResumeLayout(false);
+        panel4.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();
+        panel5.ResumeLayout(false);
+        panel5.PerformLayout();
+        panel7.ResumeLayout(false);
+        panel7.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar3).EndInit();
+        panel8.ResumeLayout(false);
+        panel8.PerformLayout();
+        YCbCrFlow.ResumeLayout(false);
+        panel23.ResumeLayout(false);
+        panel23.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)YLumaSlider).EndInit();
+        panel24.ResumeLayout(false);
+        panel24.PerformLayout();
+        panel25.ResumeLayout(false);
+        panel25.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueDiffSlider).EndInit();
+        panel26.ResumeLayout(false);
+        panel26.PerformLayout();
+        panel27.ResumeLayout(false);
+        panel27.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedDiffSlider).EndInit();
+        panel28.ResumeLayout(false);
+        panel28.PerformLayout();
+        RGBFlow.ResumeLayout(false);
+        panel17.ResumeLayout(false);
+        panel17.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedSlider).EndInit();
+        panel18.ResumeLayout(false);
+        panel18.PerformLayout();
+        panel19.ResumeLayout(false);
+        panel19.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenSlider).EndInit();
+        panel20.ResumeLayout(false);
+        panel20.PerformLayout();
+        panel21.ResumeLayout(false);
+        panel21.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueSlider).EndInit();
+        panel22.ResumeLayout(false);
+        panel22.PerformLayout();
+        LABFlow.ResumeLayout(false);
+        panel29.ResumeLayout(false);
+        panel29.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)LightnessSlider).EndInit();
+        panel30.ResumeLayout(false);
+        panel30.PerformLayout();
+        panel31.ResumeLayout(false);
+        panel31.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenAxisSlider).EndInit();
+        panel32.ResumeLayout(false);
+        panel32.PerformLayout();
+        panel33.ResumeLayout(false);
+        panel33.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueAxisSlider).EndInit();
+        panel34.ResumeLayout(false);
+        panel34.PerformLayout();
+        YUVFlow.ResumeLayout(false);
+        panel35.ResumeLayout(false);
+        panel35.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)YYUVLumaSlider).EndInit();
+        panel36.ResumeLayout(false);
+        panel36.PerformLayout();
+        panel37.ResumeLayout(false);
+        panel37.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueProjectionSlider).EndInit();
+        panel38.ResumeLayout(false);
+        panel38.PerformLayout();
+        panel39.ResumeLayout(false);
+        panel39.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedPorjectionSlider).EndInit();
+        panel40.ResumeLayout(false);
+        panel40.PerformLayout();
         CMYKFlow.ResumeLayout(false);
         panel15.ResumeLayout(false);
         panel15.PerformLayout();
@@ -2381,143 +2461,67 @@ partial class MainScreen {
         OriginalImageSplit.ResumeLayout(false);
         OriginalImagePanel.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)OriginalImageViewer).EndInit();
-        HSVCompoundsFlow.ResumeLayout(false);
-        panel2.ResumeLayout(false);
-        panel2.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
-        panel3.ResumeLayout(false);
-        panel3.PerformLayout();
-        panel4.ResumeLayout(false);
-        panel4.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();
-        panel5.ResumeLayout(false);
-        panel5.PerformLayout();
-        panel7.ResumeLayout(false);
-        panel7.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar3).EndInit();
-        panel8.ResumeLayout(false);
-        panel8.PerformLayout();
-        flowLayoutPanel1.ResumeLayout(false);
-        panel17.ResumeLayout(false);
-        panel17.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar4).EndInit();
-        panel18.ResumeLayout(false);
-        panel18.PerformLayout();
-        panel19.ResumeLayout(false);
-        panel19.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar5).EndInit();
-        panel20.ResumeLayout(false);
-        panel20.PerformLayout();
-        panel21.ResumeLayout(false);
-        panel21.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar6).EndInit();
-        panel22.ResumeLayout(false);
-        panel22.PerformLayout();
-        flowLayoutPanel2.ResumeLayout(false);
-        panel23.ResumeLayout(false);
-        panel23.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar7).EndInit();
-        panel24.ResumeLayout(false);
-        panel24.PerformLayout();
-        panel25.ResumeLayout(false);
-        panel25.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar8).EndInit();
-        panel26.ResumeLayout(false);
-        panel26.PerformLayout();
-        panel27.ResumeLayout(false);
-        panel27.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar9).EndInit();
-        panel28.ResumeLayout(false);
-        panel28.PerformLayout();
-        flowLayoutPanel3.ResumeLayout(false);
-        panel29.ResumeLayout(false);
-        panel29.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar10).EndInit();
-        panel30.ResumeLayout(false);
-        panel30.PerformLayout();
-        panel31.ResumeLayout(false);
-        panel31.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar11).EndInit();
-        panel32.ResumeLayout(false);
-        panel32.PerformLayout();
-        panel33.ResumeLayout(false);
-        panel33.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar12).EndInit();
-        panel34.ResumeLayout(false);
-        panel34.PerformLayout();
-        flowLayoutPanel4.ResumeLayout(false);
-        panel35.ResumeLayout(false);
-        panel35.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar13).EndInit();
-        panel36.ResumeLayout(false);
-        panel36.PerformLayout();
-        panel37.ResumeLayout(false);
-        panel37.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar14).EndInit();
-        panel38.ResumeLayout(false);
-        panel38.PerformLayout();
-        panel39.ResumeLayout(false);
-        panel39.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)trackBar15).EndInit();
-        panel40.ResumeLayout(false);
-        panel40.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+    private System.Windows.Forms.CheckBox BlueProjectionCheckbox;
+    private System.Windows.Forms.TrackBar YYUVLumaSlider;
+    private System.Windows.Forms.TrackBar BlueProjectionSlider;
+
+    private System.Windows.Forms.FlowLayoutPanel RGBFlow;
     private System.Windows.Forms.Panel panel17;
-    private System.Windows.Forms.TrackBar trackBar4;
+    private System.Windows.Forms.TrackBar RedSlider;
     private System.Windows.Forms.Panel panel18;
-    private System.Windows.Forms.CheckBox checkBox4;
+    private System.Windows.Forms.CheckBox RedCheckbox;
     private System.Windows.Forms.Label label8;
     private System.Windows.Forms.Panel panel19;
-    private System.Windows.Forms.TrackBar trackBar5;
+    private System.Windows.Forms.TrackBar GreenSlider;
     private System.Windows.Forms.Panel panel20;
-    private System.Windows.Forms.CheckBox checkBox5;
+    private System.Windows.Forms.CheckBox GreenCheckbox;
     private System.Windows.Forms.Label label9;
     private System.Windows.Forms.Panel panel21;
-    private System.Windows.Forms.TrackBar trackBar6;
+    private System.Windows.Forms.TrackBar BlueSlider;
     private System.Windows.Forms.Panel panel22;
-    private System.Windows.Forms.CheckBox checkBox6;
+    private System.Windows.Forms.CheckBox BlueCheckbox;
     private System.Windows.Forms.Label label10;
-    private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+    private System.Windows.Forms.FlowLayoutPanel YCbCrFlow;
     private System.Windows.Forms.Panel panel23;
-    private System.Windows.Forms.TrackBar trackBar7;
+    private System.Windows.Forms.TrackBar YLumaSlider;
     private System.Windows.Forms.Panel panel24;
-    private System.Windows.Forms.CheckBox checkBox7;
+    private System.Windows.Forms.CheckBox YLumaCheck;
     private System.Windows.Forms.Label label11;
     private System.Windows.Forms.Panel panel25;
-    private System.Windows.Forms.TrackBar trackBar8;
+    private System.Windows.Forms.TrackBar BlueDiffSlider;
     private System.Windows.Forms.Panel panel26;
-    private System.Windows.Forms.CheckBox checkBox8;
+    private System.Windows.Forms.CheckBox BlueDiffCheck;
     private System.Windows.Forms.Label label12;
     private System.Windows.Forms.Panel panel27;
-    private System.Windows.Forms.TrackBar trackBar9;
+    private System.Windows.Forms.TrackBar RedDiffSlider;
     private System.Windows.Forms.Panel panel28;
-    private System.Windows.Forms.CheckBox checkBox9;
+    private System.Windows.Forms.CheckBox RedDiffCheck;
     private System.Windows.Forms.Label label13;
-    private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+    private System.Windows.Forms.FlowLayoutPanel LABFlow;
     private System.Windows.Forms.Panel panel29;
-    private System.Windows.Forms.TrackBar trackBar10;
+    private System.Windows.Forms.TrackBar LightnessSlider;
     private System.Windows.Forms.Panel panel30;
-    private System.Windows.Forms.CheckBox checkBox10;
+    private System.Windows.Forms.CheckBox LightnessCheck;
     private System.Windows.Forms.Label label14;
     private System.Windows.Forms.Panel panel31;
-    private System.Windows.Forms.TrackBar trackBar11;
+    private System.Windows.Forms.TrackBar GreenAxisSlider;
     private System.Windows.Forms.Panel panel32;
-    private System.Windows.Forms.CheckBox checkBox11;
+    private System.Windows.Forms.CheckBox GreenAxisCheck;
     private System.Windows.Forms.Label label15;
     private System.Windows.Forms.Panel panel33;
-    private System.Windows.Forms.TrackBar trackBar12;
+    private System.Windows.Forms.TrackBar BlueAxisSlider;
     private System.Windows.Forms.Panel panel34;
-    private System.Windows.Forms.CheckBox checkBox12;
+    private System.Windows.Forms.CheckBox BlueAxisCheck;
     private System.Windows.Forms.Label label16;
-    private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+    private System.Windows.Forms.FlowLayoutPanel YUVFlow;
     private System.Windows.Forms.Panel panel35;
-    private System.Windows.Forms.TrackBar trackBar13;
+    private System.Windows.Forms.CheckBox YYUVLumaCheckbox;
     private System.Windows.Forms.Panel panel36;
-    private System.Windows.Forms.CheckBox checkBox13;
+    private System.Windows.Forms.CheckBox YYUVLumnaCheckbox;
     private System.Windows.Forms.Label label17;
     private System.Windows.Forms.Panel panel37;
     private System.Windows.Forms.TrackBar trackBar14;
@@ -2525,9 +2529,9 @@ partial class MainScreen {
     private System.Windows.Forms.CheckBox checkBox14;
     private System.Windows.Forms.Label label18;
     private System.Windows.Forms.Panel panel39;
-    private System.Windows.Forms.TrackBar trackBar15;
+    private System.Windows.Forms.TrackBar RedPorjectionSlider;
     private System.Windows.Forms.Panel panel40;
-    private System.Windows.Forms.CheckBox checkBox15;
+    private System.Windows.Forms.CheckBox RedPorjectionCheckbox;
     private System.Windows.Forms.Label label19;
 
     private System.Windows.Forms.FlowLayoutPanel CMYKFlow;

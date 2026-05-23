@@ -82,6 +82,6 @@ public partial class MainScreen : Form {
     }
 
     private void RGBButton_CheckedChanged(object sender, EventArgs e) {
-      if(RGBButton.Checked){}
+   
     }
 }
