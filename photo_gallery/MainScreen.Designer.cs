@@ -260,6 +260,7 @@ partial class MainScreen {
         LoadButton.TabIndex = 3;
         LoadButton.Text = "تحميل صورة";
         LoadButton.UseVisualStyleBackColor = false;
+        LoadButton.Click += LoadButton_Click;
         // 
         // ResetButton
         // 
@@ -291,6 +292,7 @@ partial class MainScreen {
         SaveButton.TabIndex = 1;
         SaveButton.Text = "حفظ";
         SaveButton.UseVisualStyleBackColor = false;
+        SaveButton.Click += SaveButton_Click;
         // 
         // Open3DSpaceButton
         // 
