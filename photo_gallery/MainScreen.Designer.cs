@@ -24,8 +24,7 @@ partial class MainScreen {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent()
-    {
+    private void InitializeComponent() {
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -76,15 +75,30 @@ partial class MainScreen {
         BCheckBox = new System.Windows.Forms.CheckBox();
         BColorPer = new System.Windows.Forms.Label();
         ImageInfoFlow = new System.Windows.Forms.FlowLayoutPanel();
-        DimensionsPanel = new System.Windows.Forms.Panel();
-        label6 = new System.Windows.Forms.Label();
-        DimensionsLabel = new System.Windows.Forms.Label();
-        FileFormatPanel = new System.Windows.Forms.Panel();
-        label4 = new System.Windows.Forms.Label();
-        FileFormatLabel = new System.Windows.Forms.Label();
-        BitDepthPanel = new System.Windows.Forms.Panel();
-        label1 = new System.Windows.Forms.Label();
-        BitDepthLabel = new System.Windows.Forms.Label();
+        ImageNamePanel = new System.Windows.Forms.Panel();
+        ImageNameValue = new System.Windows.Forms.Label();
+        ImageNameLabel = new System.Windows.Forms.Label();
+        ImageSizePanel = new System.Windows.Forms.Panel();
+        ImageSizeValue = new System.Windows.Forms.Label();
+        ImageSizeLabel = new System.Windows.Forms.Label();
+        ImageDimensionPanel = new System.Windows.Forms.Panel();
+        ImageDimensionValue = new System.Windows.Forms.Label();
+        ImageDimensionLabel = new System.Windows.Forms.Label();
+        ImageExtensionPanel = new System.Windows.Forms.Panel();
+        ImageExtensionValue = new System.Windows.Forms.Label();
+        ImageExtensionLabel = new System.Windows.Forms.Label();
+        ImageChannelsPanel = new System.Windows.Forms.Panel();
+        ImageChannelValue = new System.Windows.Forms.Label();
+        ImageChannelLabel = new System.Windows.Forms.Label();
+        ImageTypePanel = new System.Windows.Forms.Panel();
+        ImageTypeValue = new System.Windows.Forms.Label();
+        TypeLabel = new System.Windows.Forms.Label();
+        ImageDPIPanel = new System.Windows.Forms.Panel();
+        ImageDPIValue = new System.Windows.Forms.Label();
+        ImageDPILabel = new System.Windows.Forms.Label();
+        ImageAspectRatioPanel = new System.Windows.Forms.Panel();
+        ImageAspectRatioValue = new System.Windows.Forms.Label();
+        ImageAspectRatioLabel = new System.Windows.Forms.Label();
         panel1 = new System.Windows.Forms.Panel();
         EditorSceneSplitter = new System.Windows.Forms.SplitContainer();
         ModifiedImageSplit = new System.Windows.Forms.Panel();
@@ -118,9 +132,14 @@ partial class MainScreen {
         ((System.ComponentModel.ISupportInitialize)BSlider).BeginInit();
         BLabels.SuspendLayout();
         ImageInfoFlow.SuspendLayout();
-        DimensionsPanel.SuspendLayout();
-        FileFormatPanel.SuspendLayout();
-        BitDepthPanel.SuspendLayout();
+        ImageNamePanel.SuspendLayout();
+        ImageSizePanel.SuspendLayout();
+        ImageDimensionPanel.SuspendLayout();
+        ImageExtensionPanel.SuspendLayout();
+        ImageChannelsPanel.SuspendLayout();
+        ImageTypePanel.SuspendLayout();
+        ImageDPIPanel.SuspendLayout();
+        ImageAspectRatioPanel.SuspendLayout();
         panel1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)EditorSceneSplitter).BeginInit();
         EditorSceneSplitter.Panel1.SuspendLayout();
@@ -277,6 +296,7 @@ partial class MainScreen {
         ResetButton.TabIndex = 2;
         ResetButton.Text = "إعادة تعيين";
         ResetButton.UseVisualStyleBackColor = false;
+        ResetButton.Click += ResetButton_Click;
         // 
         // SaveButton
         // 
@@ -377,7 +397,7 @@ partial class MainScreen {
         RightPanel.Margin = new System.Windows.Forms.Padding(0);
         RightPanel.Name = "RightPanel";
         RightPanel.Padding = new System.Windows.Forms.Padding(7, 7, 0, 0);
-        RightPanel.Size = new System.Drawing.Size(320, 571);
+        RightPanel.Size = new System.Drawing.Size(320, 815);
         RightPanel.TabIndex = 1;
         RightPanel.WrapContents = false;
         // 
@@ -764,113 +784,270 @@ partial class MainScreen {
         // 
         ImageInfoFlow.Anchor = System.Windows.Forms.AnchorStyles.Top;
         ImageInfoFlow.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        ImageInfoFlow.Controls.Add(DimensionsPanel);
-        ImageInfoFlow.Controls.Add(FileFormatPanel);
-        ImageInfoFlow.Controls.Add(BitDepthPanel);
+        ImageInfoFlow.Controls.Add(ImageNamePanel);
+        ImageInfoFlow.Controls.Add(ImageSizePanel);
+        ImageInfoFlow.Controls.Add(ImageDimensionPanel);
+        ImageInfoFlow.Controls.Add(ImageExtensionPanel);
+        ImageInfoFlow.Controls.Add(ImageChannelsPanel);
+        ImageInfoFlow.Controls.Add(ImageTypePanel);
+        ImageInfoFlow.Controls.Add(ImageDPIPanel);
+        ImageInfoFlow.Controls.Add(ImageAspectRatioPanel);
         ImageInfoFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         ImageInfoFlow.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ImageInfoFlow.Location = new System.Drawing.Point(8, 442);
+        ImageInfoFlow.Location = new System.Drawing.Point(10, 442);
         ImageInfoFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ImageInfoFlow.Name = "ImageInfoFlow";
-        ImageInfoFlow.Size = new System.Drawing.Size(301, 124);
+        ImageInfoFlow.Size = new System.Drawing.Size(297, 373);
         ImageInfoFlow.TabIndex = 4;
         ImageInfoFlow.WrapContents = false;
         // 
-        // DimensionsPanel
+        // ImageNamePanel
         // 
-        DimensionsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-        DimensionsPanel.Controls.Add(label6);
-        DimensionsPanel.Controls.Add(DimensionsLabel);
-        DimensionsPanel.Location = new System.Drawing.Point(12, 2);
-        DimensionsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        DimensionsPanel.Name = "DimensionsPanel";
-        DimensionsPanel.Size = new System.Drawing.Size(286, 37);
-        DimensionsPanel.TabIndex = 3;
+        ImageNamePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageNamePanel.Controls.Add(ImageNameValue);
+        ImageNamePanel.Controls.Add(ImageNameLabel);
+        ImageNamePanel.Location = new System.Drawing.Point(8, 2);
+        ImageNamePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageNamePanel.Name = "ImageNamePanel";
+        ImageNamePanel.Size = new System.Drawing.Size(286, 37);
+        ImageNamePanel.TabIndex = 8;
         // 
-        // label6
+        // ImageNameValue
         // 
-        label6.Dock = System.Windows.Forms.DockStyle.Left;
-        label6.Location = new System.Drawing.Point(0, 0);
-        label6.Name = "label6";
-        label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label6.Size = new System.Drawing.Size(159, 37);
-        label6.TabIndex = 3;
-        label6.Text = "200 x 244";
+        ImageNameValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageNameValue.Location = new System.Drawing.Point(0, 0);
+        ImageNameValue.Name = "ImageNameValue";
+        ImageNameValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageNameValue.Size = new System.Drawing.Size(159, 37);
+        ImageNameValue.TabIndex = 3;
         // 
-        // DimensionsLabel
+        // ImageNameLabel
         // 
-        DimensionsLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        DimensionsLabel.Location = new System.Drawing.Point(127, 0);
-        DimensionsLabel.Name = "DimensionsLabel";
-        DimensionsLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        DimensionsLabel.Size = new System.Drawing.Size(159, 37);
-        DimensionsLabel.TabIndex = 2;
-        DimensionsLabel.Text = "Dimensions";
-        DimensionsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        ImageNameLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageNameLabel.Location = new System.Drawing.Point(127, 0);
+        ImageNameLabel.Name = "ImageNameLabel";
+        ImageNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageNameLabel.Size = new System.Drawing.Size(159, 37);
+        ImageNameLabel.TabIndex = 2;
+        ImageNameLabel.Text = "Name";
+        ImageNameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
         // 
-        // FileFormatPanel
+        // ImageSizePanel
         // 
-        FileFormatPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        FileFormatPanel.Controls.Add(label4);
-        FileFormatPanel.Controls.Add(FileFormatLabel);
-        FileFormatPanel.Location = new System.Drawing.Point(12, 43);
-        FileFormatPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        FileFormatPanel.Name = "FileFormatPanel";
-        FileFormatPanel.Size = new System.Drawing.Size(286, 37);
-        FileFormatPanel.TabIndex = 2;
+        ImageSizePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageSizePanel.Controls.Add(ImageSizeValue);
+        ImageSizePanel.Controls.Add(ImageSizeLabel);
+        ImageSizePanel.Location = new System.Drawing.Point(8, 43);
+        ImageSizePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageSizePanel.Name = "ImageSizePanel";
+        ImageSizePanel.Size = new System.Drawing.Size(286, 37);
+        ImageSizePanel.TabIndex = 7;
         // 
-        // label4
+        // ImageSizeValue
         // 
-        label4.Dock = System.Windows.Forms.DockStyle.Left;
-        label4.Location = new System.Drawing.Point(0, 0);
-        label4.Name = "label4";
-        label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label4.Size = new System.Drawing.Size(159, 37);
-        label4.TabIndex = 3;
-        label4.Text = "200 x 244";
+        ImageSizeValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageSizeValue.Location = new System.Drawing.Point(0, 0);
+        ImageSizeValue.Name = "ImageSizeValue";
+        ImageSizeValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageSizeValue.Size = new System.Drawing.Size(159, 37);
+        ImageSizeValue.TabIndex = 3;
         // 
-        // FileFormatLabel
+        // ImageSizeLabel
         // 
-        FileFormatLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        FileFormatLabel.Location = new System.Drawing.Point(127, 0);
-        FileFormatLabel.Name = "FileFormatLabel";
-        FileFormatLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        FileFormatLabel.Size = new System.Drawing.Size(159, 37);
-        FileFormatLabel.TabIndex = 2;
-        FileFormatLabel.Text = "File Format";
-        FileFormatLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        ImageSizeLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageSizeLabel.Location = new System.Drawing.Point(127, 0);
+        ImageSizeLabel.Name = "ImageSizeLabel";
+        ImageSizeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageSizeLabel.Size = new System.Drawing.Size(159, 37);
+        ImageSizeLabel.TabIndex = 2;
+        ImageSizeLabel.Text = "Size";
+        ImageSizeLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
         // 
-        // BitDepthPanel
+        // ImageDimensionPanel
         // 
-        BitDepthPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        BitDepthPanel.Controls.Add(label1);
-        BitDepthPanel.Controls.Add(BitDepthLabel);
-        BitDepthPanel.Location = new System.Drawing.Point(12, 84);
-        BitDepthPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        BitDepthPanel.Name = "BitDepthPanel";
-        BitDepthPanel.Size = new System.Drawing.Size(286, 37);
-        BitDepthPanel.TabIndex = 1;
+        ImageDimensionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageDimensionPanel.Controls.Add(ImageDimensionValue);
+        ImageDimensionPanel.Controls.Add(ImageDimensionLabel);
+        ImageDimensionPanel.Location = new System.Drawing.Point(8, 84);
+        ImageDimensionPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageDimensionPanel.Name = "ImageDimensionPanel";
+        ImageDimensionPanel.Size = new System.Drawing.Size(286, 37);
+        ImageDimensionPanel.TabIndex = 6;
         // 
-        // label1
+        // ImageDimensionValue
         // 
-        label1.Dock = System.Windows.Forms.DockStyle.Left;
-        label1.Location = new System.Drawing.Point(0, 0);
-        label1.Name = "label1";
-        label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        label1.Size = new System.Drawing.Size(159, 37);
-        label1.TabIndex = 3;
-        label1.Text = "200 x 244";
+        ImageDimensionValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageDimensionValue.Location = new System.Drawing.Point(0, 0);
+        ImageDimensionValue.Name = "ImageDimensionValue";
+        ImageDimensionValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageDimensionValue.Size = new System.Drawing.Size(159, 37);
+        ImageDimensionValue.TabIndex = 3;
         // 
-        // BitDepthLabel
+        // ImageDimensionLabel
         // 
-        BitDepthLabel.Dock = System.Windows.Forms.DockStyle.Right;
-        BitDepthLabel.Location = new System.Drawing.Point(127, 0);
-        BitDepthLabel.Name = "BitDepthLabel";
-        BitDepthLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        BitDepthLabel.Size = new System.Drawing.Size(159, 37);
-        BitDepthLabel.TabIndex = 2;
-        BitDepthLabel.Text = "Bit Depth";
-        BitDepthLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        ImageDimensionLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageDimensionLabel.Location = new System.Drawing.Point(127, 0);
+        ImageDimensionLabel.Name = "ImageDimensionLabel";
+        ImageDimensionLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageDimensionLabel.Size = new System.Drawing.Size(159, 37);
+        ImageDimensionLabel.TabIndex = 2;
+        ImageDimensionLabel.Text = "Dimension";
+        ImageDimensionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        // 
+        // ImageExtensionPanel
+        // 
+        ImageExtensionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageExtensionPanel.Controls.Add(ImageExtensionValue);
+        ImageExtensionPanel.Controls.Add(ImageExtensionLabel);
+        ImageExtensionPanel.Location = new System.Drawing.Point(8, 125);
+        ImageExtensionPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageExtensionPanel.Name = "ImageExtensionPanel";
+        ImageExtensionPanel.Size = new System.Drawing.Size(286, 37);
+        ImageExtensionPanel.TabIndex = 5;
+        // 
+        // ImageExtensionValue
+        // 
+        ImageExtensionValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageExtensionValue.Location = new System.Drawing.Point(0, 0);
+        ImageExtensionValue.Name = "ImageExtensionValue";
+        ImageExtensionValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageExtensionValue.Size = new System.Drawing.Size(159, 37);
+        ImageExtensionValue.TabIndex = 3;
+        // 
+        // ImageExtensionLabel
+        // 
+        ImageExtensionLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageExtensionLabel.Location = new System.Drawing.Point(127, 0);
+        ImageExtensionLabel.Name = "ImageExtensionLabel";
+        ImageExtensionLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageExtensionLabel.Size = new System.Drawing.Size(159, 37);
+        ImageExtensionLabel.TabIndex = 2;
+        ImageExtensionLabel.Text = "Extension";
+        ImageExtensionLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        // 
+        // ImageChannelsPanel
+        // 
+        ImageChannelsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageChannelsPanel.Controls.Add(ImageChannelValue);
+        ImageChannelsPanel.Controls.Add(ImageChannelLabel);
+        ImageChannelsPanel.Location = new System.Drawing.Point(8, 166);
+        ImageChannelsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageChannelsPanel.Name = "ImageChannelsPanel";
+        ImageChannelsPanel.Size = new System.Drawing.Size(286, 37);
+        ImageChannelsPanel.TabIndex = 4;
+        // 
+        // ImageChannelValue
+        // 
+        ImageChannelValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageChannelValue.Location = new System.Drawing.Point(0, 0);
+        ImageChannelValue.Name = "ImageChannelValue";
+        ImageChannelValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageChannelValue.Size = new System.Drawing.Size(159, 37);
+        ImageChannelValue.TabIndex = 3;
+        // 
+        // ImageChannelLabel
+        // 
+        ImageChannelLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageChannelLabel.Location = new System.Drawing.Point(127, 0);
+        ImageChannelLabel.Name = "ImageChannelLabel";
+        ImageChannelLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageChannelLabel.Size = new System.Drawing.Size(159, 37);
+        ImageChannelLabel.TabIndex = 2;
+        ImageChannelLabel.Text = "Channels";
+        ImageChannelLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        // 
+        // ImageTypePanel
+        // 
+        ImageTypePanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+        ImageTypePanel.Controls.Add(ImageTypeValue);
+        ImageTypePanel.Controls.Add(TypeLabel);
+        ImageTypePanel.Location = new System.Drawing.Point(8, 207);
+        ImageTypePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageTypePanel.Name = "ImageTypePanel";
+        ImageTypePanel.Size = new System.Drawing.Size(286, 37);
+        ImageTypePanel.TabIndex = 3;
+        // 
+        // ImageTypeValue
+        // 
+        ImageTypeValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageTypeValue.Location = new System.Drawing.Point(0, 0);
+        ImageTypeValue.Name = "ImageTypeValue";
+        ImageTypeValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageTypeValue.Size = new System.Drawing.Size(159, 37);
+        ImageTypeValue.TabIndex = 3;
+        // 
+        // TypeLabel
+        // 
+        TypeLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        TypeLabel.Location = new System.Drawing.Point(127, 0);
+        TypeLabel.Name = "TypeLabel";
+        TypeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        TypeLabel.Size = new System.Drawing.Size(159, 37);
+        TypeLabel.TabIndex = 2;
+        TypeLabel.Text = "Type";
+        TypeLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        // 
+        // ImageDPIPanel
+        // 
+        ImageDPIPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageDPIPanel.Controls.Add(ImageDPIValue);
+        ImageDPIPanel.Controls.Add(ImageDPILabel);
+        ImageDPIPanel.Location = new System.Drawing.Point(8, 248);
+        ImageDPIPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageDPIPanel.Name = "ImageDPIPanel";
+        ImageDPIPanel.Size = new System.Drawing.Size(286, 37);
+        ImageDPIPanel.TabIndex = 2;
+        // 
+        // ImageDPIValue
+        // 
+        ImageDPIValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageDPIValue.Location = new System.Drawing.Point(0, 0);
+        ImageDPIValue.Name = "ImageDPIValue";
+        ImageDPIValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageDPIValue.Size = new System.Drawing.Size(159, 37);
+        ImageDPIValue.TabIndex = 3;
+        // 
+        // ImageDPILabel
+        // 
+        ImageDPILabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageDPILabel.Location = new System.Drawing.Point(127, 0);
+        ImageDPILabel.Name = "ImageDPILabel";
+        ImageDPILabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageDPILabel.Size = new System.Drawing.Size(159, 37);
+        ImageDPILabel.TabIndex = 2;
+        ImageDPILabel.Text = "DPI";
+        ImageDPILabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+        // 
+        // ImageAspectRatioPanel
+        // 
+        ImageAspectRatioPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        ImageAspectRatioPanel.Controls.Add(ImageAspectRatioValue);
+        ImageAspectRatioPanel.Controls.Add(ImageAspectRatioLabel);
+        ImageAspectRatioPanel.Location = new System.Drawing.Point(8, 289);
+        ImageAspectRatioPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ImageAspectRatioPanel.Name = "ImageAspectRatioPanel";
+        ImageAspectRatioPanel.Size = new System.Drawing.Size(286, 37);
+        ImageAspectRatioPanel.TabIndex = 1;
+        // 
+        // ImageAspectRatioValue
+        // 
+        ImageAspectRatioValue.Dock = System.Windows.Forms.DockStyle.Left;
+        ImageAspectRatioValue.Location = new System.Drawing.Point(0, 0);
+        ImageAspectRatioValue.Name = "ImageAspectRatioValue";
+        ImageAspectRatioValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageAspectRatioValue.Size = new System.Drawing.Size(159, 37);
+        ImageAspectRatioValue.TabIndex = 3;
+        // 
+        // ImageAspectRatioLabel
+        // 
+        ImageAspectRatioLabel.Dock = System.Windows.Forms.DockStyle.Right;
+        ImageAspectRatioLabel.Location = new System.Drawing.Point(127, 0);
+        ImageAspectRatioLabel.Name = "ImageAspectRatioLabel";
+        ImageAspectRatioLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        ImageAspectRatioLabel.Size = new System.Drawing.Size(159, 37);
+        ImageAspectRatioLabel.TabIndex = 2;
+        ImageAspectRatioLabel.Text = "Aspect Ratio";
+        ImageAspectRatioLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
         // 
         // panel1
         // 
@@ -881,7 +1058,7 @@ partial class MainScreen {
         panel1.Margin = new System.Windows.Forms.Padding(20, 21, 20, 21);
         panel1.Name = "panel1";
         panel1.Padding = new System.Windows.Forms.Padding(20, 21, 20, 21);
-        panel1.Size = new System.Drawing.Size(1107, 571);
+        panel1.Size = new System.Drawing.Size(1107, 815);
         panel1.TabIndex = 2;
         // 
         // EditorSceneSplitter
@@ -901,7 +1078,7 @@ partial class MainScreen {
         // 
         EditorSceneSplitter.Panel2.Controls.Add(OriginalImageSplit);
         EditorSceneSplitter.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-        EditorSceneSplitter.Size = new System.Drawing.Size(1067, 529);
+        EditorSceneSplitter.Size = new System.Drawing.Size(1067, 773);
         EditorSceneSplitter.SplitterDistance = 533;
         EditorSceneSplitter.SplitterWidth = 22;
         EditorSceneSplitter.TabIndex = 3;
@@ -916,7 +1093,7 @@ partial class MainScreen {
         ModifiedImageSplit.Location = new System.Drawing.Point(0, 0);
         ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImageSplit.Name = "ModifiedImageSplit";
-        ModifiedImageSplit.Size = new System.Drawing.Size(533, 529);
+        ModifiedImageSplit.Size = new System.Drawing.Size(533, 773);
         ModifiedImageSplit.TabIndex = 0;
         // 
         // ModifiedImagePanel
@@ -926,7 +1103,7 @@ partial class MainScreen {
         ModifiedImagePanel.Location = new System.Drawing.Point(0, 69);
         ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImagePanel.Name = "ModifiedImagePanel";
-        ModifiedImagePanel.Size = new System.Drawing.Size(533, 460);
+        ModifiedImagePanel.Size = new System.Drawing.Size(533, 704);
         ModifiedImagePanel.TabIndex = 1;
         // 
         // ModifiedImageViewer
@@ -935,7 +1112,7 @@ partial class MainScreen {
         ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
         ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ModifiedImageViewer.Name = "ModifiedImageViewer";
-        ModifiedImageViewer.Size = new System.Drawing.Size(533, 460);
+        ModifiedImageViewer.Size = new System.Drawing.Size(533, 704);
         ModifiedImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         ModifiedImageViewer.TabIndex = 0;
         ModifiedImageViewer.TabStop = false;
@@ -960,7 +1137,7 @@ partial class MainScreen {
         OriginalImageSplit.Location = new System.Drawing.Point(0, 0);
         OriginalImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageSplit.Name = "OriginalImageSplit";
-        OriginalImageSplit.Size = new System.Drawing.Size(512, 529);
+        OriginalImageSplit.Size = new System.Drawing.Size(512, 773);
         OriginalImageSplit.TabIndex = 1;
         // 
         // OriginalImagePanel
@@ -970,7 +1147,7 @@ partial class MainScreen {
         OriginalImagePanel.Location = new System.Drawing.Point(0, 69);
         OriginalImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImagePanel.Name = "OriginalImagePanel";
-        OriginalImagePanel.Size = new System.Drawing.Size(512, 460);
+        OriginalImagePanel.Size = new System.Drawing.Size(512, 704);
         OriginalImagePanel.TabIndex = 2;
         // 
         // OriginalImageViewer
@@ -979,7 +1156,7 @@ partial class MainScreen {
         OriginalImageViewer.Location = new System.Drawing.Point(0, 0);
         OriginalImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageViewer.Name = "OriginalImageViewer";
-        OriginalImageViewer.Size = new System.Drawing.Size(512, 460);
+        OriginalImageViewer.Size = new System.Drawing.Size(512, 704);
         OriginalImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         OriginalImageViewer.TabIndex = 0;
         OriginalImageViewer.TabStop = false;
@@ -999,7 +1176,7 @@ partial class MainScreen {
         // 
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(1427, 647);
+        ClientSize = new System.Drawing.Size(1427, 891);
         Controls.Add(panel1);
         Controls.Add(RightPanel);
         Controls.Add(TobBarFlowLayout);
@@ -1048,9 +1225,14 @@ partial class MainScreen {
         BLabels.ResumeLayout(false);
         BLabels.PerformLayout();
         ImageInfoFlow.ResumeLayout(false);
-        DimensionsPanel.ResumeLayout(false);
-        FileFormatPanel.ResumeLayout(false);
-        BitDepthPanel.ResumeLayout(false);
+        ImageNamePanel.ResumeLayout(false);
+        ImageSizePanel.ResumeLayout(false);
+        ImageDimensionPanel.ResumeLayout(false);
+        ImageExtensionPanel.ResumeLayout(false);
+        ImageChannelsPanel.ResumeLayout(false);
+        ImageTypePanel.ResumeLayout(false);
+        ImageDPIPanel.ResumeLayout(false);
+        ImageAspectRatioPanel.ResumeLayout(false);
         panel1.ResumeLayout(false);
         EditorSceneSplitter.Panel1.ResumeLayout(false);
         EditorSceneSplitter.Panel2.ResumeLayout(false);
@@ -1066,6 +1248,23 @@ partial class MainScreen {
         PerformLayout();
     }
 
+    private System.Windows.Forms.Panel ImageSizePanel;
+    private System.Windows.Forms.Label ImageSizeValue;
+    private System.Windows.Forms.Label ImageSizeLabel;
+    private System.Windows.Forms.Panel ImageNamePanel;
+    private System.Windows.Forms.Label ImageNameValue;
+    private System.Windows.Forms.Label ImageNameLabel;
+
+    private System.Windows.Forms.Panel ImageChannelsPanel;
+    private System.Windows.Forms.Label ImageChannelLabel;
+    private System.Windows.Forms.Panel ImageExtensionPanel;
+    private System.Windows.Forms.Label ImageExtensionValue;
+    private System.Windows.Forms.Label ImageDimensionValue;
+
+    private System.Windows.Forms.Label ImageTypeValue;
+    private System.Windows.Forms.Label ImageDPIValue;
+    private System.Windows.Forms.Label ImageAspectRatioValue;
+
     private System.Windows.Forms.SplitContainer EditorSceneSplitter;
     private System.Windows.Forms.Panel ModifiedImageSplit;
     private System.Windows.Forms.Panel ModifiedImagePanel;
@@ -1080,15 +1279,15 @@ partial class MainScreen {
 
     private System.Windows.Forms.SplitContainer EditorScenePanel;
 
-    private System.Windows.Forms.Panel FileFormatPanel;
-    private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.Label FileFormatLabel;
-    private System.Windows.Forms.Label label6;
-    private System.Windows.Forms.Label DimensionsLabel;
+    private System.Windows.Forms.Panel ImageDPIPanel;
+    private System.Windows.Forms.Label ImageExtensionLabel;
+    private System.Windows.Forms.Label ImageDPILabel;
+    private System.Windows.Forms.Label ImageDimensionLabel;
+    private System.Windows.Forms.Label TypeLabel;
 
-    private System.Windows.Forms.Panel BitDepthPanel;
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.Label BitDepthLabel;
+    private System.Windows.Forms.Panel ImageAspectRatioPanel;
+    private System.Windows.Forms.Label ImageChannelValue;
+    private System.Windows.Forms.Label ImageAspectRatioLabel;
 
     private System.Windows.Forms.FlowLayoutPanel ImageInfoFlow;
     private System.Windows.Forms.Label ss;
@@ -1106,9 +1305,9 @@ partial class MainScreen {
     private System.Windows.Forms.Panel GLabels;
     private System.Windows.Forms.CheckBox G;
     private System.Windows.Forms.Label GColorPer;
-    private System.Windows.Forms.Panel DimensionsPanel;
+    private System.Windows.Forms.Panel ImageTypePanel;
     private System.Windows.Forms.TrackBar RSlider;
-    private System.Windows.Forms.Panel panel4;
+    private System.Windows.Forms.Panel ImageDimensionPanel;
     private System.Windows.Forms.CheckBox RCheckBox;
 
     private System.Windows.Forms.TrackBar BSlider;
