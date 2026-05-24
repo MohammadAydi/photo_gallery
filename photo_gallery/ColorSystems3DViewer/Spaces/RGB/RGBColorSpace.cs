@@ -39,8 +39,8 @@ public class RgbColorSpace : BaseColorSpace
     protected override void BuildOutline()
     {
         var axes = AxisBuilder.BuildCartesianAxes(
-            (10f, -1f, -1f), (1f, 0.2f, 0.2f), // R → red
-            (-1f, 10f, -1f), (0.2f, 1f, 0.2f), // G → green
+            (10f, -1f, -1f), (1f, 0.2f, 0.2f),
+            (-1f, 10f, -1f), (0.2f, 1f, 0.2f),
             (-1f, -1f, 10f), (0.2f, 0.2f, 1f));
 
         var cube = BuildCubeEdges();

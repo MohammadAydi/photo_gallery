@@ -26,8 +26,7 @@ public partial class FilterPanel : UserControl
         AutoScroll = true;
     }
 
-    // ── Public entry point ────────────────────────────────────────
-
+  
     public void LoadFilter(ColorFilter filter)
     {
         _filter = filter;
@@ -45,8 +44,8 @@ public partial class FilterPanel : UserControl
         SetMode(true);
     }
 
-    // ── Mode toggle ───────────────────────────────────────────────
 
+    
     private void BuildModeToggle()
     {
         _rbFreeClip = new RadioButton
@@ -131,7 +130,7 @@ public partial class FilterPanel : UserControl
         }
 
         
-        y += 20;
+        y += 30;
         _clipPanel.Controls.Add(MakeDivider(y));
         y += 20;
 
@@ -161,17 +160,20 @@ public partial class FilterPanel : UserControl
             FlatStyle = FlatStyle.Flat,
             Font      = new Font("Segoe UI", 9f)
         };
+        _subtractCheck.Checked = _filter.SubtractInner;
+
         _subtractCheck.CheckedChanged += (_, _) =>
         {
             _filter.SubtractInner = _subtractCheck.Checked;
+            _subtractCheck.Invalidate();
             FilterChanged?.Invoke();
         };
 
         _clipPanel.Controls.AddRange([peelLbl, _peelTrack, peelBox, _subtractCheck]);
     }
    
-    // ── Point panel ───────────────────────────────────────────────
 
+    
     private void BuildPointPanel()
     {
         _pointPanel = new Panel
@@ -211,6 +213,7 @@ public partial class FilterPanel : UserControl
             y += 44;
         }
 
+        y += 20;
         _pointPanel.Controls.Add(MakeDivider(y));
         y += 12;
 
@@ -247,8 +250,7 @@ public partial class FilterPanel : UserControl
         _btnShowInSpace.Left =
             (_pointPanel.ClientSize.Width - _btnShowInSpace.Width) / 2;
     }
-    // ── Mode switch ───────────────────────────────────────────────
-
+    
     private void SetMode(bool freeClip)
     {
         if (freeClip)
@@ -268,8 +270,7 @@ public partial class FilterPanel : UserControl
         FilterChanged?.Invoke();
     }
 
-    // ── Helpers ───────────────────────────────────────────────────
-
+   
     private static Label MakeLabel(string text, Point location) => new()
     {
         Text      = text,
@@ -325,6 +326,7 @@ public partial class FilterPanel : UserControl
 
     private static Panel MakeDivider(int y) => new()
     {
+        
         Location  = new Point(6, y),
         Height    = 1,
         Width     = 320,
