@@ -13,7 +13,7 @@ public partial class ColorValuesPanel : UserControl
     private Label  _currentSpaceLabel;
     private Label  _currentValueLabel;
 
-    // one label per space — created once, reused forever
+  
     private readonly Dictionary<string, Label> _spaceLabels = new();
 
     public ColorValuesPanel()
@@ -64,8 +64,8 @@ public partial class ColorValuesPanel : UserControl
             BackColor     = BgDark
         };
 
-        // pre-create one label per known space — order matters for display
-        foreach (string key in new[] { "RGB","CMY","HSV","HSL","L*a*b","YCbCr","YUV" })
+        
+        foreach (string key in new[] { "RGB","CMY","HSV","HSL" })
         {
             var lbl = new Label
             {
@@ -124,7 +124,7 @@ public partial class ColorValuesPanel : UserControl
         _currentSpaceLabel.Text    = currentSpace;
         _currentValueLabel.Text    = FormatChannels(channelNames, currentChannels);
 
-        // just update text + color on existing labels — no rebuild
+       
         foreach (var kv in allSpaces)
         {
             if (!_spaceLabels.TryGetValue(kv.Key, out var lbl)) continue;
@@ -147,9 +147,7 @@ public partial class ColorValuesPanel : UserControl
                 "H"                => $"{val:0}°",
                 "R" or "G" or "B"  => $"{val:0}",
                 "L" when val > 2f  => $"{val:0.0}",
-                "a" or "b"         => $"{val:+0.0;-0.0}",
-                "Cb" or "Cr"       => $"{val:+0.000;-0.000}",
-                "U"  or "V"        => $"{val:+0.000;-0.000}",
+                "V"        => $"{val:+0.000;-0.000}",
                 _                  => $"{val:0.000}"
             };
 

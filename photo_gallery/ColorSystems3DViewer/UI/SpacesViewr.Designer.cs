@@ -32,11 +32,11 @@ partial class SpacesViewr
         renderPanel = new System.Windows.Forms.Panel();
         glControl = new OpenTK.GLControl.GLControl();
         infoPanel = new System.Windows.Forms.Panel();
+        _stepPanel = new PixelLab.StepControlPanel();
         filterPanel2 = new PixelLab.FilterPanel();
         filterPanel1 = new PixelLab.FilterPanel();
         _valuesPanel = new PixelLab.ColorValuesPanel();
         lstColorSpaces = new System.Windows.Forms.ListBox();
-        _stepPanel = new PixelLab.StepControlPanel();
         filterPanel = new PixelLab.FilterPanel();
         renderPanel.SuspendLayout();
         infoPanel.SuspendLayout();
@@ -59,11 +59,11 @@ partial class SpacesViewr
         glControl.Dock = System.Windows.Forms.DockStyle.Fill;
         glControl.Flags = OpenTK.Windowing.Common.ContextFlags.Default;
         glControl.IsEventDriven = true;
-        glControl.Location = new System.Drawing.Point(0, 0);
+        glControl.Location = new System.Drawing.Point(379, 0);
         glControl.Name = "glControl";
         glControl.Profile = OpenTK.Windowing.Common.ContextProfile.Core;
         glControl.SharedContext = null;
-        glControl.Size = new System.Drawing.Size(1029, 853);
+        glControl.Size = new System.Drawing.Size(1003, 853);
         glControl.TabIndex = 1;
         glControl.Load += glControl_Load;
         glControl.Paint += glControl_Paint;
@@ -75,26 +75,35 @@ partial class SpacesViewr
         // infoPanel
         // 
         infoPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
+        infoPanel.Controls.Add(_stepPanel);
         infoPanel.Controls.Add(filterPanel2);
         infoPanel.Controls.Add(filterPanel1);
         infoPanel.Controls.Add(_valuesPanel);
         infoPanel.Controls.Add(lstColorSpaces);
-        infoPanel.Controls.Add(_stepPanel);
         infoPanel.Controls.Add(filterPanel);
-        infoPanel.Dock = System.Windows.Forms.DockStyle.Right;
-        infoPanel.Location = new System.Drawing.Point(1029, 0);
+        infoPanel.Dock = System.Windows.Forms.DockStyle.Left;
+        infoPanel.Location = new System.Drawing.Point(0, 0);
         infoPanel.Name = "infoPanel";
-        infoPanel.Size = new System.Drawing.Size(353, 853);
+        infoPanel.Size = new System.Drawing.Size(379, 853);
         infoPanel.TabIndex = 0;
+        // 
+        // _stepPanel
+        // 
+        _stepPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
+        _stepPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+        _stepPanel.Location = new System.Drawing.Point(0, 706);
+        _stepPanel.Name = "_stepPanel";
+        _stepPanel.Size = new System.Drawing.Size(379, 147);
+        _stepPanel.TabIndex = 9;
         // 
         // filterPanel2
         // 
         filterPanel2.AutoScroll = true;
         filterPanel2.AutoSize = true;
         filterPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-        filterPanel2.Location = new System.Drawing.Point(0, 441);
+        filterPanel2.Location = new System.Drawing.Point(0, 334);
         filterPanel2.Name = "filterPanel2";
-        filterPanel2.Size = new System.Drawing.Size(353, 344);
+        filterPanel2.Size = new System.Drawing.Size(379, 519);
         filterPanel2.TabIndex = 8;
         // 
         // filterPanel1
@@ -102,40 +111,34 @@ partial class SpacesViewr
         filterPanel1.AutoScroll = true;
         filterPanel1.AutoSize = true;
         filterPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-        filterPanel1.Location = new System.Drawing.Point(0, 441);
+        filterPanel1.Location = new System.Drawing.Point(0, 334);
         filterPanel1.Name = "filterPanel1";
-        filterPanel1.Size = new System.Drawing.Size(353, 0);
+        filterPanel1.Size = new System.Drawing.Size(379, 0);
         filterPanel1.TabIndex = 6;
         // 
         // _valuesPanel
         // 
         _valuesPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
         _valuesPanel.Dock = System.Windows.Forms.DockStyle.Top;
-        _valuesPanel.Location = new System.Drawing.Point(0, 164);
+        _valuesPanel.Location = new System.Drawing.Point(0, 162);
         _valuesPanel.Name = "_valuesPanel";
         _valuesPanel.Padding = new System.Windows.Forms.Padding(8);
-        _valuesPanel.Size = new System.Drawing.Size(353, 277);
+        _valuesPanel.Size = new System.Drawing.Size(379, 172);
         _valuesPanel.TabIndex = 5;
         // 
         // lstColorSpaces
         // 
+        lstColorSpaces.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
+        lstColorSpaces.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         lstColorSpaces.Dock = System.Windows.Forms.DockStyle.Top;
+        lstColorSpaces.ForeColor = System.Drawing.Color.White;
         lstColorSpaces.FormattingEnabled = true;
         lstColorSpaces.Items.AddRange(new object[] { "\"RGB\"" });
         lstColorSpaces.Location = new System.Drawing.Point(0, 0);
         lstColorSpaces.Name = "lstColorSpaces";
-        lstColorSpaces.Size = new System.Drawing.Size(353, 164);
+        lstColorSpaces.Size = new System.Drawing.Size(379, 162);
         lstColorSpaces.TabIndex = 4;
         lstColorSpaces.SelectedIndexChanged += lstColorSpaces_SelectedIndexChanged;
-        // 
-        // _stepPanel
-        // 
-        _stepPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
-        _stepPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-        _stepPanel.Location = new System.Drawing.Point(0, 785);
-        _stepPanel.Name = "_stepPanel";
-        _stepPanel.Size = new System.Drawing.Size(353, 68);
-        _stepPanel.TabIndex = 7;
         // 
         // filterPanel
         // 
@@ -162,11 +165,11 @@ partial class SpacesViewr
         ResumeLayout(false);
     }
 
+    private PixelLab.StepControlPanel _stepPanel;
+
     private PixelLab.FilterPanel filterPanel2;
 
     private PixelLab.FilterPanel filterPanel;
-
-    private PixelLab.StepControlPanel _stepPanel;
 
     private System.Windows.Forms.ListBox lstColorSpaces;
 

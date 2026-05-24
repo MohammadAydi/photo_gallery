@@ -24,7 +24,8 @@ partial class MainScreen {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent() {
+    private void InitializeComponent()
+    {
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -477,10 +478,10 @@ partial class MainScreen {
         ColorsNumberFlow.Controls.Add(UpDownColorsNumber);
         ColorsNumberFlow.Controls.Add(ColorNumberSlider);
         ColorsNumberFlow.Controls.Add(ColorsNumberLabel);
-        ColorsNumberFlow.Location = new System.Drawing.Point(34, 23);
+        ColorsNumberFlow.Location = new System.Drawing.Point(54, 24);
         ColorsNumberFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ColorsNumberFlow.Name = "ColorsNumberFlow";
-        ColorsNumberFlow.Size = new System.Drawing.Size(399, 30);
+        ColorsNumberFlow.Size = new System.Drawing.Size(379, 27);
         ColorsNumberFlow.TabIndex = 3;
         ColorsNumberFlow.WrapContents = false;
         // 
@@ -490,10 +491,11 @@ partial class MainScreen {
         UpDownColorsNumber.BackColor = System.Drawing.Color.FromArgb(((int)((byte)31)), ((int)((byte)31)), ((int)((byte)31)));
         UpDownColorsNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         UpDownColorsNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        UpDownColorsNumber.Location = new System.Drawing.Point(340, 2);
+        UpDownColorsNumber.Location = new System.Drawing.Point(328, 2);
         UpDownColorsNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        UpDownColorsNumber.Minimum = new decimal(new int[] { 2, 0, 0, 0 });
         UpDownColorsNumber.Name = "UpDownColorsNumber";
-        UpDownColorsNumber.Size = new System.Drawing.Size(56, 26);
+        UpDownColorsNumber.Size = new System.Drawing.Size(48, 23);
         UpDownColorsNumber.TabIndex = 2;
         UpDownColorsNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         UpDownColorsNumber.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
@@ -502,13 +504,13 @@ partial class MainScreen {
         // ColorNumberSlider
         // 
         ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
-        ColorNumberSlider.Location = new System.Drawing.Point(81, 2);
+        ColorNumberSlider.Location = new System.Drawing.Point(69, 2);
         ColorNumberSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        ColorNumberSlider.Maximum = 256;
+        ColorNumberSlider.Maximum = 100;
         ColorNumberSlider.Minimum = 2;
         ColorNumberSlider.Name = "ColorNumberSlider";
         ColorNumberSlider.RightToLeftLayout = true;
-        ColorNumberSlider.Size = new System.Drawing.Size(253, 26);
+        ColorNumberSlider.Size = new System.Drawing.Size(253, 23);
         ColorNumberSlider.TabIndex = 1;
         ColorNumberSlider.Value = 2;
         // 
@@ -519,7 +521,7 @@ partial class MainScreen {
         ColorsNumberLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
         ColorsNumberLabel.Location = new System.Drawing.Point(3, 0);
         ColorsNumberLabel.Name = "ColorsNumberLabel";
-        ColorsNumberLabel.Size = new System.Drawing.Size(72, 30);
+        ColorsNumberLabel.Size = new System.Drawing.Size(60, 27);
         ColorsNumberLabel.TabIndex = 0;
         ColorsNumberLabel.Text = "عدد الألوان";
         ColorsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -560,9 +562,9 @@ partial class MainScreen {
         // 
         ColorSystemLabel.AutoSize = true;
         ColorSystemLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ColorSystemLabel.Location = new System.Drawing.Point(222, 0);
+        ColorSystemLabel.Location = new System.Drawing.Point(238, 0);
         ColorSystemLabel.Name = "ColorSystemLabel";
-        ColorSystemLabel.Size = new System.Drawing.Size(79, 20);
+        ColorSystemLabel.Size = new System.Drawing.Size(63, 17);
         ColorSystemLabel.TabIndex = 0;
         ColorSystemLabel.Text = "النظام اللوني";
         ColorSystemLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -580,7 +582,7 @@ partial class MainScreen {
         ColorsSystemsGrid.Controls.Add(CMYKButton, 1, 0);
         ColorsSystemsGrid.Controls.Add(YCbCrButton, 0, 1);
         ColorsSystemsGrid.Controls.Add(HSVButton, 2, 0);
-        ColorsSystemsGrid.Location = new System.Drawing.Point(12, 22);
+        ColorsSystemsGrid.Location = new System.Drawing.Point(12, 19);
         ColorsSystemsGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ColorsSystemsGrid.Name = "ColorsSystemsGrid";
         ColorsSystemsGrid.RowCount = 2;
@@ -781,7 +783,7 @@ partial class MainScreen {
         RedSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedSlider.Maximum = 400;
         RedSlider.Name = "RedSlider";
-        RedSlider.Size = new System.Drawing.Size(240, 56);
+        RedSlider.Size = new System.Drawing.Size(240, 45);
         RedSlider.TabIndex = 1;
         RedSlider.Value = 100;
         // 
@@ -804,7 +806,7 @@ partial class MainScreen {
         RedCheckbox.Location = new System.Drawing.Point(0, 0);
         RedCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedCheckbox.Name = "RedCheckbox";
-        RedCheckbox.Size = new System.Drawing.Size(43, 27);
+        RedCheckbox.Size = new System.Drawing.Size(37, 27);
         RedCheckbox.TabIndex = 1;
         RedCheckbox.Text = "R";
         RedCheckbox.UseVisualStyleBackColor = true;
@@ -814,9 +816,9 @@ partial class MainScreen {
         label8.AutoSize = true;
         label8.Dock = System.Windows.Forms.DockStyle.Right;
         label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label8.Location = new System.Drawing.Point(177, 0);
+        label8.Location = new System.Drawing.Point(189, 0);
         label8.Name = "label8";
-        label8.Size = new System.Drawing.Size(66, 20);
+        label8.Size = new System.Drawing.Size(54, 17);
         label8.TabIndex = 0;
         label8.Text = "نسبة الـ R";
         label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -838,7 +840,7 @@ partial class MainScreen {
         GreenSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         GreenSlider.Maximum = 400;
         GreenSlider.Name = "GreenSlider";
-        GreenSlider.Size = new System.Drawing.Size(240, 56);
+        GreenSlider.Size = new System.Drawing.Size(240, 45);
         GreenSlider.TabIndex = 1;
         GreenSlider.Value = 100;
         // 
@@ -861,7 +863,7 @@ partial class MainScreen {
         GreenCheckbox.Location = new System.Drawing.Point(0, 0);
         GreenCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         GreenCheckbox.Name = "GreenCheckbox";
-        GreenCheckbox.Size = new System.Drawing.Size(44, 28);
+        GreenCheckbox.Size = new System.Drawing.Size(38, 28);
         GreenCheckbox.TabIndex = 1;
         GreenCheckbox.Text = "G";
         GreenCheckbox.UseVisualStyleBackColor = true;
@@ -871,9 +873,9 @@ partial class MainScreen {
         label9.AutoSize = true;
         label9.Dock = System.Windows.Forms.DockStyle.Right;
         label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label9.Location = new System.Drawing.Point(173, 0);
+        label9.Location = new System.Drawing.Point(185, 0);
         label9.Name = "label9";
-        label9.Size = new System.Drawing.Size(67, 20);
+        label9.Size = new System.Drawing.Size(55, 17);
         label9.TabIndex = 0;
         label9.Text = "نسبة الـ G";
         label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -897,7 +899,7 @@ partial class MainScreen {
         BlueSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueSlider.Maximum = 400;
         BlueSlider.Name = "BlueSlider";
-        BlueSlider.Size = new System.Drawing.Size(240, 56);
+        BlueSlider.Size = new System.Drawing.Size(240, 45);
         BlueSlider.TabIndex = 1;
         BlueSlider.Value = 100;
         // 
@@ -920,7 +922,7 @@ partial class MainScreen {
         BlueCheckbox.Location = new System.Drawing.Point(0, 0);
         BlueCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueCheckbox.Name = "BlueCheckbox";
-        BlueCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueCheckbox.Size = new System.Drawing.Size(36, 28);
         BlueCheckbox.TabIndex = 1;
         BlueCheckbox.Text = "B";
         BlueCheckbox.UseVisualStyleBackColor = true;
@@ -930,9 +932,9 @@ partial class MainScreen {
         label10.AutoSize = true;
         label10.Dock = System.Windows.Forms.DockStyle.Right;
         label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label10.Location = new System.Drawing.Point(174, 0);
+        label10.Location = new System.Drawing.Point(187, 0);
         label10.Name = "label10";
-        label10.Size = new System.Drawing.Size(66, 20);
+        label10.Size = new System.Drawing.Size(53, 17);
         label10.TabIndex = 0;
         label10.Text = "نسبة الـ B";
         label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -972,7 +974,7 @@ partial class MainScreen {
         LightnessSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         LightnessSlider.Maximum = 400;
         LightnessSlider.Name = "LightnessSlider";
-        LightnessSlider.Size = new System.Drawing.Size(240, 56);
+        LightnessSlider.Size = new System.Drawing.Size(240, 45);
         LightnessSlider.TabIndex = 1;
         LightnessSlider.Value = 100;
         // 
@@ -995,7 +997,7 @@ partial class MainScreen {
         LightnessCheck.Location = new System.Drawing.Point(0, 0);
         LightnessCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         LightnessCheck.Name = "LightnessCheck";
-        LightnessCheck.Size = new System.Drawing.Size(41, 27);
+        LightnessCheck.Size = new System.Drawing.Size(35, 27);
         LightnessCheck.TabIndex = 1;
         LightnessCheck.Text = "L";
         LightnessCheck.UseVisualStyleBackColor = true;
@@ -1005,9 +1007,9 @@ partial class MainScreen {
         label14.AutoSize = true;
         label14.Dock = System.Windows.Forms.DockStyle.Right;
         label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label14.Location = new System.Drawing.Point(179, 0);
+        label14.Location = new System.Drawing.Point(191, 0);
         label14.Name = "label14";
-        label14.Size = new System.Drawing.Size(64, 20);
+        label14.Size = new System.Drawing.Size(52, 17);
         label14.TabIndex = 0;
         label14.Text = "نسبة الـ L";
         label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1029,7 +1031,7 @@ partial class MainScreen {
         GreenAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         GreenAxisSlider.Maximum = 400;
         GreenAxisSlider.Name = "GreenAxisSlider";
-        GreenAxisSlider.Size = new System.Drawing.Size(240, 56);
+        GreenAxisSlider.Size = new System.Drawing.Size(240, 45);
         GreenAxisSlider.TabIndex = 1;
         GreenAxisSlider.Value = 100;
         // 
@@ -1052,7 +1054,7 @@ partial class MainScreen {
         GreenAxisCheck.Location = new System.Drawing.Point(0, 0);
         GreenAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         GreenAxisCheck.Name = "GreenAxisCheck";
-        GreenAxisCheck.Size = new System.Drawing.Size(42, 28);
+        GreenAxisCheck.Size = new System.Drawing.Size(36, 28);
         GreenAxisCheck.TabIndex = 1;
         GreenAxisCheck.Text = "A";
         GreenAxisCheck.UseVisualStyleBackColor = true;
@@ -1062,9 +1064,9 @@ partial class MainScreen {
         label15.AutoSize = true;
         label15.Dock = System.Windows.Forms.DockStyle.Right;
         label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label15.Location = new System.Drawing.Point(184, 0);
+        label15.Location = new System.Drawing.Point(196, 0);
         label15.Name = "label15";
-        label15.Size = new System.Drawing.Size(65, 20);
+        label15.Size = new System.Drawing.Size(53, 17);
         label15.TabIndex = 0;
         label15.Text = "نسبة الـ A";
         label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1088,7 +1090,7 @@ partial class MainScreen {
         BlueAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueAxisSlider.Maximum = 400;
         BlueAxisSlider.Name = "BlueAxisSlider";
-        BlueAxisSlider.Size = new System.Drawing.Size(240, 56);
+        BlueAxisSlider.Size = new System.Drawing.Size(240, 45);
         BlueAxisSlider.TabIndex = 1;
         BlueAxisSlider.Value = 100;
         // 
@@ -1111,7 +1113,7 @@ partial class MainScreen {
         BlueAxisCheck.Location = new System.Drawing.Point(0, 0);
         BlueAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueAxisCheck.Name = "BlueAxisCheck";
-        BlueAxisCheck.Size = new System.Drawing.Size(43, 28);
+        BlueAxisCheck.Size = new System.Drawing.Size(36, 28);
         BlueAxisCheck.TabIndex = 1;
         BlueAxisCheck.Text = "B";
         BlueAxisCheck.UseVisualStyleBackColor = true;
@@ -1121,9 +1123,9 @@ partial class MainScreen {
         label16.AutoSize = true;
         label16.Dock = System.Windows.Forms.DockStyle.Right;
         label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label16.Location = new System.Drawing.Point(174, 0);
+        label16.Location = new System.Drawing.Point(187, 0);
         label16.Name = "label16";
-        label16.Size = new System.Drawing.Size(66, 20);
+        label16.Size = new System.Drawing.Size(53, 17);
         label16.TabIndex = 0;
         label16.Text = "نسبة الـ B";
         label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1163,7 +1165,7 @@ partial class MainScreen {
         YYUVLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YYUVLumaSlider.Maximum = 400;
         YYUVLumaSlider.Name = "YYUVLumaSlider";
-        YYUVLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YYUVLumaSlider.Size = new System.Drawing.Size(246, 45);
         YYUVLumaSlider.TabIndex = 1;
         YYUVLumaSlider.Value = 100;
         // 
@@ -1186,7 +1188,7 @@ partial class MainScreen {
         YYUVLumaCheckbox.Location = new System.Drawing.Point(0, 0);
         YYUVLumaCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YYUVLumaCheckbox.Name = "YYUVLumaCheckbox";
-        YYUVLumaCheckbox.Size = new System.Drawing.Size(41, 27);
+        YYUVLumaCheckbox.Size = new System.Drawing.Size(36, 27);
         YYUVLumaCheckbox.TabIndex = 1;
         YYUVLumaCheckbox.Text = "Y";
         YYUVLumaCheckbox.UseVisualStyleBackColor = true;
@@ -1196,9 +1198,9 @@ partial class MainScreen {
         label17.AutoSize = true;
         label17.Dock = System.Windows.Forms.DockStyle.Right;
         label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label17.Location = new System.Drawing.Point(185, 0);
+        label17.Location = new System.Drawing.Point(196, 0);
         label17.Name = "label17";
-        label17.Size = new System.Drawing.Size(64, 20);
+        label17.Size = new System.Drawing.Size(53, 17);
         label17.TabIndex = 0;
         label17.Text = "نسبة الـ Y";
         label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1220,7 +1222,7 @@ partial class MainScreen {
         BlueProjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueProjectionSlider.Maximum = 400;
         BlueProjectionSlider.Name = "BlueProjectionSlider";
-        BlueProjectionSlider.Size = new System.Drawing.Size(240, 56);
+        BlueProjectionSlider.Size = new System.Drawing.Size(240, 45);
         BlueProjectionSlider.TabIndex = 1;
         BlueProjectionSlider.Value = 100;
         // 
@@ -1243,7 +1245,7 @@ partial class MainScreen {
         BlueProjectionCheckbox.Location = new System.Drawing.Point(0, 0);
         BlueProjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueProjectionCheckbox.Name = "BlueProjectionCheckbox";
-        BlueProjectionCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueProjectionCheckbox.Size = new System.Drawing.Size(37, 28);
         BlueProjectionCheckbox.TabIndex = 1;
         BlueProjectionCheckbox.Text = "U";
         BlueProjectionCheckbox.UseVisualStyleBackColor = true;
@@ -1253,9 +1255,9 @@ partial class MainScreen {
         label18.AutoSize = true;
         label18.Dock = System.Windows.Forms.DockStyle.Right;
         label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label18.Location = new System.Drawing.Point(183, 0);
+        label18.Location = new System.Drawing.Point(195, 0);
         label18.Name = "label18";
-        label18.Size = new System.Drawing.Size(66, 20);
+        label18.Size = new System.Drawing.Size(54, 17);
         label18.TabIndex = 0;
         label18.Text = "نسبة الـ U";
         label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1279,7 +1281,7 @@ partial class MainScreen {
         RedPorjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedPorjectionSlider.Maximum = 400;
         RedPorjectionSlider.Name = "RedPorjectionSlider";
-        RedPorjectionSlider.Size = new System.Drawing.Size(246, 56);
+        RedPorjectionSlider.Size = new System.Drawing.Size(246, 45);
         RedPorjectionSlider.TabIndex = 1;
         RedPorjectionSlider.Value = 100;
         // 
@@ -1302,7 +1304,7 @@ partial class MainScreen {
         RedPorjectionCheckbox.Location = new System.Drawing.Point(0, 0);
         RedPorjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedPorjectionCheckbox.Name = "RedPorjectionCheckbox";
-        RedPorjectionCheckbox.Size = new System.Drawing.Size(42, 28);
+        RedPorjectionCheckbox.Size = new System.Drawing.Size(36, 28);
         RedPorjectionCheckbox.TabIndex = 1;
         RedPorjectionCheckbox.Text = "V";
         RedPorjectionCheckbox.UseVisualStyleBackColor = true;
@@ -1312,9 +1314,9 @@ partial class MainScreen {
         label19.AutoSize = true;
         label19.Dock = System.Windows.Forms.DockStyle.Right;
         label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label19.Location = new System.Drawing.Point(181, 0);
+        label19.Location = new System.Drawing.Point(193, 0);
         label19.Name = "label19";
-        label19.Size = new System.Drawing.Size(65, 20);
+        label19.Size = new System.Drawing.Size(53, 17);
         label19.TabIndex = 0;
         label19.Text = "نسبة الـ V";
         label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1354,7 +1356,7 @@ partial class MainScreen {
         YLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YLumaSlider.Maximum = 400;
         YLumaSlider.Name = "YLumaSlider";
-        YLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YLumaSlider.Size = new System.Drawing.Size(246, 45);
         YLumaSlider.TabIndex = 1;
         YLumaSlider.Value = 100;
         // 
@@ -1377,7 +1379,7 @@ partial class MainScreen {
         YLumaCheck.Location = new System.Drawing.Point(0, 0);
         YLumaCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YLumaCheck.Name = "YLumaCheck";
-        YLumaCheck.Size = new System.Drawing.Size(41, 27);
+        YLumaCheck.Size = new System.Drawing.Size(36, 27);
         YLumaCheck.TabIndex = 1;
         YLumaCheck.Text = "Y";
         YLumaCheck.UseVisualStyleBackColor = true;
@@ -1387,9 +1389,9 @@ partial class MainScreen {
         label11.AutoSize = true;
         label11.Dock = System.Windows.Forms.DockStyle.Right;
         label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label11.Location = new System.Drawing.Point(182, 0);
+        label11.Location = new System.Drawing.Point(193, 0);
         label11.Name = "label11";
-        label11.Size = new System.Drawing.Size(64, 20);
+        label11.Size = new System.Drawing.Size(53, 17);
         label11.TabIndex = 0;
         label11.Text = "نسبة الـ Y";
         label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1411,7 +1413,7 @@ partial class MainScreen {
         BlueDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueDiffSlider.Maximum = 400;
         BlueDiffSlider.Name = "BlueDiffSlider";
-        BlueDiffSlider.Size = new System.Drawing.Size(240, 56);
+        BlueDiffSlider.Size = new System.Drawing.Size(240, 45);
         BlueDiffSlider.TabIndex = 1;
         BlueDiffSlider.Value = 100;
         // 
@@ -1434,7 +1436,7 @@ partial class MainScreen {
         BlueDiffCheck.Location = new System.Drawing.Point(0, 0);
         BlueDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         BlueDiffCheck.Name = "BlueDiffCheck";
-        BlueDiffCheck.Size = new System.Drawing.Size(52, 28);
+        BlueDiffCheck.Size = new System.Drawing.Size(44, 28);
         BlueDiffCheck.TabIndex = 1;
         BlueDiffCheck.Text = "Cb";
         BlueDiffCheck.UseVisualStyleBackColor = true;
@@ -1444,9 +1446,9 @@ partial class MainScreen {
         label12.AutoSize = true;
         label12.Dock = System.Windows.Forms.DockStyle.Right;
         label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label12.Location = new System.Drawing.Point(174, 0);
+        label12.Location = new System.Drawing.Point(188, 0);
         label12.Name = "label12";
-        label12.Size = new System.Drawing.Size(75, 20);
+        label12.Size = new System.Drawing.Size(61, 17);
         label12.TabIndex = 0;
         label12.Text = "نسبة الـ Cb";
         label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1470,7 +1472,7 @@ partial class MainScreen {
         RedDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedDiffSlider.Maximum = 400;
         RedDiffSlider.Name = "RedDiffSlider";
-        RedDiffSlider.Size = new System.Drawing.Size(246, 56);
+        RedDiffSlider.Size = new System.Drawing.Size(246, 45);
         RedDiffSlider.TabIndex = 1;
         RedDiffSlider.Value = 100;
         // 
@@ -1493,7 +1495,7 @@ partial class MainScreen {
         RedDiffCheck.Location = new System.Drawing.Point(0, 0);
         RedDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         RedDiffCheck.Name = "RedDiffCheck";
-        RedDiffCheck.Size = new System.Drawing.Size(49, 28);
+        RedDiffCheck.Size = new System.Drawing.Size(41, 28);
         RedDiffCheck.TabIndex = 1;
         RedDiffCheck.Text = "Cr";
         RedDiffCheck.UseVisualStyleBackColor = true;
@@ -1503,9 +1505,9 @@ partial class MainScreen {
         label13.AutoSize = true;
         label13.Dock = System.Windows.Forms.DockStyle.Right;
         label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label13.Location = new System.Drawing.Point(174, 0);
+        label13.Location = new System.Drawing.Point(188, 0);
         label13.Name = "label13";
-        label13.Size = new System.Drawing.Size(72, 20);
+        label13.Size = new System.Drawing.Size(58, 17);
         label13.TabIndex = 0;
         label13.Text = "نسبة الـ Cr";
         label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1545,7 +1547,7 @@ partial class MainScreen {
         HueSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         HueSlider.Maximum = 400;
         HueSlider.Name = "HueSlider";
-        HueSlider.Size = new System.Drawing.Size(240, 56);
+        HueSlider.Size = new System.Drawing.Size(240, 45);
         HueSlider.TabIndex = 1;
         HueSlider.Value = 100;
         // 
@@ -1568,7 +1570,7 @@ partial class MainScreen {
         HueCheck.Location = new System.Drawing.Point(0, 0);
         HueCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         HueCheck.Name = "HueCheck";
-        HueCheck.Size = new System.Drawing.Size(44, 27);
+        HueCheck.Size = new System.Drawing.Size(37, 27);
         HueCheck.TabIndex = 1;
         HueCheck.Text = "H";
         HueCheck.UseVisualStyleBackColor = true;
@@ -1578,9 +1580,9 @@ partial class MainScreen {
         label1.AutoSize = true;
         label1.Dock = System.Windows.Forms.DockStyle.Right;
         label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label1.Location = new System.Drawing.Point(176, 0);
+        label1.Location = new System.Drawing.Point(189, 0);
         label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(67, 20);
+        label1.Size = new System.Drawing.Size(54, 17);
         label1.TabIndex = 0;
         label1.Text = "نسبة الـ H";
         label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1602,7 +1604,7 @@ partial class MainScreen {
         SaturationSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         SaturationSlider.Maximum = 400;
         SaturationSlider.Name = "SaturationSlider";
-        SaturationSlider.Size = new System.Drawing.Size(240, 56);
+        SaturationSlider.Size = new System.Drawing.Size(240, 45);
         SaturationSlider.TabIndex = 1;
         SaturationSlider.Value = 100;
         // 
@@ -1625,7 +1627,7 @@ partial class MainScreen {
         SaturationCheck.Location = new System.Drawing.Point(0, 0);
         SaturationCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         SaturationCheck.Name = "SaturationCheck";
-        SaturationCheck.Size = new System.Drawing.Size(42, 28);
+        SaturationCheck.Size = new System.Drawing.Size(36, 28);
         SaturationCheck.TabIndex = 1;
         SaturationCheck.Text = "S";
         SaturationCheck.UseVisualStyleBackColor = true;
@@ -1635,9 +1637,9 @@ partial class MainScreen {
         label2.AutoSize = true;
         label2.Dock = System.Windows.Forms.DockStyle.Right;
         label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label2.Location = new System.Drawing.Point(184, 0);
+        label2.Location = new System.Drawing.Point(196, 0);
         label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(65, 20);
+        label2.Size = new System.Drawing.Size(53, 17);
         label2.TabIndex = 0;
         label2.Text = "نسبة الـ S";
         label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1661,7 +1663,7 @@ partial class MainScreen {
         HSVValueSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         HSVValueSlider.Maximum = 400;
         HSVValueSlider.Name = "HSVValueSlider";
-        HSVValueSlider.Size = new System.Drawing.Size(240, 56);
+        HSVValueSlider.Size = new System.Drawing.Size(240, 45);
         HSVValueSlider.TabIndex = 1;
         HSVValueSlider.Value = 100;
         // 
@@ -1684,7 +1686,7 @@ partial class MainScreen {
         HSVValueCheck.Location = new System.Drawing.Point(0, 0);
         HSVValueCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         HSVValueCheck.Name = "HSVValueCheck";
-        HSVValueCheck.Size = new System.Drawing.Size(42, 28);
+        HSVValueCheck.Size = new System.Drawing.Size(36, 28);
         HSVValueCheck.TabIndex = 1;
         HSVValueCheck.Text = "V";
         HSVValueCheck.UseVisualStyleBackColor = true;
@@ -1694,9 +1696,9 @@ partial class MainScreen {
         label3.AutoSize = true;
         label3.Dock = System.Windows.Forms.DockStyle.Right;
         label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label3.Location = new System.Drawing.Point(175, 0);
+        label3.Location = new System.Drawing.Point(187, 0);
         label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(65, 20);
+        label3.Size = new System.Drawing.Size(53, 17);
         label3.TabIndex = 0;
         label3.Text = "نسبة الـ V";
         label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1736,7 +1738,7 @@ partial class MainScreen {
         CyanSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         CyanSlider.Maximum = 400;
         CyanSlider.Name = "CyanSlider";
-        CyanSlider.Size = new System.Drawing.Size(240, 56);
+        CyanSlider.Size = new System.Drawing.Size(240, 45);
         CyanSlider.TabIndex = 1;
         CyanSlider.Value = 100;
         // 
@@ -1759,7 +1761,7 @@ partial class MainScreen {
         CyanCheckbox.Location = new System.Drawing.Point(0, 0);
         CyanCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         CyanCheckbox.Name = "CyanCheckbox";
-        CyanCheckbox.Size = new System.Drawing.Size(43, 28);
+        CyanCheckbox.Size = new System.Drawing.Size(36, 28);
         CyanCheckbox.TabIndex = 1;
         CyanCheckbox.Text = "C";
         CyanCheckbox.UseVisualStyleBackColor = true;
@@ -1769,9 +1771,9 @@ partial class MainScreen {
         label7.AutoSize = true;
         label7.Dock = System.Windows.Forms.DockStyle.Right;
         label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label7.Location = new System.Drawing.Point(177, 0);
+        label7.Location = new System.Drawing.Point(190, 0);
         label7.Name = "label7";
-        label7.Size = new System.Drawing.Size(66, 20);
+        label7.Size = new System.Drawing.Size(53, 17);
         label7.TabIndex = 0;
         label7.Text = "نسبة الـ C";
         label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1794,7 +1796,7 @@ partial class MainScreen {
         MagentaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         MagentaSlider.Maximum = 400;
         MagentaSlider.Name = "MagentaSlider";
-        MagentaSlider.Size = new System.Drawing.Size(240, 56);
+        MagentaSlider.Size = new System.Drawing.Size(240, 45);
         MagentaSlider.TabIndex = 1;
         MagentaSlider.Value = 100;
         // 
@@ -1817,7 +1819,7 @@ partial class MainScreen {
         MagentaCheckbox.Location = new System.Drawing.Point(0, 0);
         MagentaCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         MagentaCheckbox.Name = "MagentaCheckbox";
-        MagentaCheckbox.Size = new System.Drawing.Size(45, 27);
+        MagentaCheckbox.Size = new System.Drawing.Size(38, 27);
         MagentaCheckbox.TabIndex = 1;
         MagentaCheckbox.Text = "M";
         MagentaCheckbox.UseVisualStyleBackColor = true;
@@ -1827,9 +1829,9 @@ partial class MainScreen {
         label4.AutoSize = true;
         label4.Dock = System.Windows.Forms.DockStyle.Right;
         label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label4.Location = new System.Drawing.Point(178, 0);
+        label4.Location = new System.Drawing.Point(191, 0);
         label4.Name = "label4";
-        label4.Size = new System.Drawing.Size(68, 20);
+        label4.Size = new System.Drawing.Size(55, 17);
         label4.TabIndex = 0;
         label4.Text = "نسبة الـ M";
         label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1852,7 +1854,7 @@ partial class MainScreen {
         YellowSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YellowSlider.Maximum = 400;
         YellowSlider.Name = "YellowSlider";
-        YellowSlider.Size = new System.Drawing.Size(240, 56);
+        YellowSlider.Size = new System.Drawing.Size(240, 45);
         YellowSlider.TabIndex = 1;
         YellowSlider.Value = 100;
         // 
@@ -1875,7 +1877,7 @@ partial class MainScreen {
         YellowCheckbox.Location = new System.Drawing.Point(0, 0);
         YellowCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         YellowCheckbox.Name = "YellowCheckbox";
-        YellowCheckbox.Size = new System.Drawing.Size(41, 28);
+        YellowCheckbox.Size = new System.Drawing.Size(36, 28);
         YellowCheckbox.TabIndex = 1;
         YellowCheckbox.Text = "Y";
         YellowCheckbox.UseVisualStyleBackColor = true;
@@ -1885,9 +1887,9 @@ partial class MainScreen {
         label5.AutoSize = true;
         label5.Dock = System.Windows.Forms.DockStyle.Right;
         label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label5.Location = new System.Drawing.Point(185, 0);
+        label5.Location = new System.Drawing.Point(196, 0);
         label5.Name = "label5";
-        label5.Size = new System.Drawing.Size(64, 20);
+        label5.Size = new System.Drawing.Size(53, 17);
         label5.TabIndex = 0;
         label5.Text = "نسبة الـ Y";
         label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1910,7 +1912,7 @@ partial class MainScreen {
         KeySlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         KeySlider.Maximum = 400;
         KeySlider.Name = "KeySlider";
-        KeySlider.Size = new System.Drawing.Size(240, 56);
+        KeySlider.Size = new System.Drawing.Size(240, 45);
         KeySlider.TabIndex = 1;
         KeySlider.Value = 100;
         // 
@@ -1933,7 +1935,7 @@ partial class MainScreen {
         KeyCheckbox.Location = new System.Drawing.Point(0, 0);
         KeyCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         KeyCheckbox.Name = "KeyCheckbox";
-        KeyCheckbox.Size = new System.Drawing.Size(42, 28);
+        KeyCheckbox.Size = new System.Drawing.Size(36, 28);
         KeyCheckbox.TabIndex = 1;
         KeyCheckbox.Text = "K";
         KeyCheckbox.UseVisualStyleBackColor = true;
@@ -1943,9 +1945,9 @@ partial class MainScreen {
         label6.AutoSize = true;
         label6.Dock = System.Windows.Forms.DockStyle.Right;
         label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        label6.Location = new System.Drawing.Point(181, 0);
+        label6.Location = new System.Drawing.Point(193, 0);
         label6.Name = "label6";
-        label6.Size = new System.Drawing.Size(65, 20);
+        label6.Size = new System.Drawing.Size(53, 17);
         label6.TabIndex = 0;
         label6.Text = "نسبة الـ K";
         label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

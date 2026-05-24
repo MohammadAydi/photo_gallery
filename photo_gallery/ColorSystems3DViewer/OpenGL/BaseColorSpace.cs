@@ -5,10 +5,9 @@ namespace PixelLab;
 
 public abstract class BaseColorSpace : IColorSpace
 {
-    private ColorFilter? _cachedFilter;
+    
     private float _cachedPeel = -1f;
-    private (float Min, float Max)[]? _cachedRanges;
-    private bool _cachedSubtract;
+    
     protected Shader ShaderOutline;
     protected Shader ShaderPoints;
     protected int Step = 2;
@@ -24,7 +23,7 @@ public abstract class BaseColorSpace : IColorSpace
         GL.DeleteBuffer(VboPoints);
         VaoPoints = VboPoints = 0;
 
-        _cachedRanges = null;
+      
         BuildPointCloud();
     }
 
@@ -33,7 +32,7 @@ public abstract class BaseColorSpace : IColorSpace
 
     public virtual void Init()
     {
-        _cachedRanges = null;
+        
         ShaderPoints = new Shader("ColorSystems3DViewer/Shaders/shader.vert",
             "ColorSystems3DViewer/Shaders/shader.frag");
         ShaderOutline = new Shader("ColorSystems3DViewer/Shaders/shader_axes.vert",
@@ -64,25 +63,7 @@ public abstract class BaseColorSpace : IColorSpace
         ShaderPoints?.Dispose();
         ShaderOutline?.Dispose();
     }
-
-    protected bool HasFilterChanged(ColorFilter f)
-    {
-        if (_cachedRanges == null) return true;
-        if (f.Peel != _cachedPeel) return true;
-        if (f.SubtractInner != _cachedSubtract) return true;
-        for (var i = 0; i < f.Ranges.Length; i++)
-            if (f.Ranges[i] != _cachedRanges[i])
-                return true;
-        return false;
-    }
-
-    protected void CacheFilter(ColorFilter f)
-    {
-        _cachedPeel = f.Peel;
-        _cachedSubtract = f.SubtractInner;
-        _cachedRanges = f.Ranges.ToArray();
-    }
-
+    
 
     protected abstract void BuildPointCloud();
     protected abstract void BuildOutline();
@@ -90,27 +71,51 @@ public abstract class BaseColorSpace : IColorSpace
 
     protected (int vao, int vbo) UploadStatic(float[] data)
     {
-        var vao = GL.GenVertexArray();
-        var vbo = GL.GenBuffer();
+        int vao = GL.GenVertexArray();
+        int vbo = GL.GenBuffer();
 
         GL.BindVertexArray(vao);
         GL.BindBuffer(BufferTarget.ArrayBuffer, vbo);
         GL.BufferData(BufferTarget.ArrayBuffer,
             data.Length * sizeof(float), data, BufferUsageHint.StaticDraw);
 
-        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float,
-            false, 6 * sizeof(float), 0);
+        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 0);
         GL.EnableVertexAttribArray(0);
-
-        GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float,
-            false, 6 * sizeof(float), 3 * sizeof(float));
+        GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 3 * sizeof(float));
         GL.EnableVertexAttribArray(1);
 
         GL.BindVertexArray(0);
         return (vao, vbo);
     }
+    
+    protected (int vao, int vbo) UploadPointCloud(float[] data, BufferUsageHint hint = BufferUsageHint.StaticDraw)
+    {
+        int vao = GL.GenVertexArray();
+        int vbo = GL.GenBuffer();
 
-    private void BuildHighlightVao()
+        GL.BindVertexArray(vao);
+        GL.BindBuffer(BufferTarget.ArrayBuffer, vbo);
+        GL.BufferData(BufferTarget.ArrayBuffer,
+            data.Length * sizeof(float), data, hint);
+
+        int stride = 9 * sizeof(float);
+
+       
+        GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, stride, 0);
+        GL.EnableVertexAttribArray(0);
+        
+        GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, stride, 3 * sizeof(float));
+        GL.EnableVertexAttribArray(1);
+       
+        GL.VertexAttribPointer(2, 3, VertexAttribPointerType.Float, false, stride, 6 * sizeof(float));
+        GL.EnableVertexAttribArray(2);
+
+        GL.BindVertexArray(0);
+        return (vao, vbo);
+    }
+
+
+    protected void BuildHighlightVao()
     {
         VaoHighlight = GL.GenVertexArray();
         VboHighlight = GL.GenBuffer();
@@ -134,7 +139,7 @@ public abstract class BaseColorSpace : IColorSpace
     protected abstract (float x, float y, float z) ChannelsToPosition(float[] ch);
     public abstract (float r, float g, float b) ChannelsToRgb(float[] channels);
 
-    private void DrawOutline(Matrix4 mvp)
+    protected void DrawOutline(Matrix4 mvp)
     {
         ShaderOutline.Use();
         ShaderOutline.SetMatrix4("uMVP", mvp);
@@ -154,7 +159,15 @@ public abstract class BaseColorSpace : IColorSpace
         GL.BindVertexArray(0);
     }
 
-    protected abstract void SetFilterUniforms(ColorFilter filter);
+    protected virtual void SetFilterUniforms(ColorFilter filter)
+    {
+        ShaderPoints.SetVec3("uRangeMin",
+            new Vector3(filter.Ranges[0].Min, filter.Ranges[1].Min, filter.Ranges[2].Min));
+        ShaderPoints.SetVec3("uRangeMax",
+            new Vector3(filter.Ranges[0].Max, filter.Ranges[1].Max, filter.Ranges[2].Max));
+        ShaderPoints.SetFloat("uPeel", filter.Peel);
+        ShaderPoints.SetBool("uSubtract", filter.SubtractInner);
+    }
 
     public virtual void DrawPoint(float[] channels, Matrix4 mvp)
     {
@@ -175,4 +188,32 @@ public abstract class BaseColorSpace : IColorSpace
         GL.BindVertexArray(0);
         GL.Enable(EnableCap.DepthTest);
     }
+
+    protected float[] BuildCubeEdges()
+    {
+        var v = new List<float>();
+        float[] corners =
+        [
+            -1, -1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1,
+            -1, -1, 1, 1, -1, 1, 1, 1, 1, -1, 1, 1
+        ];
+        int[] lines = [0, 1, 1, 2, 2, 3, 3, 0, 4, 5, 5, 6, 6, 7, 7, 4, 0, 4, 1, 5, 2, 6, 3, 7];
+
+        foreach (var idx in lines.Chunk(2))
+        {
+            int a = idx[0] * 3, b = idx[1] * 3;
+            var ca = GetCubeCornerColor(corners[a], corners[a + 1], corners[a + 2]);
+            var cb = GetCubeCornerColor(corners[b], corners[b + 1], corners[b + 2]);
+            v.AddRange([corners[a], corners[a + 1], corners[a + 2], ca[0], ca[1], ca[2]]);
+            v.AddRange([corners[b], corners[b + 1], corners[b + 2], cb[0], cb[1], cb[2]]);
+        }
+
+        return v.ToArray();
+    }
+    
+    public virtual float[] GetCubeCornerColor(float x, float y, float z)
+    {
+        return [(x + 1f) / 2f, (y + 1f) / 2f, (z + 1f) / 2f];
+    }
+    
 }

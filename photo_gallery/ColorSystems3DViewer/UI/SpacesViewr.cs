@@ -11,8 +11,8 @@ public partial class SpacesViewr : Form
     private bool _isDragging;
     private Point _lastMousePos;
     
+    
     private OpenGLRenderer _renderer;
-    private bool _wasDragging;
 
     public SpacesViewr()
     {
@@ -24,14 +24,11 @@ public partial class SpacesViewr : Form
         _renderer = new OpenGLRenderer(glControl);
         _renderer.Setup();
 
-        // pre-register all spaces — NOT initialized yet
+        
         _spaces["RGB"] = new RgbColorSpace();
         _spaces["CMY"] = new CmyColorSpace();
         _spaces["HSV"] = new HsvColorSpace();
         _spaces["HSL"] = new HslColorSpace();
-        _spaces["L*a*b"] = new LabColorSpace();
-        _spaces["YCbCr"] = new YCbCrColorSpace();
-        _spaces["YUV"] = new YuvColorSpace();
 
         foreach (var key in _spaces.Keys)
             _spaceSteps[key] = 3;
@@ -45,8 +42,7 @@ public partial class SpacesViewr : Form
         };
         glControl.MouseWheel += glControl_MouseWheel;
         filterPanel2.FilterChanged += OnFilterChanged;
-        _renderer = new OpenGLRenderer(glControl);
-        _renderer.Setup();
+        
 
         lstColorSpaces.Items.Clear();
         lstColorSpaces.Items.AddRange(_spaces.Keys.ToArray<object>());
@@ -57,14 +53,15 @@ public partial class SpacesViewr : Form
     {
         var key = lstColorSpaces.SelectedItem?.ToString() ?? "RGB";
         var space = _spaces[key];
-
+        _renderer.Camera.RotX = 0;
+        _renderer.Camera.RotY = 0;
         if (!_initializedSpaces.Contains(key))
         {
             space.Init();
             _initializedSpaces.Add(key);
         }
 
-        // restore this space's step
+      
         var savedStep = _spaceSteps.GetValueOrDefault(key, 3);
         _stepPanel.SetStep(savedStep);
 
@@ -86,12 +83,11 @@ public partial class SpacesViewr : Form
     {
         if (_filter.PointChannels != null)
         {
-            // convert current space's point channels back to RGB
+            
             var (r, g, b) = _activeSpace.ChannelsToRgb(_filter.PointChannels);
             _lastPickedRgb = (r, g, b);
             ShowPickedColor();
         }
-
         glControl.Invalidate();
     }
 
@@ -122,12 +118,9 @@ public partial class SpacesViewr : Form
 
     private void glControl_Paint(object sender, PaintEventArgs e)
     {
-        if (_renderer == null || _activeSpace == null || _filter == null)
-            return;
-
         _renderer.BeginFrame();
         var mvp = _renderer.Camera.GetMVP(_renderer.Aspect);
-        _activeSpace.Draw(_filter, mvp); // core path
+        _activeSpace.Draw(_filter, mvp); 
         _renderer.EndFrame();
     }
 
@@ -139,7 +132,7 @@ public partial class SpacesViewr : Form
     private void glControl_MouseDown(object sender, MouseEventArgs e)
     {
         _isDragging = true;
-        _wasDragging = false;
+        
         _lastMousePos = e.Location;
     }
 
@@ -155,17 +148,16 @@ public partial class SpacesViewr : Form
         float dx = e.X - _lastMousePos.X;
         float dy = e.Y - _lastMousePos.Y;
 
-        if (Math.Abs(dx) > 2 || Math.Abs(dy) > 2)
-            _wasDragging = true;
+        
 
-        _renderer.Camera.Pan(dx, dy);
+        _renderer.Camera.Orbit(dx, dy);
         _lastMousePos = e.Location;
         glControl.Invalidate();
     }
 
     private void glControl_MouseWheel(object sender, MouseEventArgs e)
     {
-        _renderer.Camera.Scroll(e.Delta);
+        _renderer.Camera.Zoom(e.Delta);
         glControl.Invalidate();
     }
 }
