@@ -22,7 +22,7 @@ public static class AxisBuilder
     }
 
 
-    public static float[] BuildPolarAxes(float radius = 1f)
+    public static float[] BuildPolarAxes(float radius = 2f)
     {
         var h0x = radius;
         var h0z = 0f;

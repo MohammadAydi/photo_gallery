@@ -25,9 +25,9 @@ public class Shader : IDisposable
         Handle = GL.CreateProgram();
         GL.AttachShader(Handle, vert);
         GL.AttachShader(Handle, frag);
+
         GL.LinkProgram(Handle);
         CheckProgram(Handle);
-
         GL.DeleteShader(vert);
         GL.DeleteShader(frag);
     }

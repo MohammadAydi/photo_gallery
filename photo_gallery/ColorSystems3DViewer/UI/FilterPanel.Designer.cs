@@ -38,7 +38,7 @@ partial class FilterPanel
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         AutoSize = true;
-        Size = new System.Drawing.Size(228, 410);
+        Size = new System.Drawing.Size(332, 410);
         ResumeLayout(false);
     }
 

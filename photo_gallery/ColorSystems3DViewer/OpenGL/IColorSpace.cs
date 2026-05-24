@@ -10,6 +10,5 @@ public interface IColorSpace
     void Rebuild(int step);
     void Draw(ColorFilter filter, Matrix4 mvp);
     (float r, float g, float b) ChannelsToRgb(float[] channels);
-
     void Dispose();
 }

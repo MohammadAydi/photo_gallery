@@ -7,7 +7,6 @@ public static class ConeOutlineBuilder
         var verts = new List<float>();
         float r = 1f, top = 1f, bottom = -1f;
 
-        // top circle
         for (var i = 0; i < segments; i++)
         {
             var a0 = 2f * MathF.PI * i / segments;
@@ -17,14 +16,13 @@ public static class ConeOutlineBuilder
                 MathF.Cos(a1) * r, top, MathF.Sin(a1) * r);
         }
 
-        // lines from apex to top circle, every 60 degrees
         for (var i = 0; i < 6; i++)
         {
             var a = 2f * MathF.PI * i / 6f;
             AddLine(verts, 0f, bottom, 0f, MathF.Cos(a) * r, top, MathF.Sin(a) * r);
         }
 
-        // center vertical axis
+        
         AddLine(verts, 0f, bottom, 0f, 0f, top, 0f);
 
         return verts.ToArray();
@@ -36,7 +34,7 @@ public static class ConeOutlineBuilder
         var verts = new List<float>();
         var r = 1f;
 
-        // middle circle
+        
         for (var i = 0; i < segments; i++)
         {
             var a0 = 2f * MathF.PI * i / segments;
@@ -46,7 +44,7 @@ public static class ConeOutlineBuilder
                 MathF.Cos(a1) * r, 0f, MathF.Sin(a1) * r);
         }
 
-        // lines from bottom apex to middle, every 60 degrees
+       
         for (var i = 0; i < 6; i++)
         {
             var a = 2f * MathF.PI * i / 6f;

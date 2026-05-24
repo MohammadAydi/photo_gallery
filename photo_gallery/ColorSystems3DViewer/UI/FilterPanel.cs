@@ -51,25 +51,25 @@ public partial class FilterPanel : UserControl
     {
         _rbFreeClip = new RadioButton
         {
-            Text     = "Free Clip",
-            Location = new Point(8, 6),
-            AutoSize = true,
-            Checked  = true,
+            Text = "Free Clip",
+            Location = new Point(10, 8),
+            Size = new Size(110, 24),
+            Checked = true,
             ForeColor = TextLight,
-            BackColor = Color.Transparent,
-            FlatStyle = FlatStyle.Flat,
-            Font      = new Font("Segoe UI", 9f)
+            BackColor = BgDark,
+            Font = new Font("Segoe UI", 9f),
+            UseVisualStyleBackColor = false
         };
 
         _rbPickPoint = new RadioButton
         {
-            Text      = "Pick Point",
-            Location  = new Point(110, 6),
-            AutoSize  = true,
+            Text = "Pick Point",
+            Location = new Point(140, 8),
+            Size = new Size(120, 24),
             ForeColor = TextLight,
-            BackColor = Color.Transparent,
-            FlatStyle = FlatStyle.Flat,
-            Font      = new Font("Segoe UI", 9f)
+            BackColor = BgDark,
+            Font = new Font("Segoe UI", 9f),
+            UseVisualStyleBackColor = false
         };
 
         _rbFreeClip.CheckedChanged  += (_, _) => { if (_rbFreeClip.Checked)  SetMode(true);  };
@@ -79,10 +79,10 @@ public partial class FilterPanel : UserControl
         Controls.Add(_rbPickPoint);
     }
 
-    // ── Clip panel ────────────────────────────────────────────────
-
+  
     private void BuildClipPanel()
     {
+        
         _clipPanel = new Panel
         {
             Location     = new Point(0, 30),
@@ -102,13 +102,16 @@ public partial class FilterPanel : UserControl
             var lbl = MakeLabel(_filter.ChannelNames[i], new Point(6, y + 8));
 
             var minTrack = MakeTrackBar(0, new Point(30, y));
-            var maxTrack = MakeTrackBar(100, new Point(170, y));
+            minTrack.Width = 120;
 
             var minBox = MakeValueBox(minTrack, v => $"{v}%");
-            var maxBox = MakeValueBox(maxTrack, v => $"{v}%");
+            minBox.Location = new Point(155, y + 4);
 
-            minBox.Location = new Point(minTrack.Right + 2, y + 4);
-            maxBox.Location = new Point(maxTrack.Right + 2, y + 4);
+            var maxTrack = MakeTrackBar(100, new Point(210, y));
+            maxTrack.Width = 120;
+
+            var maxBox = MakeValueBox(maxTrack, v => $"{v}%");
+            maxBox.Location = new Point(335, y + 4);
 
             minTrack.ValueChanged += (_, _) =>
             {
@@ -124,14 +127,15 @@ public partial class FilterPanel : UserControl
             _clipPanel.Controls.AddRange([lbl, minTrack, minBox, maxTrack, maxBox]);
             _clipTracks.Add((minTrack, maxTrack));
 
-            y += 44;
+            y += 50;
         }
 
-        // divider
+        
+        y += 20;
         _clipPanel.Controls.Add(MakeDivider(y));
-        y += 12;
+        y += 20;
 
-        // peel
+       
         var peelLbl = MakeLabel("Peel", new Point(6, y + 8));
         _peelTrack = MakeTrackBar(100, new Point(50, y));
         _peelTrack.Width = 200;
@@ -145,7 +149,7 @@ public partial class FilterPanel : UserControl
             FilterChanged?.Invoke();
         };
 
-        y += 44;
+        y += 50;
 
         _subtractCheck = new CheckBox
         {
@@ -165,7 +169,7 @@ public partial class FilterPanel : UserControl
 
         _clipPanel.Controls.AddRange([peelLbl, _peelTrack, peelBox, _subtractCheck]);
     }
-
+   
     // ── Point panel ───────────────────────────────────────────────
 
     private void BuildPointPanel()
@@ -187,6 +191,7 @@ public partial class FilterPanel : UserControl
             int idx = i;
 
             var lbl   = MakeLabel(_filter.ChannelNames[i], new Point(6, y + 8));
+            
             var track = MakeTrackBar(50, new Point(30, y));
             track.Width = 220;
 
@@ -212,17 +217,18 @@ public partial class FilterPanel : UserControl
         _btnShowInSpace = new Button
         {
             Text      = "Show in Space",
-            Location  = new Point(6, y),
             Width     = 200,
             Height    = 36,
             FlatStyle = FlatStyle.Flat,
+            // Dock = DockStyle.Bottom,
             BackColor = Color.FromArgb(31, 31, 31),
             ForeColor = Accent,
             Font      = new Font("Segoe UI", 9f, FontStyle.Bold)
         };
+
         _btnShowInSpace.FlatAppearance.BorderColor = Accent;
         _btnShowInSpace.FlatAppearance.BorderSize  = 2;
-
+        _btnShowInSpace.Location = new Point(0, y + 20);
         _btnShowInSpace.Click += (_, _) =>
         {
             _filter.PeelToPoint();
@@ -230,10 +236,17 @@ public partial class FilterPanel : UserControl
                 _peelTrack.Value = (int)(_filter.Peel * 100);
             FilterChanged?.Invoke();
         };
-
+        _pointPanel.SizeChanged += (_, _) => CenterShowButton();
+        _pointPanel.Layout += (_, _) => CenterShowButton();
         _pointPanel.Controls.Add(_btnShowInSpace);
     }
+    private void CenterShowButton()
+    {
+        if (_btnShowInSpace == null || _pointPanel == null) return;
 
+        _btnShowInSpace.Left =
+            (_pointPanel.ClientSize.Width - _btnShowInSpace.Width) / 2;
+    }
     // ── Mode switch ───────────────────────────────────────────────
 
     private void SetMode(bool freeClip)
@@ -299,19 +312,20 @@ public partial class FilterPanel : UserControl
     private static void AddSectionHeader(Panel panel, string text)
     {
         panel.Controls.Add(new Label
-        {
-            Text      = text,
-            Location  = new Point(6, 4),
-            AutoSize  = true,
+        {   Dock = DockStyle.Top,
+            Text = text,
+            Location = new Point(0, 4),
+            Size = new Size(panel.Width, 24),
+            TextAlign = ContentAlignment.MiddleCenter,
             ForeColor = Color.FromArgb(85, 79, 179),
             BackColor = Color.Transparent,
-            Font      = new Font("Segoe UI", 8f, FontStyle.Bold)
+            Font = new Font("Segoe UI", 8f, FontStyle.Bold)
         });
     }
 
     private static Panel MakeDivider(int y) => new()
     {
-        Location  = new Point(0, y + 4),
+        Location  = new Point(6, y),
         Height    = 1,
         Width     = 320,
         BackColor = Color.FromArgb(80, 80, 80)

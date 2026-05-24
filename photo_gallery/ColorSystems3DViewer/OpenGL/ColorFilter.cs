@@ -15,27 +15,7 @@ public abstract class ColorFilter
 
     public abstract string[] ChannelNames { get; }
     public (float Min, float Max)[] Ranges { get; }
-
-    public bool Passes(ReadOnlySpan<float> normalizedChannels)
-    {
-        var peelAxis = normalizedChannels[0];
-        if (peelAxis > Peel) return false;
-
-        var insideAll = true;
-        for (var i = 0; i < Ranges.Length; i++)
-        {
-            var v = normalizedChannels[i];
-            if (v < Ranges[i].Min || v > Ranges[i].Max)
-            {
-                insideAll = false;
-                break;
-            }
-        }
-
-        return SubtractInner ? !insideAll : insideAll;
-    }
-
-
+    
     public void PeelToPoint()
     {
         if (PointChannels == null) return;

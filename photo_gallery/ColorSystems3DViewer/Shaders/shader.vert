@@ -2,6 +2,7 @@
 
 layout(location = 0) in vec3 aPos;
 layout(location = 1) in vec3 aColor;
+layout(location = 2) in vec3 aChannels;
 
 out vec3 vColor;
 
@@ -16,13 +17,11 @@ void main()
 {
     if (!uNoFilter)
     {
-        vec3 norm = (aPos + 1.0) * 0.5;
-
         bool inside =
-            norm.x >= uRangeMin.x && norm.x <= uRangeMax.x &&
-            norm.y >= uRangeMin.y && norm.y <= uRangeMax.y &&
-            norm.z >= uRangeMin.z && norm.z <= uRangeMax.z &&
-            norm.x <= uPeel;
+            aChannels.x >= uRangeMin.x && aChannels.x <= uRangeMax.x &&
+            aChannels.y >= uRangeMin.y && aChannels.y <= uRangeMax.y &&
+            aChannels.z >= uRangeMin.z && aChannels.z <= uRangeMax.z &&
+            aChannels.x <= uPeel;
 
         bool visible = uSubtract ? !inside : inside;
 
@@ -35,6 +34,6 @@ void main()
     }
 
     gl_Position = uMVP * vec4(aPos, 1.0);
-    gl_PointSize = 4.0;
+    gl_PointSize = 3.0;
     vColor = aColor;
 }
