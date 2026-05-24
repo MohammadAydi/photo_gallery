@@ -18,18 +18,19 @@ public class ImageCompoundsService {
             throw new ArgumentException(
                 $"Expected {expectedChannels} channel entries for {colorSpace}.");
 
+        DepthType sourceDepth = source.Depth; // preserve original depth (Cv32F for CMYK, Cv8U for RGB/HSV)
+
         Mat[] channels = SplitChannels(source);
 
         for (int i = 0; i < channels.Length; i++) {
             if (!channelEnabled[i]) {
-                // Channel disabled → zero it out
                 channels[i].SetTo(new MCvScalar(0));
             }
             else {
                 double scale = channelScales[i];
                 if (Math.Abs(scale - 1.0) > 1e-6) {
                     Mat scaled = new Mat();
-                    channels[i].ConvertTo(scaled, DepthType.Cv8U, scale);
+                    channels[i].ConvertTo(scaled, sourceDepth, scale); // ← match source depth
                     channels[i].Dispose();
                     channels[i] = scaled;
                 }
@@ -37,9 +38,7 @@ public class ImageCompoundsService {
         }
 
         Mat result = MergeChannels(channels);
-
         foreach (var ch in channels) ch.Dispose();
-
         return result;
     }
 
