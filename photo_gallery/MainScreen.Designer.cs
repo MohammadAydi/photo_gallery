@@ -24,7 +24,8 @@ partial class MainScreen {
     /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
-    private void InitializeComponent() {
+    private void InitializeComponent()
+    {
         panel6 = new System.Windows.Forms.Panel();
         radioButton2 = new System.Windows.Forms.RadioButton();
         radioButton3 = new System.Windows.Forms.RadioButton();
@@ -51,29 +52,13 @@ partial class MainScreen {
         ColorsSystemsGrid = new System.Windows.Forms.TableLayoutPanel();
         YUVButton = new System.Windows.Forms.RadioButton();
         LABButton = new System.Windows.Forms.RadioButton();
-        HLSButton = new System.Windows.Forms.RadioButton();
+        RGBButton = new System.Windows.Forms.RadioButton();
         CMYKButton = new System.Windows.Forms.RadioButton();
         YCbCrButton = new System.Windows.Forms.RadioButton();
         HSVButton = new System.Windows.Forms.RadioButton();
         CompoundsControlFlow = new System.Windows.Forms.FlowLayoutPanel();
         CompoundsControlLabel = new System.Windows.Forms.Label();
         ControlStacksPanel = new System.Windows.Forms.Panel();
-        RGBCompoundsPanel = new System.Windows.Forms.FlowLayoutPanel();
-        RCompoundPanel = new System.Windows.Forms.Panel();
-        RSlider = new System.Windows.Forms.TrackBar();
-        RLabels = new System.Windows.Forms.Panel();
-        RCheckBox = new System.Windows.Forms.CheckBox();
-        RColorPer = new System.Windows.Forms.Label();
-        GCompoundPanel = new System.Windows.Forms.Panel();
-        GSlider = new System.Windows.Forms.TrackBar();
-        GLabels = new System.Windows.Forms.Panel();
-        G = new System.Windows.Forms.CheckBox();
-        GColorPer = new System.Windows.Forms.Label();
-        BCompoundPanel = new System.Windows.Forms.Panel();
-        BSlider = new System.Windows.Forms.TrackBar();
-        BLabels = new System.Windows.Forms.Panel();
-        BCheckBox = new System.Windows.Forms.CheckBox();
-        BColorPer = new System.Windows.Forms.Label();
         ImageInfoFlow = new System.Windows.Forms.FlowLayoutPanel();
         ImageNamePanel = new System.Windows.Forms.Panel();
         ImageNameValue = new System.Windows.Forms.Label();
@@ -99,16 +84,117 @@ partial class MainScreen {
         ImageAspectRatioPanel = new System.Windows.Forms.Panel();
         ImageAspectRatioValue = new System.Windows.Forms.Label();
         ImageAspectRatioLabel = new System.Windows.Forms.Label();
-        panel1 = new System.Windows.Forms.Panel();
+        panel13 = new System.Windows.Forms.Panel();
+        panel14 = new System.Windows.Forms.Panel();
+        label6 = new System.Windows.Forms.Label();
+        KeyCheckbox = new System.Windows.Forms.CheckBox();
+        KeySlider = new System.Windows.Forms.TrackBar();
+        panel11 = new System.Windows.Forms.Panel();
+        panel12 = new System.Windows.Forms.Panel();
+        label5 = new System.Windows.Forms.Label();
+        YellowCheckbox = new System.Windows.Forms.CheckBox();
+        YellowSlider = new System.Windows.Forms.TrackBar();
+        panel9 = new System.Windows.Forms.Panel();
+        panel10 = new System.Windows.Forms.Panel();
+        label4 = new System.Windows.Forms.Label();
+        MagentaCheckbox = new System.Windows.Forms.CheckBox();
+        MagentaSlider = new System.Windows.Forms.TrackBar();
+        panel15 = new System.Windows.Forms.Panel();
+        panel16 = new System.Windows.Forms.Panel();
+        label7 = new System.Windows.Forms.Label();
+        CyanCheckbox = new System.Windows.Forms.CheckBox();
+        CyanSlider = new System.Windows.Forms.TrackBar();
+        CMYKFlow = new System.Windows.Forms.FlowLayoutPanel();
         EditorSceneSplitter = new System.Windows.Forms.SplitContainer();
-        ModifiedImageSplit = new System.Windows.Forms.Panel();
-        ModifiedImagePanel = new System.Windows.Forms.Panel();
-        ModifiedImageViewer = new System.Windows.Forms.PictureBox();
-        ModifiedImageLabel = new System.Windows.Forms.Label();
         OriginalImageSplit = new System.Windows.Forms.Panel();
+        OriginalImageLabel = new System.Windows.Forms.Label();
         OriginalImagePanel = new System.Windows.Forms.Panel();
         OriginalImageViewer = new System.Windows.Forms.PictureBox();
-        OriginalImageLabel = new System.Windows.Forms.Label();
+        ModifiedImageSplit = new System.Windows.Forms.Panel();
+        ModifiedImageLabel = new System.Windows.Forms.Label();
+        ModifiedImagePanel = new System.Windows.Forms.Panel();
+        ModifiedImageViewer = new System.Windows.Forms.PictureBox();
+        panel1 = new System.Windows.Forms.Panel();
+        RGBFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel17 = new System.Windows.Forms.Panel();
+        RedSlider = new System.Windows.Forms.TrackBar();
+        panel18 = new System.Windows.Forms.Panel();
+        RedCheckbox = new System.Windows.Forms.CheckBox();
+        label8 = new System.Windows.Forms.Label();
+        panel19 = new System.Windows.Forms.Panel();
+        GreenSlider = new System.Windows.Forms.TrackBar();
+        panel20 = new System.Windows.Forms.Panel();
+        GreenCheckbox = new System.Windows.Forms.CheckBox();
+        label9 = new System.Windows.Forms.Label();
+        panel21 = new System.Windows.Forms.Panel();
+        BlueSlider = new System.Windows.Forms.TrackBar();
+        panel22 = new System.Windows.Forms.Panel();
+        BlueCheckbox = new System.Windows.Forms.CheckBox();
+        label10 = new System.Windows.Forms.Label();
+        LABFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel29 = new System.Windows.Forms.Panel();
+        LightnessSlider = new System.Windows.Forms.TrackBar();
+        panel30 = new System.Windows.Forms.Panel();
+        LightnessCheck = new System.Windows.Forms.CheckBox();
+        label14 = new System.Windows.Forms.Label();
+        panel31 = new System.Windows.Forms.Panel();
+        GreenAxisSlider = new System.Windows.Forms.TrackBar();
+        panel32 = new System.Windows.Forms.Panel();
+        GreenAxisCheck = new System.Windows.Forms.CheckBox();
+        label15 = new System.Windows.Forms.Label();
+        panel33 = new System.Windows.Forms.Panel();
+        BlueAxisSlider = new System.Windows.Forms.TrackBar();
+        panel34 = new System.Windows.Forms.Panel();
+        BlueAxisCheck = new System.Windows.Forms.CheckBox();
+        label16 = new System.Windows.Forms.Label();
+        YUVFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel35 = new System.Windows.Forms.Panel();
+        YYUVLumaSlider = new System.Windows.Forms.TrackBar();
+        panel36 = new System.Windows.Forms.Panel();
+        YYUVLumaCheckbox = new System.Windows.Forms.CheckBox();
+        label17 = new System.Windows.Forms.Label();
+        panel37 = new System.Windows.Forms.Panel();
+        BlueProjectionSlider = new System.Windows.Forms.TrackBar();
+        panel38 = new System.Windows.Forms.Panel();
+        BlueProjectionCheckbox = new System.Windows.Forms.CheckBox();
+        label18 = new System.Windows.Forms.Label();
+        panel39 = new System.Windows.Forms.Panel();
+        RedPorjectionSlider = new System.Windows.Forms.TrackBar();
+        panel40 = new System.Windows.Forms.Panel();
+        RedPorjectionCheckbox = new System.Windows.Forms.CheckBox();
+        label19 = new System.Windows.Forms.Label();
+        HSVCompoundsFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel2 = new System.Windows.Forms.Panel();
+        trackBar1 = new System.Windows.Forms.TrackBar();
+        panel3 = new System.Windows.Forms.Panel();
+        checkBox1 = new System.Windows.Forms.CheckBox();
+        label1 = new System.Windows.Forms.Label();
+        panel4 = new System.Windows.Forms.Panel();
+        trackBar2 = new System.Windows.Forms.TrackBar();
+        panel5 = new System.Windows.Forms.Panel();
+        checkBox2 = new System.Windows.Forms.CheckBox();
+        label2 = new System.Windows.Forms.Label();
+        panel7 = new System.Windows.Forms.Panel();
+        trackBar3 = new System.Windows.Forms.TrackBar();
+        panel8 = new System.Windows.Forms.Panel();
+        checkBox3 = new System.Windows.Forms.CheckBox();
+        label3 = new System.Windows.Forms.Label();
+        YCbCrFlow = new System.Windows.Forms.FlowLayoutPanel();
+        panel23 = new System.Windows.Forms.Panel();
+        YLumaSlider = new System.Windows.Forms.TrackBar();
+        panel24 = new System.Windows.Forms.Panel();
+        YLumaCheck = new System.Windows.Forms.CheckBox();
+        label11 = new System.Windows.Forms.Label();
+        panel25 = new System.Windows.Forms.Panel();
+        BlueDiffSlider = new System.Windows.Forms.TrackBar();
+        panel26 = new System.Windows.Forms.Panel();
+        BlueDiffCheck = new System.Windows.Forms.CheckBox();
+        label12 = new System.Windows.Forms.Label();
+        panel27 = new System.Windows.Forms.Panel();
+        RedDiffSlider = new System.Windows.Forms.TrackBar();
+        panel28 = new System.Windows.Forms.Panel();
+        RedDiffCheck = new System.Windows.Forms.CheckBox();
+        label13 = new System.Windows.Forms.Label();
         TobBarFlowLayout.SuspendLayout();
         TitlePanel.SuspendLayout();
         ActionButtonsPanel.SuspendLayout();
@@ -121,16 +207,6 @@ partial class MainScreen {
         ColorsSystemsGrid.SuspendLayout();
         CompoundsControlFlow.SuspendLayout();
         ControlStacksPanel.SuspendLayout();
-        RGBCompoundsPanel.SuspendLayout();
-        RCompoundPanel.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)RSlider).BeginInit();
-        RLabels.SuspendLayout();
-        GCompoundPanel.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)GSlider).BeginInit();
-        GLabels.SuspendLayout();
-        BCompoundPanel.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)BSlider).BeginInit();
-        BLabels.SuspendLayout();
         ImageInfoFlow.SuspendLayout();
         ImageNamePanel.SuspendLayout();
         ImageSizePanel.SuspendLayout();
@@ -140,17 +216,80 @@ partial class MainScreen {
         ImageTypePanel.SuspendLayout();
         ImageDPIPanel.SuspendLayout();
         ImageAspectRatioPanel.SuspendLayout();
-        panel1.SuspendLayout();
+        panel13.SuspendLayout();
+        panel14.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)KeySlider).BeginInit();
+        panel11.SuspendLayout();
+        panel12.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)YellowSlider).BeginInit();
+        panel9.SuspendLayout();
+        panel10.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)MagentaSlider).BeginInit();
+        panel15.SuspendLayout();
+        panel16.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)CyanSlider).BeginInit();
+        CMYKFlow.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)EditorSceneSplitter).BeginInit();
         EditorSceneSplitter.Panel1.SuspendLayout();
         EditorSceneSplitter.Panel2.SuspendLayout();
         EditorSceneSplitter.SuspendLayout();
-        ModifiedImageSplit.SuspendLayout();
-        ModifiedImagePanel.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)ModifiedImageViewer).BeginInit();
         OriginalImageSplit.SuspendLayout();
         OriginalImagePanel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)OriginalImageViewer).BeginInit();
+        ModifiedImageSplit.SuspendLayout();
+        ModifiedImagePanel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)ModifiedImageViewer).BeginInit();
+        panel1.SuspendLayout();
+        RGBFlow.SuspendLayout();
+        panel17.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedSlider).BeginInit();
+        panel18.SuspendLayout();
+        panel19.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenSlider).BeginInit();
+        panel20.SuspendLayout();
+        panel21.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueSlider).BeginInit();
+        panel22.SuspendLayout();
+        LABFlow.SuspendLayout();
+        panel29.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)LightnessSlider).BeginInit();
+        panel30.SuspendLayout();
+        panel31.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenAxisSlider).BeginInit();
+        panel32.SuspendLayout();
+        panel33.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueAxisSlider).BeginInit();
+        panel34.SuspendLayout();
+        YUVFlow.SuspendLayout();
+        panel35.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)YYUVLumaSlider).BeginInit();
+        panel36.SuspendLayout();
+        panel37.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueProjectionSlider).BeginInit();
+        panel38.SuspendLayout();
+        panel39.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedPorjectionSlider).BeginInit();
+        panel40.SuspendLayout();
+        HSVCompoundsFlow.SuspendLayout();
+        panel2.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+        panel3.SuspendLayout();
+        panel4.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
+        panel5.SuspendLayout();
+        panel7.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar3).BeginInit();
+        panel8.SuspendLayout();
+        YCbCrFlow.SuspendLayout();
+        panel23.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)YLumaSlider).BeginInit();
+        panel24.SuspendLayout();
+        panel25.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueDiffSlider).BeginInit();
+        panel26.SuspendLayout();
+        panel27.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)RedDiffSlider).BeginInit();
+        panel28.SuspendLayout();
         SuspendLayout();
         // 
         // panel6
@@ -359,12 +498,14 @@ partial class MainScreen {
         UpDownColorsNumber.TabIndex = 2;
         UpDownColorsNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         UpDownColorsNumber.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+        UpDownColorsNumber.Value = new decimal(new int[] { 2, 0, 0, 0 });
         // 
         // ColorNumberSlider
         // 
         ColorNumberSlider.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom));
         ColorNumberSlider.Location = new System.Drawing.Point(81, 2);
         ColorNumberSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ColorNumberSlider.Maximum = 256;
         ColorNumberSlider.Minimum = 2;
         ColorNumberSlider.Name = "ColorNumberSlider";
         ColorNumberSlider.RightToLeftLayout = true;
@@ -397,7 +538,7 @@ partial class MainScreen {
         RightPanel.Margin = new System.Windows.Forms.Padding(0);
         RightPanel.Name = "RightPanel";
         RightPanel.Padding = new System.Windows.Forms.Padding(7, 7, 0, 0);
-        RightPanel.Size = new System.Drawing.Size(320, 815);
+        RightPanel.Size = new System.Drawing.Size(320, 897);
         RightPanel.TabIndex = 1;
         RightPanel.WrapContents = false;
         // 
@@ -436,7 +577,7 @@ partial class MainScreen {
         ColorsSystemsGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.333332F));
         ColorsSystemsGrid.Controls.Add(YUVButton, 0, 0);
         ColorsSystemsGrid.Controls.Add(LABButton, 0, 1);
-        ColorsSystemsGrid.Controls.Add(HLSButton, 0, 1);
+        ColorsSystemsGrid.Controls.Add(RGBButton, 0, 1);
         ColorsSystemsGrid.Controls.Add(CMYKButton, 1, 0);
         ColorsSystemsGrid.Controls.Add(YCbCrButton, 0, 1);
         ColorsSystemsGrid.Controls.Add(HSVButton, 2, 0);
@@ -468,6 +609,7 @@ partial class MainScreen {
         YUVButton.Text = "YUV";
         YUVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         YUVButton.UseVisualStyleBackColor = true;
+        YUVButton.CheckedChanged += YUVButton_CheckedChanged_1;
         // 
         // LABButton
         // 
@@ -486,24 +628,26 @@ partial class MainScreen {
         LABButton.Text = "LAB";
         LABButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         LABButton.UseVisualStyleBackColor = true;
+        LABButton.CheckedChanged += LABButton_CheckedChanged;
         // 
-        // HLSButton
+        // RGBButton
         // 
-        HLSButton.Appearance = System.Windows.Forms.Appearance.Button;
-        HLSButton.AutoSize = true;
-        HLSButton.Dock = System.Windows.Forms.DockStyle.Fill;
-        HLSButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)130)), ((int)((byte)130)), ((int)((byte)130)));
-        HLSButton.FlatAppearance.BorderSize = 2;
-        HLSButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        HLSButton.Location = new System.Drawing.Point(196, 54);
-        HLSButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        HLSButton.Name = "HLSButton";
-        HLSButton.Size = new System.Drawing.Size(90, 48);
-        HLSButton.TabIndex = 4;
-        HLSButton.TabStop = true;
-        HLSButton.Text = "HLS";
-        HLSButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        HLSButton.UseVisualStyleBackColor = true;
+        RGBButton.Appearance = System.Windows.Forms.Appearance.Button;
+        RGBButton.AutoSize = true;
+        RGBButton.Dock = System.Windows.Forms.DockStyle.Fill;
+        RGBButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)((byte)130)), ((int)((byte)130)), ((int)((byte)130)));
+        RGBButton.FlatAppearance.BorderSize = 2;
+        RGBButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+        RGBButton.Location = new System.Drawing.Point(196, 54);
+        RGBButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RGBButton.Name = "RGBButton";
+        RGBButton.Size = new System.Drawing.Size(90, 48);
+        RGBButton.TabIndex = 4;
+        RGBButton.TabStop = true;
+        RGBButton.Text = "RGB";
+        RGBButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        RGBButton.UseVisualStyleBackColor = true;
+        RGBButton.CheckedChanged += RGBButton_CheckedChanged;
         // 
         // CMYKButton
         // 
@@ -523,6 +667,7 @@ partial class MainScreen {
         CMYKButton.Text = "CMYK";
         CMYKButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         CMYKButton.UseVisualStyleBackColor = true;
+        CMYKButton.CheckedChanged += CMYKButton_CheckedChanged;
         // 
         // YCbCrButton
         // 
@@ -541,6 +686,7 @@ partial class MainScreen {
         YCbCrButton.Text = "YCbCr";
         YCbCrButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         YCbCrButton.UseVisualStyleBackColor = true;
+        YCbCrButton.CheckedChanged += YCbCrButton_CheckedChanged;
         // 
         // HSVButton
         // 
@@ -560,6 +706,7 @@ partial class MainScreen {
         HSVButton.Text = "HSV";
         HSVButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         HSVButton.UseVisualStyleBackColor = true;
+        HSVButton.CheckedChanged += HSVButton_CheckedChanged;
         // 
         // CompoundsControlFlow
         // 
@@ -572,8 +719,9 @@ partial class MainScreen {
         CompoundsControlFlow.Location = new System.Drawing.Point(6, 160);
         CompoundsControlFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         CompoundsControlFlow.Name = "CompoundsControlFlow";
-        CompoundsControlFlow.Size = new System.Drawing.Size(304, 278);
+        CompoundsControlFlow.Size = new System.Drawing.Size(304, 362);
         CompoundsControlFlow.TabIndex = 3;
+        CompoundsControlFlow.WrapContents = false;
         // 
         // CompoundsControlLabel
         // 
@@ -587,198 +735,17 @@ partial class MainScreen {
         // ControlStacksPanel
         // 
         ControlStacksPanel.AutoSize = true;
-        ControlStacksPanel.Controls.Add(RGBCompoundsPanel);
-        ControlStacksPanel.Location = new System.Drawing.Point(-1, 51);
+        ControlStacksPanel.Controls.Add(YCbCrFlow);
+        ControlStacksPanel.Controls.Add(HSVCompoundsFlow);
+        ControlStacksPanel.Controls.Add(CMYKFlow);
+        ControlStacksPanel.Controls.Add(RGBFlow);
+        ControlStacksPanel.Controls.Add(LABFlow);
+        ControlStacksPanel.Controls.Add(YUVFlow);
+        ControlStacksPanel.Location = new System.Drawing.Point(-1445, 51);
         ControlStacksPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ControlStacksPanel.Name = "ControlStacksPanel";
-        ControlStacksPanel.Size = new System.Drawing.Size(302, 221);
+        ControlStacksPanel.Size = new System.Drawing.Size(1746, 1391);
         ControlStacksPanel.TabIndex = 1;
-        // 
-        // RGBCompoundsPanel
-        // 
-        RGBCompoundsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        RGBCompoundsPanel.AutoSize = true;
-        RGBCompoundsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        RGBCompoundsPanel.Controls.Add(RCompoundPanel);
-        RGBCompoundsPanel.Controls.Add(GCompoundPanel);
-        RGBCompoundsPanel.Controls.Add(BCompoundPanel);
-        RGBCompoundsPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-        RGBCompoundsPanel.Location = new System.Drawing.Point(0, 0);
-        RGBCompoundsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        RGBCompoundsPanel.Name = "RGBCompoundsPanel";
-        RGBCompoundsPanel.Size = new System.Drawing.Size(291, 219);
-        RGBCompoundsPanel.TabIndex = 1;
-        RGBCompoundsPanel.WrapContents = false;
-        // 
-        // RCompoundPanel
-        // 
-        RCompoundPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        RCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        RCompoundPanel.Controls.Add(RSlider);
-        RCompoundPanel.Controls.Add(RLabels);
-        RCompoundPanel.Location = new System.Drawing.Point(3, 2);
-        RCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        RCompoundPanel.Name = "RCompoundPanel";
-        RCompoundPanel.Size = new System.Drawing.Size(285, 66);
-        RCompoundPanel.TabIndex = 2;
-        // 
-        // RSlider
-        // 
-        RSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        RSlider.Location = new System.Drawing.Point(36, 25);
-        RSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        RSlider.Name = "RSlider";
-        RSlider.Size = new System.Drawing.Size(246, 56);
-        RSlider.TabIndex = 1;
-        // 
-        // RLabels
-        // 
-        RLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        RLabels.Controls.Add(RCheckBox);
-        RLabels.Controls.Add(RColorPer);
-        RLabels.Location = new System.Drawing.Point(36, 0);
-        RLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        RLabels.Name = "RLabels";
-        RLabels.Size = new System.Drawing.Size(249, 27);
-        RLabels.TabIndex = 0;
-        // 
-        // RCheckBox
-        // 
-        RCheckBox.AutoSize = true;
-        RCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
-        RCheckBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        RCheckBox.Location = new System.Drawing.Point(0, 0);
-        RCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        RCheckBox.Name = "RCheckBox";
-        RCheckBox.Size = new System.Drawing.Size(43, 27);
-        RCheckBox.TabIndex = 1;
-        RCheckBox.Text = "R";
-        RCheckBox.UseVisualStyleBackColor = true;
-        // 
-        // RColorPer
-        // 
-        RColorPer.AutoSize = true;
-        RColorPer.Dock = System.Windows.Forms.DockStyle.Right;
-        RColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        RColorPer.Location = new System.Drawing.Point(175, 0);
-        RColorPer.Name = "RColorPer";
-        RColorPer.Size = new System.Drawing.Size(74, 20);
-        RColorPer.TabIndex = 0;
-        RColorPer.Text = "نسبة الأحمر";
-        RColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // GCompoundPanel
-        // 
-        GCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        GCompoundPanel.Controls.Add(GSlider);
-        GCompoundPanel.Controls.Add(GLabels);
-        GCompoundPanel.Location = new System.Drawing.Point(3, 72);
-        GCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        GCompoundPanel.Name = "GCompoundPanel";
-        GCompoundPanel.Size = new System.Drawing.Size(285, 68);
-        GCompoundPanel.TabIndex = 1;
-        // 
-        // GSlider
-        // 
-        GSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        GSlider.Location = new System.Drawing.Point(39, 25);
-        GSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        GSlider.Name = "GSlider";
-        GSlider.Size = new System.Drawing.Size(249, 56);
-        GSlider.TabIndex = 1;
-        // 
-        // GLabels
-        // 
-        GLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        GLabels.Controls.Add(G);
-        GLabels.Controls.Add(GColorPer);
-        GLabels.Location = new System.Drawing.Point(36, 0);
-        GLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        GLabels.Name = "GLabels";
-        GLabels.Size = new System.Drawing.Size(249, 28);
-        GLabels.TabIndex = 0;
-        // 
-        // G
-        // 
-        G.AutoSize = true;
-        G.Dock = System.Windows.Forms.DockStyle.Left;
-        G.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        G.Location = new System.Drawing.Point(0, 0);
-        G.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        G.Name = "G";
-        G.Size = new System.Drawing.Size(44, 28);
-        G.TabIndex = 1;
-        G.Text = "G";
-        G.UseVisualStyleBackColor = true;
-        // 
-        // GColorPer
-        // 
-        GColorPer.AutoSize = true;
-        GColorPer.Dock = System.Windows.Forms.DockStyle.Right;
-        GColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        GColorPer.Location = new System.Drawing.Point(168, 0);
-        GColorPer.Name = "GColorPer";
-        GColorPer.Size = new System.Drawing.Size(81, 20);
-        GColorPer.TabIndex = 0;
-        GColorPer.Text = "نسبة الأخضر";
-        GColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        // 
-        // BCompoundPanel
-        // 
-        BCompoundPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
-        BCompoundPanel.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
-        BCompoundPanel.Controls.Add(BSlider);
-        BCompoundPanel.Controls.Add(BLabels);
-        BCompoundPanel.Location = new System.Drawing.Point(3, 144);
-        BCompoundPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        BCompoundPanel.Name = "BCompoundPanel";
-        BCompoundPanel.Size = new System.Drawing.Size(285, 73);
-        BCompoundPanel.TabIndex = 0;
-        // 
-        // BSlider
-        // 
-        BSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        BSlider.Location = new System.Drawing.Point(39, 31);
-        BSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        BSlider.Name = "BSlider";
-        BSlider.Size = new System.Drawing.Size(246, 56);
-        BSlider.TabIndex = 1;
-        // 
-        // BLabels
-        // 
-        BLabels.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
-        BLabels.Controls.Add(BCheckBox);
-        BLabels.Controls.Add(BColorPer);
-        BLabels.Location = new System.Drawing.Point(39, 0);
-        BLabels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        BLabels.Name = "BLabels";
-        BLabels.Size = new System.Drawing.Size(246, 28);
-        BLabels.TabIndex = 0;
-        // 
-        // BCheckBox
-        // 
-        BCheckBox.AutoSize = true;
-        BCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
-        BCheckBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        BCheckBox.Location = new System.Drawing.Point(0, 0);
-        BCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        BCheckBox.Name = "BCheckBox";
-        BCheckBox.Size = new System.Drawing.Size(43, 28);
-        BCheckBox.TabIndex = 1;
-        BCheckBox.Text = "B";
-        BCheckBox.UseVisualStyleBackColor = true;
-        // 
-        // BColorPer
-        // 
-        BColorPer.AutoSize = true;
-        BColorPer.Dock = System.Windows.Forms.DockStyle.Right;
-        BColorPer.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        BColorPer.Location = new System.Drawing.Point(170, 0);
-        BColorPer.Name = "BColorPer";
-        BColorPer.Size = new System.Drawing.Size(76, 20);
-        BColorPer.TabIndex = 0;
-        BColorPer.Text = "نسبة الأزرق";
-        BColorPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // ImageInfoFlow
         // 
@@ -794,7 +761,7 @@ partial class MainScreen {
         ImageInfoFlow.Controls.Add(ImageAspectRatioPanel);
         ImageInfoFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
         ImageInfoFlow.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ImageInfoFlow.Location = new System.Drawing.Point(10, 442);
+        ImageInfoFlow.Location = new System.Drawing.Point(10, 526);
         ImageInfoFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         ImageInfoFlow.Name = "ImageInfoFlow";
         ImageInfoFlow.Size = new System.Drawing.Size(297, 373);
@@ -1049,17 +1016,248 @@ partial class MainScreen {
         ImageAspectRatioLabel.Text = "Aspect Ratio";
         ImageAspectRatioLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
         // 
-        // panel1
+        // panel13
         // 
-        panel1.BackColor = System.Drawing.Color.FromArgb(((int)((byte)19)), ((int)((byte)19)), ((int)((byte)19)));
-        panel1.Controls.Add(EditorSceneSplitter);
-        panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-        panel1.Location = new System.Drawing.Point(320, 76);
-        panel1.Margin = new System.Windows.Forms.Padding(20, 21, 20, 21);
-        panel1.Name = "panel1";
-        panel1.Padding = new System.Windows.Forms.Padding(20, 21, 20, 21);
-        panel1.Size = new System.Drawing.Size(1107, 815);
-        panel1.TabIndex = 2;
+        panel13.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel13.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel13.Controls.Add(KeySlider);
+        panel13.Controls.Add(panel14);
+        panel13.Location = new System.Drawing.Point(1458, 221);
+        panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel13.Name = "panel13";
+        panel13.Size = new System.Drawing.Size(285, 73);
+        panel13.TabIndex = 0;
+        // 
+        // panel14
+        // 
+        panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel14.Controls.Add(KeyCheckbox);
+        panel14.Controls.Add(label6);
+        panel14.Location = new System.Drawing.Point(39, 0);
+        panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel14.Name = "panel14";
+        panel14.Size = new System.Drawing.Size(246, 28);
+        panel14.TabIndex = 0;
+        // 
+        // label6
+        // 
+        label6.AutoSize = true;
+        label6.Dock = System.Windows.Forms.DockStyle.Right;
+        label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label6.Location = new System.Drawing.Point(181, 0);
+        label6.Name = "label6";
+        label6.Size = new System.Drawing.Size(65, 20);
+        label6.TabIndex = 0;
+        label6.Text = "نسبة الـ K";
+        label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // KeyCheckbox
+        // 
+        KeyCheckbox.AutoSize = true;
+        KeyCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        KeyCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        KeyCheckbox.Location = new System.Drawing.Point(0, 0);
+        KeyCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        KeyCheckbox.Name = "KeyCheckbox";
+        KeyCheckbox.Size = new System.Drawing.Size(42, 28);
+        KeyCheckbox.TabIndex = 1;
+        KeyCheckbox.Text = "K";
+        KeyCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // KeySlider
+        // 
+        KeySlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        KeySlider.Location = new System.Drawing.Point(39, 31);
+        KeySlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        KeySlider.Name = "KeySlider";
+        KeySlider.Size = new System.Drawing.Size(246, 56);
+        KeySlider.TabIndex = 1;
+        // 
+        // panel11
+        // 
+        panel11.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel11.Controls.Add(YellowSlider);
+        panel11.Controls.Add(panel12);
+        panel11.Location = new System.Drawing.Point(1458, 149);
+        panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel11.Name = "panel11";
+        panel11.Size = new System.Drawing.Size(285, 68);
+        panel11.TabIndex = 1;
+        // 
+        // panel12
+        // 
+        panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel12.Controls.Add(YellowCheckbox);
+        panel12.Controls.Add(label5);
+        panel12.Location = new System.Drawing.Point(36, 0);
+        panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel12.Name = "panel12";
+        panel12.Size = new System.Drawing.Size(249, 28);
+        panel12.TabIndex = 0;
+        // 
+        // label5
+        // 
+        label5.AutoSize = true;
+        label5.Dock = System.Windows.Forms.DockStyle.Right;
+        label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label5.Location = new System.Drawing.Point(185, 0);
+        label5.Name = "label5";
+        label5.Size = new System.Drawing.Size(64, 20);
+        label5.TabIndex = 0;
+        label5.Text = "نسبة الـ Y";
+        label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // YellowCheckbox
+        // 
+        YellowCheckbox.AutoSize = true;
+        YellowCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        YellowCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        YellowCheckbox.Location = new System.Drawing.Point(0, 0);
+        YellowCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YellowCheckbox.Name = "YellowCheckbox";
+        YellowCheckbox.Size = new System.Drawing.Size(41, 28);
+        YellowCheckbox.TabIndex = 1;
+        YellowCheckbox.Text = "Y";
+        YellowCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // YellowSlider
+        // 
+        YellowSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        YellowSlider.Location = new System.Drawing.Point(39, 25);
+        YellowSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YellowSlider.Name = "YellowSlider";
+        YellowSlider.Size = new System.Drawing.Size(249, 56);
+        YellowSlider.TabIndex = 1;
+        // 
+        // panel9
+        // 
+        panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel9.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel9.Controls.Add(MagentaSlider);
+        panel9.Controls.Add(panel10);
+        panel9.Location = new System.Drawing.Point(1458, 79);
+        panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel9.Name = "panel9";
+        panel9.Size = new System.Drawing.Size(285, 66);
+        panel9.TabIndex = 2;
+        // 
+        // panel10
+        // 
+        panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel10.Controls.Add(MagentaCheckbox);
+        panel10.Controls.Add(label4);
+        panel10.Location = new System.Drawing.Point(36, 0);
+        panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel10.Name = "panel10";
+        panel10.Size = new System.Drawing.Size(246, 27);
+        panel10.TabIndex = 0;
+        // 
+        // label4
+        // 
+        label4.AutoSize = true;
+        label4.Dock = System.Windows.Forms.DockStyle.Right;
+        label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label4.Location = new System.Drawing.Point(178, 0);
+        label4.Name = "label4";
+        label4.Size = new System.Drawing.Size(68, 20);
+        label4.TabIndex = 0;
+        label4.Text = "نسبة الـ M";
+        label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // MagentaCheckbox
+        // 
+        MagentaCheckbox.AutoSize = true;
+        MagentaCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        MagentaCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        MagentaCheckbox.Location = new System.Drawing.Point(0, 0);
+        MagentaCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        MagentaCheckbox.Name = "MagentaCheckbox";
+        MagentaCheckbox.Size = new System.Drawing.Size(45, 27);
+        MagentaCheckbox.TabIndex = 1;
+        MagentaCheckbox.Text = "M";
+        MagentaCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // MagentaSlider
+        // 
+        MagentaSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        MagentaSlider.Location = new System.Drawing.Point(36, 25);
+        MagentaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        MagentaSlider.Name = "MagentaSlider";
+        MagentaSlider.Size = new System.Drawing.Size(246, 56);
+        MagentaSlider.TabIndex = 1;
+        // 
+        // panel15
+        // 
+        panel15.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel15.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel15.Controls.Add(CyanSlider);
+        panel15.Controls.Add(panel16);
+        panel15.Location = new System.Drawing.Point(1458, 2);
+        panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel15.Name = "panel15";
+        panel15.Size = new System.Drawing.Size(285, 73);
+        panel15.TabIndex = 3;
+        // 
+        // panel16
+        // 
+        panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel16.Controls.Add(CyanCheckbox);
+        panel16.Controls.Add(label7);
+        panel16.Location = new System.Drawing.Point(39, 0);
+        panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel16.Name = "panel16";
+        panel16.Size = new System.Drawing.Size(243, 28);
+        panel16.TabIndex = 0;
+        // 
+        // label7
+        // 
+        label7.AutoSize = true;
+        label7.Dock = System.Windows.Forms.DockStyle.Right;
+        label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label7.Location = new System.Drawing.Point(177, 0);
+        label7.Name = "label7";
+        label7.Size = new System.Drawing.Size(66, 20);
+        label7.TabIndex = 0;
+        label7.Text = "نسبة الـ C";
+        label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // CyanCheckbox
+        // 
+        CyanCheckbox.AutoSize = true;
+        CyanCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        CyanCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        CyanCheckbox.Location = new System.Drawing.Point(0, 0);
+        CyanCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        CyanCheckbox.Name = "CyanCheckbox";
+        CyanCheckbox.Size = new System.Drawing.Size(43, 28);
+        CyanCheckbox.TabIndex = 1;
+        CyanCheckbox.Text = "C";
+        CyanCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // CyanSlider
+        // 
+        CyanSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        CyanSlider.Location = new System.Drawing.Point(39, 31);
+        CyanSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        CyanSlider.Name = "CyanSlider";
+        CyanSlider.Size = new System.Drawing.Size(285, 56);
+        CyanSlider.TabIndex = 1;
+        // 
+        // CMYKFlow
+        // 
+        CMYKFlow.AutoSize = true;
+        CMYKFlow.Controls.Add(panel15);
+        CMYKFlow.Controls.Add(panel9);
+        CMYKFlow.Controls.Add(panel11);
+        CMYKFlow.Controls.Add(panel13);
+        CMYKFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        CMYKFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        CMYKFlow.Location = new System.Drawing.Point(0, 0);
+        CMYKFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        CMYKFlow.Name = "CMYKFlow";
+        CMYKFlow.Size = new System.Drawing.Size(1746, 1391);
+        CMYKFlow.TabIndex = 11;
+        CMYKFlow.WrapContents = false;
         // 
         // EditorSceneSplitter
         // 
@@ -1078,55 +1276,11 @@ partial class MainScreen {
         // 
         EditorSceneSplitter.Panel2.Controls.Add(OriginalImageSplit);
         EditorSceneSplitter.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-        EditorSceneSplitter.Size = new System.Drawing.Size(1067, 773);
-        EditorSceneSplitter.SplitterDistance = 533;
+        EditorSceneSplitter.Size = new System.Drawing.Size(1067, 855);
+        EditorSceneSplitter.SplitterDistance = 532;
         EditorSceneSplitter.SplitterWidth = 22;
         EditorSceneSplitter.TabIndex = 3;
         EditorSceneSplitter.Text = "splitContainer1";
-        // 
-        // ModifiedImageSplit
-        // 
-        ModifiedImageSplit.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
-        ModifiedImageSplit.Controls.Add(ModifiedImagePanel);
-        ModifiedImageSplit.Controls.Add(ModifiedImageLabel);
-        ModifiedImageSplit.Dock = System.Windows.Forms.DockStyle.Fill;
-        ModifiedImageSplit.Location = new System.Drawing.Point(0, 0);
-        ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        ModifiedImageSplit.Name = "ModifiedImageSplit";
-        ModifiedImageSplit.Size = new System.Drawing.Size(533, 773);
-        ModifiedImageSplit.TabIndex = 0;
-        // 
-        // ModifiedImagePanel
-        // 
-        ModifiedImagePanel.Controls.Add(ModifiedImageViewer);
-        ModifiedImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-        ModifiedImagePanel.Location = new System.Drawing.Point(0, 69);
-        ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        ModifiedImagePanel.Name = "ModifiedImagePanel";
-        ModifiedImagePanel.Size = new System.Drawing.Size(533, 704);
-        ModifiedImagePanel.TabIndex = 1;
-        // 
-        // ModifiedImageViewer
-        // 
-        ModifiedImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-        ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
-        ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-        ModifiedImageViewer.Name = "ModifiedImageViewer";
-        ModifiedImageViewer.Size = new System.Drawing.Size(533, 704);
-        ModifiedImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-        ModifiedImageViewer.TabIndex = 0;
-        ModifiedImageViewer.TabStop = false;
-        // 
-        // ModifiedImageLabel
-        // 
-        ModifiedImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
-        ModifiedImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        ModifiedImageLabel.Location = new System.Drawing.Point(0, 0);
-        ModifiedImageLabel.Name = "ModifiedImageLabel";
-        ModifiedImageLabel.Size = new System.Drawing.Size(533, 69);
-        ModifiedImageLabel.TabIndex = 0;
-        ModifiedImageLabel.Text = "نظام HSV";
-        ModifiedImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // OriginalImageSplit
         // 
@@ -1137,8 +1291,19 @@ partial class MainScreen {
         OriginalImageSplit.Location = new System.Drawing.Point(0, 0);
         OriginalImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageSplit.Name = "OriginalImageSplit";
-        OriginalImageSplit.Size = new System.Drawing.Size(512, 773);
+        OriginalImageSplit.Size = new System.Drawing.Size(513, 855);
         OriginalImageSplit.TabIndex = 1;
+        // 
+        // OriginalImageLabel
+        // 
+        OriginalImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
+        OriginalImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        OriginalImageLabel.Location = new System.Drawing.Point(0, 0);
+        OriginalImageLabel.Name = "OriginalImageLabel";
+        OriginalImageLabel.Size = new System.Drawing.Size(513, 69);
+        OriginalImageLabel.TabIndex = 1;
+        OriginalImageLabel.Text = "الصورة الأصلية - RGB";
+        OriginalImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // OriginalImagePanel
         // 
@@ -1147,7 +1312,7 @@ partial class MainScreen {
         OriginalImagePanel.Location = new System.Drawing.Point(0, 69);
         OriginalImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImagePanel.Name = "OriginalImagePanel";
-        OriginalImagePanel.Size = new System.Drawing.Size(512, 704);
+        OriginalImagePanel.Size = new System.Drawing.Size(513, 786);
         OriginalImagePanel.TabIndex = 2;
         // 
         // OriginalImageViewer
@@ -1156,27 +1321,1002 @@ partial class MainScreen {
         OriginalImageViewer.Location = new System.Drawing.Point(0, 0);
         OriginalImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         OriginalImageViewer.Name = "OriginalImageViewer";
-        OriginalImageViewer.Size = new System.Drawing.Size(512, 704);
+        OriginalImageViewer.Size = new System.Drawing.Size(513, 786);
         OriginalImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         OriginalImageViewer.TabIndex = 0;
         OriginalImageViewer.TabStop = false;
         // 
-        // OriginalImageLabel
+        // ModifiedImageSplit
         // 
-        OriginalImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
-        OriginalImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-        OriginalImageLabel.Location = new System.Drawing.Point(0, 0);
-        OriginalImageLabel.Name = "OriginalImageLabel";
-        OriginalImageLabel.Size = new System.Drawing.Size(512, 69);
-        OriginalImageLabel.TabIndex = 1;
-        OriginalImageLabel.Text = "الصورة الأصلية - RGB";
-        OriginalImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        ModifiedImageSplit.BackColor = System.Drawing.Color.FromArgb(((int)((byte)50)), ((int)((byte)50)), ((int)((byte)50)));
+        ModifiedImageSplit.Controls.Add(ModifiedImagePanel);
+        ModifiedImageSplit.Controls.Add(ModifiedImageLabel);
+        ModifiedImageSplit.Dock = System.Windows.Forms.DockStyle.Fill;
+        ModifiedImageSplit.Location = new System.Drawing.Point(0, 0);
+        ModifiedImageSplit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImageSplit.Name = "ModifiedImageSplit";
+        ModifiedImageSplit.Size = new System.Drawing.Size(532, 855);
+        ModifiedImageSplit.TabIndex = 0;
+        // 
+        // ModifiedImageLabel
+        // 
+        ModifiedImageLabel.Dock = System.Windows.Forms.DockStyle.Top;
+        ModifiedImageLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        ModifiedImageLabel.Location = new System.Drawing.Point(0, 0);
+        ModifiedImageLabel.Name = "ModifiedImageLabel";
+        ModifiedImageLabel.Size = new System.Drawing.Size(532, 69);
+        ModifiedImageLabel.TabIndex = 0;
+        ModifiedImageLabel.Text = "نظام HSV";
+        ModifiedImageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // ModifiedImagePanel
+        // 
+        ModifiedImagePanel.Controls.Add(ModifiedImageViewer);
+        ModifiedImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+        ModifiedImagePanel.Location = new System.Drawing.Point(0, 69);
+        ModifiedImagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImagePanel.Name = "ModifiedImagePanel";
+        ModifiedImagePanel.Size = new System.Drawing.Size(532, 786);
+        ModifiedImagePanel.TabIndex = 1;
+        // 
+        // ModifiedImageViewer
+        // 
+        ModifiedImageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+        ModifiedImageViewer.Location = new System.Drawing.Point(0, 0);
+        ModifiedImageViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        ModifiedImageViewer.Name = "ModifiedImageViewer";
+        ModifiedImageViewer.Size = new System.Drawing.Size(532, 786);
+        ModifiedImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+        ModifiedImageViewer.TabIndex = 0;
+        ModifiedImageViewer.TabStop = false;
+        // 
+        // panel1
+        // 
+        panel1.BackColor = System.Drawing.Color.FromArgb(((int)((byte)19)), ((int)((byte)19)), ((int)((byte)19)));
+        panel1.Controls.Add(EditorSceneSplitter);
+        panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+        panel1.Location = new System.Drawing.Point(320, 76);
+        panel1.Margin = new System.Windows.Forms.Padding(20, 21, 20, 21);
+        panel1.Name = "panel1";
+        panel1.Padding = new System.Windows.Forms.Padding(20, 21, 20, 21);
+        panel1.Size = new System.Drawing.Size(1107, 897);
+        panel1.TabIndex = 2;
+        // 
+        // RGBFlow
+        // 
+        RGBFlow.AutoSize = true;
+        RGBFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        RGBFlow.Controls.Add(panel17);
+        RGBFlow.Controls.Add(panel19);
+        RGBFlow.Controls.Add(panel21);
+        RGBFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        RGBFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        RGBFlow.Location = new System.Drawing.Point(0, 0);
+        RGBFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RGBFlow.Name = "RGBFlow";
+        RGBFlow.Size = new System.Drawing.Size(1746, 1391);
+        RGBFlow.TabIndex = 15;
+        RGBFlow.WrapContents = false;
+        // 
+        // panel17
+        // 
+        panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel17.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel17.Controls.Add(RedSlider);
+        panel17.Controls.Add(panel18);
+        panel17.Location = new System.Drawing.Point(1458, 2);
+        panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel17.Name = "panel17";
+        panel17.Size = new System.Drawing.Size(285, 66);
+        panel17.TabIndex = 2;
+        // 
+        // RedSlider
+        // 
+        RedSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedSlider.Location = new System.Drawing.Point(36, 25);
+        RedSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedSlider.Name = "RedSlider";
+        RedSlider.Size = new System.Drawing.Size(240, 56);
+        RedSlider.TabIndex = 1;
+        // 
+        // panel18
+        // 
+        panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel18.Controls.Add(RedCheckbox);
+        panel18.Controls.Add(label8);
+        panel18.Location = new System.Drawing.Point(36, 0);
+        panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel18.Name = "panel18";
+        panel18.Size = new System.Drawing.Size(243, 27);
+        panel18.TabIndex = 0;
+        // 
+        // RedCheckbox
+        // 
+        RedCheckbox.AutoSize = true;
+        RedCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        RedCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedCheckbox.Location = new System.Drawing.Point(0, 0);
+        RedCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedCheckbox.Name = "RedCheckbox";
+        RedCheckbox.Size = new System.Drawing.Size(43, 27);
+        RedCheckbox.TabIndex = 1;
+        RedCheckbox.Text = "R";
+        RedCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label8
+        // 
+        label8.AutoSize = true;
+        label8.Dock = System.Windows.Forms.DockStyle.Right;
+        label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label8.Location = new System.Drawing.Point(177, 0);
+        label8.Name = "label8";
+        label8.Size = new System.Drawing.Size(66, 20);
+        label8.TabIndex = 0;
+        label8.Text = "نسبة الـ R";
+        label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel19
+        // 
+        panel19.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel19.Controls.Add(GreenSlider);
+        panel19.Controls.Add(panel20);
+        panel19.Location = new System.Drawing.Point(1458, 72);
+        panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel19.Name = "panel19";
+        panel19.Size = new System.Drawing.Size(285, 68);
+        panel19.TabIndex = 1;
+        // 
+        // GreenSlider
+        // 
+        GreenSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        GreenSlider.Location = new System.Drawing.Point(39, 25);
+        GreenSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenSlider.Name = "GreenSlider";
+        GreenSlider.Size = new System.Drawing.Size(249, 56);
+        GreenSlider.TabIndex = 1;
+        // 
+        // panel20
+        // 
+        panel20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel20.Controls.Add(GreenCheckbox);
+        panel20.Controls.Add(label9);
+        panel20.Location = new System.Drawing.Point(36, 0);
+        panel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel20.Name = "panel20";
+        panel20.Size = new System.Drawing.Size(249, 28);
+        panel20.TabIndex = 0;
+        // 
+        // GreenCheckbox
+        // 
+        GreenCheckbox.AutoSize = true;
+        GreenCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        GreenCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        GreenCheckbox.Location = new System.Drawing.Point(0, 0);
+        GreenCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenCheckbox.Name = "GreenCheckbox";
+        GreenCheckbox.Size = new System.Drawing.Size(44, 28);
+        GreenCheckbox.TabIndex = 1;
+        GreenCheckbox.Text = "G";
+        GreenCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label9
+        // 
+        label9.AutoSize = true;
+        label9.Dock = System.Windows.Forms.DockStyle.Right;
+        label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label9.Location = new System.Drawing.Point(182, 0);
+        label9.Name = "label9";
+        label9.Size = new System.Drawing.Size(67, 20);
+        label9.TabIndex = 0;
+        label9.Text = "نسبة الـ G";
+        label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel21
+        // 
+        panel21.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel21.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel21.Controls.Add(BlueSlider);
+        panel21.Controls.Add(panel22);
+        panel21.Location = new System.Drawing.Point(1458, 144);
+        panel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel21.Name = "panel21";
+        panel21.Size = new System.Drawing.Size(285, 73);
+        panel21.TabIndex = 0;
+        // 
+        // BlueSlider
+        // 
+        BlueSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueSlider.Location = new System.Drawing.Point(39, 31);
+        BlueSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueSlider.Name = "BlueSlider";
+        BlueSlider.Size = new System.Drawing.Size(240, 56);
+        BlueSlider.TabIndex = 1;
+        // 
+        // panel22
+        // 
+        panel22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel22.Controls.Add(BlueCheckbox);
+        panel22.Controls.Add(label10);
+        panel22.Location = new System.Drawing.Point(39, 0);
+        panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel22.Name = "panel22";
+        panel22.Size = new System.Drawing.Size(240, 28);
+        panel22.TabIndex = 0;
+        // 
+        // BlueCheckbox
+        // 
+        BlueCheckbox.AutoSize = true;
+        BlueCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueCheckbox.Location = new System.Drawing.Point(0, 0);
+        BlueCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueCheckbox.Name = "BlueCheckbox";
+        BlueCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueCheckbox.TabIndex = 1;
+        BlueCheckbox.Text = "B";
+        BlueCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label10
+        // 
+        label10.AutoSize = true;
+        label10.Dock = System.Windows.Forms.DockStyle.Right;
+        label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label10.Location = new System.Drawing.Point(174, 0);
+        label10.Name = "label10";
+        label10.Size = new System.Drawing.Size(66, 20);
+        label10.TabIndex = 0;
+        label10.Text = "نسبة الـ B";
+        label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // LABFlow
+        // 
+        LABFlow.AutoSize = true;
+        LABFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        LABFlow.Controls.Add(panel29);
+        LABFlow.Controls.Add(panel31);
+        LABFlow.Controls.Add(panel33);
+        LABFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        LABFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        LABFlow.Location = new System.Drawing.Point(0, 0);
+        LABFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LABFlow.Name = "LABFlow";
+        LABFlow.Size = new System.Drawing.Size(1746, 1391);
+        LABFlow.TabIndex = 16;
+        LABFlow.WrapContents = false;
+        // 
+        // panel29
+        // 
+        panel29.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel29.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel29.Controls.Add(LightnessSlider);
+        panel29.Controls.Add(panel30);
+        panel29.Location = new System.Drawing.Point(1458, 2);
+        panel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel29.Name = "panel29";
+        panel29.Size = new System.Drawing.Size(285, 66);
+        panel29.TabIndex = 2;
+        // 
+        // LightnessSlider
+        // 
+        LightnessSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        LightnessSlider.Location = new System.Drawing.Point(36, 25);
+        LightnessSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LightnessSlider.Name = "LightnessSlider";
+        LightnessSlider.Size = new System.Drawing.Size(240, 56);
+        LightnessSlider.TabIndex = 1;
+        // 
+        // panel30
+        // 
+        panel30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel30.Controls.Add(LightnessCheck);
+        panel30.Controls.Add(label14);
+        panel30.Location = new System.Drawing.Point(36, 0);
+        panel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel30.Name = "panel30";
+        panel30.Size = new System.Drawing.Size(243, 27);
+        panel30.TabIndex = 0;
+        // 
+        // LightnessCheck
+        // 
+        LightnessCheck.AutoSize = true;
+        LightnessCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        LightnessCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        LightnessCheck.Location = new System.Drawing.Point(0, 0);
+        LightnessCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        LightnessCheck.Name = "LightnessCheck";
+        LightnessCheck.Size = new System.Drawing.Size(41, 27);
+        LightnessCheck.TabIndex = 1;
+        LightnessCheck.Text = "L";
+        LightnessCheck.UseVisualStyleBackColor = true;
+        // 
+        // label14
+        // 
+        label14.AutoSize = true;
+        label14.Dock = System.Windows.Forms.DockStyle.Right;
+        label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label14.Location = new System.Drawing.Point(179, 0);
+        label14.Name = "label14";
+        label14.Size = new System.Drawing.Size(64, 20);
+        label14.TabIndex = 0;
+        label14.Text = "نسبة الـ L";
+        label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel31
+        // 
+        panel31.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel31.Controls.Add(GreenAxisSlider);
+        panel31.Controls.Add(panel32);
+        panel31.Location = new System.Drawing.Point(1458, 72);
+        panel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel31.Name = "panel31";
+        panel31.Size = new System.Drawing.Size(285, 68);
+        panel31.TabIndex = 1;
+        // 
+        // GreenAxisSlider
+        // 
+        GreenAxisSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        GreenAxisSlider.Location = new System.Drawing.Point(39, 25);
+        GreenAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenAxisSlider.Name = "GreenAxisSlider";
+        GreenAxisSlider.Size = new System.Drawing.Size(249, 56);
+        GreenAxisSlider.TabIndex = 1;
+        // 
+        // panel32
+        // 
+        panel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel32.Controls.Add(GreenAxisCheck);
+        panel32.Controls.Add(label15);
+        panel32.Location = new System.Drawing.Point(36, 0);
+        panel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel32.Name = "panel32";
+        panel32.Size = new System.Drawing.Size(249, 28);
+        panel32.TabIndex = 0;
+        // 
+        // GreenAxisCheck
+        // 
+        GreenAxisCheck.AutoSize = true;
+        GreenAxisCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        GreenAxisCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        GreenAxisCheck.Location = new System.Drawing.Point(0, 0);
+        GreenAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        GreenAxisCheck.Name = "GreenAxisCheck";
+        GreenAxisCheck.Size = new System.Drawing.Size(42, 28);
+        GreenAxisCheck.TabIndex = 1;
+        GreenAxisCheck.Text = "A";
+        GreenAxisCheck.UseVisualStyleBackColor = true;
+        // 
+        // label15
+        // 
+        label15.AutoSize = true;
+        label15.Dock = System.Windows.Forms.DockStyle.Right;
+        label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label15.Location = new System.Drawing.Point(184, 0);
+        label15.Name = "label15";
+        label15.Size = new System.Drawing.Size(65, 20);
+        label15.TabIndex = 0;
+        label15.Text = "نسبة الـ A";
+        label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel33
+        // 
+        panel33.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel33.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel33.Controls.Add(BlueAxisSlider);
+        panel33.Controls.Add(panel34);
+        panel33.Location = new System.Drawing.Point(1458, 144);
+        panel33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel33.Name = "panel33";
+        panel33.Size = new System.Drawing.Size(285, 73);
+        panel33.TabIndex = 0;
+        // 
+        // BlueAxisSlider
+        // 
+        BlueAxisSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueAxisSlider.Location = new System.Drawing.Point(39, 31);
+        BlueAxisSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueAxisSlider.Name = "BlueAxisSlider";
+        BlueAxisSlider.Size = new System.Drawing.Size(240, 56);
+        BlueAxisSlider.TabIndex = 1;
+        // 
+        // panel34
+        // 
+        panel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel34.Controls.Add(BlueAxisCheck);
+        panel34.Controls.Add(label16);
+        panel34.Location = new System.Drawing.Point(39, 0);
+        panel34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel34.Name = "panel34";
+        panel34.Size = new System.Drawing.Size(240, 28);
+        panel34.TabIndex = 0;
+        // 
+        // BlueAxisCheck
+        // 
+        BlueAxisCheck.AutoSize = true;
+        BlueAxisCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueAxisCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueAxisCheck.Location = new System.Drawing.Point(0, 0);
+        BlueAxisCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueAxisCheck.Name = "BlueAxisCheck";
+        BlueAxisCheck.Size = new System.Drawing.Size(43, 28);
+        BlueAxisCheck.TabIndex = 1;
+        BlueAxisCheck.Text = "B";
+        BlueAxisCheck.UseVisualStyleBackColor = true;
+        // 
+        // label16
+        // 
+        label16.AutoSize = true;
+        label16.Dock = System.Windows.Forms.DockStyle.Right;
+        label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label16.Location = new System.Drawing.Point(174, 0);
+        label16.Name = "label16";
+        label16.Size = new System.Drawing.Size(66, 20);
+        label16.TabIndex = 0;
+        label16.Text = "نسبة الـ B";
+        label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // YUVFlow
+        // 
+        YUVFlow.AutoSize = true;
+        YUVFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        YUVFlow.Controls.Add(panel35);
+        YUVFlow.Controls.Add(panel37);
+        YUVFlow.Controls.Add(panel39);
+        YUVFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        YUVFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        YUVFlow.Location = new System.Drawing.Point(0, 0);
+        YUVFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YUVFlow.Name = "YUVFlow";
+        YUVFlow.Size = new System.Drawing.Size(1746, 1391);
+        YUVFlow.TabIndex = 17;
+        YUVFlow.WrapContents = false;
+        // 
+        // panel35
+        // 
+        panel35.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel35.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel35.Controls.Add(YYUVLumaSlider);
+        panel35.Controls.Add(panel36);
+        panel35.Location = new System.Drawing.Point(1458, 2);
+        panel35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel35.Name = "panel35";
+        panel35.Size = new System.Drawing.Size(285, 66);
+        panel35.TabIndex = 2;
+        // 
+        // YYUVLumaSlider
+        // 
+        YYUVLumaSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        YYUVLumaSlider.Location = new System.Drawing.Point(36, 25);
+        YYUVLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YYUVLumaSlider.Name = "YYUVLumaSlider";
+        YYUVLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YYUVLumaSlider.TabIndex = 1;
+        // 
+        // panel36
+        // 
+        panel36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel36.Controls.Add(YYUVLumaCheckbox);
+        panel36.Controls.Add(label17);
+        panel36.Location = new System.Drawing.Point(36, 0);
+        panel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel36.Name = "panel36";
+        panel36.Size = new System.Drawing.Size(249, 27);
+        panel36.TabIndex = 0;
+        // 
+        // YYUVLumaCheckbox
+        // 
+        YYUVLumaCheckbox.AutoSize = true;
+        YYUVLumaCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        YYUVLumaCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        YYUVLumaCheckbox.Location = new System.Drawing.Point(0, 0);
+        YYUVLumaCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YYUVLumaCheckbox.Name = "YYUVLumaCheckbox";
+        YYUVLumaCheckbox.Size = new System.Drawing.Size(41, 27);
+        YYUVLumaCheckbox.TabIndex = 1;
+        YYUVLumaCheckbox.Text = "Y";
+        YYUVLumaCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label17
+        // 
+        label17.AutoSize = true;
+        label17.Dock = System.Windows.Forms.DockStyle.Right;
+        label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label17.Location = new System.Drawing.Point(185, 0);
+        label17.Name = "label17";
+        label17.Size = new System.Drawing.Size(64, 20);
+        label17.TabIndex = 0;
+        label17.Text = "نسبة الـ Y";
+        label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel37
+        // 
+        panel37.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel37.Controls.Add(BlueProjectionSlider);
+        panel37.Controls.Add(panel38);
+        panel37.Location = new System.Drawing.Point(1458, 72);
+        panel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel37.Name = "panel37";
+        panel37.Size = new System.Drawing.Size(285, 68);
+        panel37.TabIndex = 1;
+        // 
+        // BlueProjectionSlider
+        // 
+        BlueProjectionSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueProjectionSlider.Location = new System.Drawing.Point(39, 25);
+        BlueProjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueProjectionSlider.Name = "BlueProjectionSlider";
+        BlueProjectionSlider.Size = new System.Drawing.Size(249, 56);
+        BlueProjectionSlider.TabIndex = 1;
+        // 
+        // panel38
+        // 
+        panel38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel38.Controls.Add(BlueProjectionCheckbox);
+        panel38.Controls.Add(label18);
+        panel38.Location = new System.Drawing.Point(36, 0);
+        panel38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel38.Name = "panel38";
+        panel38.Size = new System.Drawing.Size(249, 28);
+        panel38.TabIndex = 0;
+        // 
+        // BlueProjectionCheckbox
+        // 
+        BlueProjectionCheckbox.AutoSize = true;
+        BlueProjectionCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueProjectionCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueProjectionCheckbox.Location = new System.Drawing.Point(0, 0);
+        BlueProjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueProjectionCheckbox.Name = "BlueProjectionCheckbox";
+        BlueProjectionCheckbox.Size = new System.Drawing.Size(43, 28);
+        BlueProjectionCheckbox.TabIndex = 1;
+        BlueProjectionCheckbox.Text = "U";
+        BlueProjectionCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label18
+        // 
+        label18.AutoSize = true;
+        label18.Dock = System.Windows.Forms.DockStyle.Right;
+        label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label18.Location = new System.Drawing.Point(183, 0);
+        label18.Name = "label18";
+        label18.Size = new System.Drawing.Size(66, 20);
+        label18.TabIndex = 0;
+        label18.Text = "نسبة الـ U";
+        label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel39
+        // 
+        panel39.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel39.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel39.Controls.Add(RedPorjectionSlider);
+        panel39.Controls.Add(panel40);
+        panel39.Location = new System.Drawing.Point(1458, 144);
+        panel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel39.Name = "panel39";
+        panel39.Size = new System.Drawing.Size(285, 73);
+        panel39.TabIndex = 0;
+        // 
+        // RedPorjectionSlider
+        // 
+        RedPorjectionSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedPorjectionSlider.Location = new System.Drawing.Point(39, 31);
+        RedPorjectionSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedPorjectionSlider.Name = "RedPorjectionSlider";
+        RedPorjectionSlider.Size = new System.Drawing.Size(246, 56);
+        RedPorjectionSlider.TabIndex = 1;
+        // 
+        // panel40
+        // 
+        panel40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel40.Controls.Add(RedPorjectionCheckbox);
+        panel40.Controls.Add(label19);
+        panel40.Location = new System.Drawing.Point(39, 0);
+        panel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel40.Name = "panel40";
+        panel40.Size = new System.Drawing.Size(246, 28);
+        panel40.TabIndex = 0;
+        // 
+        // RedPorjectionCheckbox
+        // 
+        RedPorjectionCheckbox.AutoSize = true;
+        RedPorjectionCheckbox.Dock = System.Windows.Forms.DockStyle.Left;
+        RedPorjectionCheckbox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedPorjectionCheckbox.Location = new System.Drawing.Point(0, 0);
+        RedPorjectionCheckbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedPorjectionCheckbox.Name = "RedPorjectionCheckbox";
+        RedPorjectionCheckbox.Size = new System.Drawing.Size(42, 28);
+        RedPorjectionCheckbox.TabIndex = 1;
+        RedPorjectionCheckbox.Text = "V";
+        RedPorjectionCheckbox.UseVisualStyleBackColor = true;
+        // 
+        // label19
+        // 
+        label19.AutoSize = true;
+        label19.Dock = System.Windows.Forms.DockStyle.Right;
+        label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label19.Location = new System.Drawing.Point(181, 0);
+        label19.Name = "label19";
+        label19.Size = new System.Drawing.Size(65, 20);
+        label19.TabIndex = 0;
+        label19.Text = "نسبة الـ V";
+        label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // HSVCompoundsFlow
+        // 
+        HSVCompoundsFlow.AutoSize = true;
+        HSVCompoundsFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        HSVCompoundsFlow.Controls.Add(panel2);
+        HSVCompoundsFlow.Controls.Add(panel4);
+        HSVCompoundsFlow.Controls.Add(panel7);
+        HSVCompoundsFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        HSVCompoundsFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        HSVCompoundsFlow.Location = new System.Drawing.Point(0, 0);
+        HSVCompoundsFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        HSVCompoundsFlow.Name = "HSVCompoundsFlow";
+        HSVCompoundsFlow.Size = new System.Drawing.Size(1746, 1391);
+        HSVCompoundsFlow.TabIndex = 18;
+        HSVCompoundsFlow.WrapContents = false;
+        // 
+        // panel2
+        // 
+        panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel2.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel2.Controls.Add(trackBar1);
+        panel2.Controls.Add(panel3);
+        panel2.Location = new System.Drawing.Point(1458, 2);
+        panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel2.Name = "panel2";
+        panel2.Size = new System.Drawing.Size(285, 66);
+        panel2.TabIndex = 2;
+        // 
+        // trackBar1
+        // 
+        trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar1.Location = new System.Drawing.Point(36, 25);
+        trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar1.Name = "trackBar1";
+        trackBar1.Size = new System.Drawing.Size(240, 56);
+        trackBar1.TabIndex = 1;
+        // 
+        // panel3
+        // 
+        panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel3.Controls.Add(checkBox1);
+        panel3.Controls.Add(label1);
+        panel3.Location = new System.Drawing.Point(36, 0);
+        panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel3.Name = "panel3";
+        panel3.Size = new System.Drawing.Size(243, 27);
+        panel3.TabIndex = 0;
+        // 
+        // checkBox1
+        // 
+        checkBox1.AutoSize = true;
+        checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox1.Location = new System.Drawing.Point(0, 0);
+        checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox1.Name = "checkBox1";
+        checkBox1.Size = new System.Drawing.Size(44, 27);
+        checkBox1.TabIndex = 1;
+        checkBox1.Text = "H";
+        checkBox1.UseVisualStyleBackColor = true;
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Dock = System.Windows.Forms.DockStyle.Right;
+        label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label1.Location = new System.Drawing.Point(176, 0);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(67, 20);
+        label1.TabIndex = 0;
+        label1.Text = "نسبة الـ H";
+        label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel4
+        // 
+        panel4.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel4.Controls.Add(trackBar2);
+        panel4.Controls.Add(panel5);
+        panel4.Location = new System.Drawing.Point(1458, 72);
+        panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel4.Name = "panel4";
+        panel4.Size = new System.Drawing.Size(285, 68);
+        panel4.TabIndex = 1;
+        // 
+        // trackBar2
+        // 
+        trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar2.Location = new System.Drawing.Point(39, 25);
+        trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar2.Name = "trackBar2";
+        trackBar2.Size = new System.Drawing.Size(249, 56);
+        trackBar2.TabIndex = 1;
+        // 
+        // panel5
+        // 
+        panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel5.Controls.Add(checkBox2);
+        panel5.Controls.Add(label2);
+        panel5.Location = new System.Drawing.Point(36, 0);
+        panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel5.Name = "panel5";
+        panel5.Size = new System.Drawing.Size(249, 28);
+        panel5.TabIndex = 0;
+        // 
+        // checkBox2
+        // 
+        checkBox2.AutoSize = true;
+        checkBox2.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox2.Location = new System.Drawing.Point(0, 0);
+        checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox2.Name = "checkBox2";
+        checkBox2.Size = new System.Drawing.Size(42, 28);
+        checkBox2.TabIndex = 1;
+        checkBox2.Text = "S";
+        checkBox2.UseVisualStyleBackColor = true;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Dock = System.Windows.Forms.DockStyle.Right;
+        label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label2.Location = new System.Drawing.Point(184, 0);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(65, 20);
+        label2.TabIndex = 0;
+        label2.Text = "نسبة الـ S";
+        label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel7
+        // 
+        panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel7.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel7.Controls.Add(trackBar3);
+        panel7.Controls.Add(panel8);
+        panel7.Location = new System.Drawing.Point(1458, 144);
+        panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel7.Name = "panel7";
+        panel7.Size = new System.Drawing.Size(285, 73);
+        panel7.TabIndex = 0;
+        // 
+        // trackBar3
+        // 
+        trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        trackBar3.Location = new System.Drawing.Point(39, 31);
+        trackBar3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        trackBar3.Name = "trackBar3";
+        trackBar3.Size = new System.Drawing.Size(240, 56);
+        trackBar3.TabIndex = 1;
+        // 
+        // panel8
+        // 
+        panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel8.Controls.Add(checkBox3);
+        panel8.Controls.Add(label3);
+        panel8.Location = new System.Drawing.Point(39, 0);
+        panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel8.Name = "panel8";
+        panel8.Size = new System.Drawing.Size(240, 28);
+        panel8.TabIndex = 0;
+        // 
+        // checkBox3
+        // 
+        checkBox3.AutoSize = true;
+        checkBox3.Dock = System.Windows.Forms.DockStyle.Left;
+        checkBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        checkBox3.Location = new System.Drawing.Point(0, 0);
+        checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        checkBox3.Name = "checkBox3";
+        checkBox3.Size = new System.Drawing.Size(42, 28);
+        checkBox3.TabIndex = 1;
+        checkBox3.Text = "V";
+        checkBox3.UseVisualStyleBackColor = true;
+        // 
+        // label3
+        // 
+        label3.AutoSize = true;
+        label3.Dock = System.Windows.Forms.DockStyle.Right;
+        label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label3.Location = new System.Drawing.Point(175, 0);
+        label3.Name = "label3";
+        label3.Size = new System.Drawing.Size(65, 20);
+        label3.TabIndex = 0;
+        label3.Text = "نسبة الـ V";
+        label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // YCbCrFlow
+        // 
+        YCbCrFlow.AutoSize = true;
+        YCbCrFlow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        YCbCrFlow.Controls.Add(panel23);
+        YCbCrFlow.Controls.Add(panel25);
+        YCbCrFlow.Controls.Add(panel27);
+        YCbCrFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+        YCbCrFlow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+        YCbCrFlow.Location = new System.Drawing.Point(0, 0);
+        YCbCrFlow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YCbCrFlow.Name = "YCbCrFlow";
+        YCbCrFlow.Size = new System.Drawing.Size(1746, 1391);
+        YCbCrFlow.TabIndex = 19;
+        YCbCrFlow.WrapContents = false;
+        // 
+        // panel23
+        // 
+        panel23.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel23.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel23.Controls.Add(YLumaSlider);
+        panel23.Controls.Add(panel24);
+        panel23.Location = new System.Drawing.Point(1458, 2);
+        panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel23.Name = "panel23";
+        panel23.Size = new System.Drawing.Size(285, 66);
+        panel23.TabIndex = 2;
+        // 
+        // YLumaSlider
+        // 
+        YLumaSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        YLumaSlider.Location = new System.Drawing.Point(36, 25);
+        YLumaSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YLumaSlider.Name = "YLumaSlider";
+        YLumaSlider.Size = new System.Drawing.Size(246, 56);
+        YLumaSlider.TabIndex = 1;
+        // 
+        // panel24
+        // 
+        panel24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel24.Controls.Add(YLumaCheck);
+        panel24.Controls.Add(label11);
+        panel24.Location = new System.Drawing.Point(36, 0);
+        panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel24.Name = "panel24";
+        panel24.Size = new System.Drawing.Size(246, 27);
+        panel24.TabIndex = 0;
+        // 
+        // YLumaCheck
+        // 
+        YLumaCheck.AutoSize = true;
+        YLumaCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        YLumaCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        YLumaCheck.Location = new System.Drawing.Point(0, 0);
+        YLumaCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        YLumaCheck.Name = "YLumaCheck";
+        YLumaCheck.Size = new System.Drawing.Size(41, 27);
+        YLumaCheck.TabIndex = 1;
+        YLumaCheck.Text = "Y";
+        YLumaCheck.UseVisualStyleBackColor = true;
+        // 
+        // label11
+        // 
+        label11.AutoSize = true;
+        label11.Dock = System.Windows.Forms.DockStyle.Right;
+        label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label11.Location = new System.Drawing.Point(182, 0);
+        label11.Name = "label11";
+        label11.Size = new System.Drawing.Size(64, 20);
+        label11.TabIndex = 0;
+        label11.Text = "نسبة الـ Y";
+        label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel25
+        // 
+        panel25.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel25.Controls.Add(BlueDiffSlider);
+        panel25.Controls.Add(panel26);
+        panel25.Location = new System.Drawing.Point(1458, 72);
+        panel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel25.Name = "panel25";
+        panel25.Size = new System.Drawing.Size(285, 68);
+        panel25.TabIndex = 1;
+        // 
+        // BlueDiffSlider
+        // 
+        BlueDiffSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        BlueDiffSlider.Location = new System.Drawing.Point(39, 25);
+        BlueDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueDiffSlider.Name = "BlueDiffSlider";
+        BlueDiffSlider.Size = new System.Drawing.Size(249, 56);
+        BlueDiffSlider.TabIndex = 1;
+        // 
+        // panel26
+        // 
+        panel26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel26.Controls.Add(BlueDiffCheck);
+        panel26.Controls.Add(label12);
+        panel26.Location = new System.Drawing.Point(36, 0);
+        panel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel26.Name = "panel26";
+        panel26.Size = new System.Drawing.Size(249, 28);
+        panel26.TabIndex = 0;
+        // 
+        // BlueDiffCheck
+        // 
+        BlueDiffCheck.AutoSize = true;
+        BlueDiffCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        BlueDiffCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        BlueDiffCheck.Location = new System.Drawing.Point(0, 0);
+        BlueDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        BlueDiffCheck.Name = "BlueDiffCheck";
+        BlueDiffCheck.Size = new System.Drawing.Size(52, 28);
+        BlueDiffCheck.TabIndex = 1;
+        BlueDiffCheck.Text = "Cb";
+        BlueDiffCheck.UseVisualStyleBackColor = true;
+        // 
+        // label12
+        // 
+        label12.AutoSize = true;
+        label12.Dock = System.Windows.Forms.DockStyle.Right;
+        label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label12.Location = new System.Drawing.Point(174, 0);
+        label12.Name = "label12";
+        label12.Size = new System.Drawing.Size(75, 20);
+        label12.TabIndex = 0;
+        label12.Text = "نسبة الـ Cb";
+        label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        // 
+        // panel27
+        // 
+        panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right));
+        panel27.BackColor = System.Drawing.Color.FromArgb(((int)((byte)70)), ((int)((byte)70)), ((int)((byte)70)));
+        panel27.Controls.Add(RedDiffSlider);
+        panel27.Controls.Add(panel28);
+        panel27.Location = new System.Drawing.Point(1458, 144);
+        panel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel27.Name = "panel27";
+        panel27.Size = new System.Drawing.Size(285, 73);
+        panel27.TabIndex = 0;
+        // 
+        // RedDiffSlider
+        // 
+        RedDiffSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        RedDiffSlider.Location = new System.Drawing.Point(39, 31);
+        RedDiffSlider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedDiffSlider.Name = "RedDiffSlider";
+        RedDiffSlider.Size = new System.Drawing.Size(246, 56);
+        RedDiffSlider.TabIndex = 1;
+        // 
+        // panel28
+        // 
+        panel28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right));
+        panel28.Controls.Add(RedDiffCheck);
+        panel28.Controls.Add(label13);
+        panel28.Location = new System.Drawing.Point(39, 0);
+        panel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        panel28.Name = "panel28";
+        panel28.Size = new System.Drawing.Size(246, 28);
+        panel28.TabIndex = 0;
+        // 
+        // RedDiffCheck
+        // 
+        RedDiffCheck.AutoSize = true;
+        RedDiffCheck.Dock = System.Windows.Forms.DockStyle.Left;
+        RedDiffCheck.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        RedDiffCheck.Location = new System.Drawing.Point(0, 0);
+        RedDiffCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+        RedDiffCheck.Name = "RedDiffCheck";
+        RedDiffCheck.Size = new System.Drawing.Size(49, 28);
+        RedDiffCheck.TabIndex = 1;
+        RedDiffCheck.Text = "Cr";
+        RedDiffCheck.UseVisualStyleBackColor = true;
+        // 
+        // label13
+        // 
+        label13.AutoSize = true;
+        label13.Dock = System.Windows.Forms.DockStyle.Right;
+        label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+        label13.Location = new System.Drawing.Point(174, 0);
+        label13.Name = "label13";
+        label13.Size = new System.Drawing.Size(72, 20);
+        label13.TabIndex = 0;
+        label13.Text = "نسبة الـ Cr";
+        label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // MainScreen
         // 
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(1427, 891);
+        ClientSize = new System.Drawing.Size(1427, 973);
         Controls.Add(panel1);
         Controls.Add(RightPanel);
         Controls.Add(TobBarFlowLayout);
@@ -1208,22 +2348,6 @@ partial class MainScreen {
         CompoundsControlFlow.PerformLayout();
         ControlStacksPanel.ResumeLayout(false);
         ControlStacksPanel.PerformLayout();
-        RGBCompoundsPanel.ResumeLayout(false);
-        RCompoundPanel.ResumeLayout(false);
-        RCompoundPanel.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)RSlider).EndInit();
-        RLabels.ResumeLayout(false);
-        RLabels.PerformLayout();
-        GCompoundPanel.ResumeLayout(false);
-        GCompoundPanel.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)GSlider).EndInit();
-        GLabels.ResumeLayout(false);
-        GLabels.PerformLayout();
-        BCompoundPanel.ResumeLayout(false);
-        BCompoundPanel.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)BSlider).EndInit();
-        BLabels.ResumeLayout(false);
-        BLabels.PerformLayout();
         ImageInfoFlow.ResumeLayout(false);
         ImageNamePanel.ResumeLayout(false);
         ImageSizePanel.ResumeLayout(false);
@@ -1233,20 +2357,228 @@ partial class MainScreen {
         ImageTypePanel.ResumeLayout(false);
         ImageDPIPanel.ResumeLayout(false);
         ImageAspectRatioPanel.ResumeLayout(false);
-        panel1.ResumeLayout(false);
+        panel13.ResumeLayout(false);
+        panel13.PerformLayout();
+        panel14.ResumeLayout(false);
+        panel14.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)KeySlider).EndInit();
+        panel11.ResumeLayout(false);
+        panel11.PerformLayout();
+        panel12.ResumeLayout(false);
+        panel12.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)YellowSlider).EndInit();
+        panel9.ResumeLayout(false);
+        panel9.PerformLayout();
+        panel10.ResumeLayout(false);
+        panel10.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)MagentaSlider).EndInit();
+        panel15.ResumeLayout(false);
+        panel15.PerformLayout();
+        panel16.ResumeLayout(false);
+        panel16.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)CyanSlider).EndInit();
+        CMYKFlow.ResumeLayout(false);
         EditorSceneSplitter.Panel1.ResumeLayout(false);
         EditorSceneSplitter.Panel2.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)EditorSceneSplitter).EndInit();
         EditorSceneSplitter.ResumeLayout(false);
-        ModifiedImageSplit.ResumeLayout(false);
-        ModifiedImagePanel.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)ModifiedImageViewer).EndInit();
         OriginalImageSplit.ResumeLayout(false);
         OriginalImagePanel.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)OriginalImageViewer).EndInit();
+        ModifiedImageSplit.ResumeLayout(false);
+        ModifiedImagePanel.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)ModifiedImageViewer).EndInit();
+        panel1.ResumeLayout(false);
+        RGBFlow.ResumeLayout(false);
+        panel17.ResumeLayout(false);
+        panel17.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedSlider).EndInit();
+        panel18.ResumeLayout(false);
+        panel18.PerformLayout();
+        panel19.ResumeLayout(false);
+        panel19.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenSlider).EndInit();
+        panel20.ResumeLayout(false);
+        panel20.PerformLayout();
+        panel21.ResumeLayout(false);
+        panel21.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueSlider).EndInit();
+        panel22.ResumeLayout(false);
+        panel22.PerformLayout();
+        LABFlow.ResumeLayout(false);
+        panel29.ResumeLayout(false);
+        panel29.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)LightnessSlider).EndInit();
+        panel30.ResumeLayout(false);
+        panel30.PerformLayout();
+        panel31.ResumeLayout(false);
+        panel31.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)GreenAxisSlider).EndInit();
+        panel32.ResumeLayout(false);
+        panel32.PerformLayout();
+        panel33.ResumeLayout(false);
+        panel33.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueAxisSlider).EndInit();
+        panel34.ResumeLayout(false);
+        panel34.PerformLayout();
+        YUVFlow.ResumeLayout(false);
+        panel35.ResumeLayout(false);
+        panel35.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)YYUVLumaSlider).EndInit();
+        panel36.ResumeLayout(false);
+        panel36.PerformLayout();
+        panel37.ResumeLayout(false);
+        panel37.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueProjectionSlider).EndInit();
+        panel38.ResumeLayout(false);
+        panel38.PerformLayout();
+        panel39.ResumeLayout(false);
+        panel39.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedPorjectionSlider).EndInit();
+        panel40.ResumeLayout(false);
+        panel40.PerformLayout();
+        HSVCompoundsFlow.ResumeLayout(false);
+        panel2.ResumeLayout(false);
+        panel2.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+        panel3.ResumeLayout(false);
+        panel3.PerformLayout();
+        panel4.ResumeLayout(false);
+        panel4.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();
+        panel5.ResumeLayout(false);
+        panel5.PerformLayout();
+        panel7.ResumeLayout(false);
+        panel7.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)trackBar3).EndInit();
+        panel8.ResumeLayout(false);
+        panel8.PerformLayout();
+        YCbCrFlow.ResumeLayout(false);
+        panel23.ResumeLayout(false);
+        panel23.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)YLumaSlider).EndInit();
+        panel24.ResumeLayout(false);
+        panel24.PerformLayout();
+        panel25.ResumeLayout(false);
+        panel25.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)BlueDiffSlider).EndInit();
+        panel26.ResumeLayout(false);
+        panel26.PerformLayout();
+        panel27.ResumeLayout(false);
+        panel27.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)RedDiffSlider).EndInit();
+        panel28.ResumeLayout(false);
+        panel28.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.CheckBox BlueProjectionCheckbox;
+    private System.Windows.Forms.TrackBar YYUVLumaSlider;
+    private System.Windows.Forms.TrackBar BlueProjectionSlider;
+
+    private System.Windows.Forms.FlowLayoutPanel RGBFlow;
+    private System.Windows.Forms.Panel panel17;
+    private System.Windows.Forms.TrackBar RedSlider;
+    private System.Windows.Forms.Panel panel18;
+    private System.Windows.Forms.CheckBox RedCheckbox;
+    private System.Windows.Forms.Label label8;
+    private System.Windows.Forms.Panel panel19;
+    private System.Windows.Forms.TrackBar GreenSlider;
+    private System.Windows.Forms.Panel panel20;
+    private System.Windows.Forms.CheckBox GreenCheckbox;
+    private System.Windows.Forms.Label label9;
+    private System.Windows.Forms.Panel panel21;
+    private System.Windows.Forms.TrackBar BlueSlider;
+    private System.Windows.Forms.Panel panel22;
+    private System.Windows.Forms.CheckBox BlueCheckbox;
+    private System.Windows.Forms.Label label10;
+    private System.Windows.Forms.FlowLayoutPanel YCbCrFlow;
+    private System.Windows.Forms.Panel panel23;
+    private System.Windows.Forms.TrackBar YLumaSlider;
+    private System.Windows.Forms.Panel panel24;
+    private System.Windows.Forms.CheckBox YLumaCheck;
+    private System.Windows.Forms.Label label11;
+    private System.Windows.Forms.Panel panel25;
+    private System.Windows.Forms.TrackBar BlueDiffSlider;
+    private System.Windows.Forms.Panel panel26;
+    private System.Windows.Forms.CheckBox BlueDiffCheck;
+    private System.Windows.Forms.Label label12;
+    private System.Windows.Forms.Panel panel27;
+    private System.Windows.Forms.TrackBar RedDiffSlider;
+    private System.Windows.Forms.Panel panel28;
+    private System.Windows.Forms.CheckBox RedDiffCheck;
+    private System.Windows.Forms.Label label13;
+    private System.Windows.Forms.FlowLayoutPanel LABFlow;
+    private System.Windows.Forms.Panel panel29;
+    private System.Windows.Forms.TrackBar LightnessSlider;
+    private System.Windows.Forms.Panel panel30;
+    private System.Windows.Forms.CheckBox LightnessCheck;
+    private System.Windows.Forms.Label label14;
+    private System.Windows.Forms.Panel panel31;
+    private System.Windows.Forms.TrackBar GreenAxisSlider;
+    private System.Windows.Forms.Panel panel32;
+    private System.Windows.Forms.CheckBox GreenAxisCheck;
+    private System.Windows.Forms.Label label15;
+    private System.Windows.Forms.Panel panel33;
+    private System.Windows.Forms.TrackBar BlueAxisSlider;
+    private System.Windows.Forms.Panel panel34;
+    private System.Windows.Forms.CheckBox BlueAxisCheck;
+    private System.Windows.Forms.Label label16;
+    private System.Windows.Forms.FlowLayoutPanel YUVFlow;
+    private System.Windows.Forms.Panel panel35;
+    private System.Windows.Forms.CheckBox YYUVLumaCheckbox;
+    private System.Windows.Forms.Panel panel36;
+    private System.Windows.Forms.CheckBox YYUVLumnaCheckbox;
+    private System.Windows.Forms.Label label17;
+    private System.Windows.Forms.Panel panel37;
+    private System.Windows.Forms.TrackBar trackBar14;
+    private System.Windows.Forms.Panel panel38;
+    private System.Windows.Forms.CheckBox checkBox14;
+    private System.Windows.Forms.Label label18;
+    private System.Windows.Forms.Panel panel39;
+    private System.Windows.Forms.TrackBar RedPorjectionSlider;
+    private System.Windows.Forms.Panel panel40;
+    private System.Windows.Forms.CheckBox RedPorjectionCheckbox;
+    private System.Windows.Forms.Label label19;
+
+    private System.Windows.Forms.FlowLayoutPanel CMYKFlow;
+    private System.Windows.Forms.Panel panel15;
+    private System.Windows.Forms.TrackBar CyanSlider;
+    private System.Windows.Forms.Panel panel16;
+    private System.Windows.Forms.CheckBox CyanCheckbox;
+    private System.Windows.Forms.Label label7;
+    private System.Windows.Forms.Panel panel9;
+    private System.Windows.Forms.TrackBar MagentaSlider;
+    private System.Windows.Forms.Panel panel10;
+    private System.Windows.Forms.CheckBox MagentaCheckbox;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Panel panel11;
+    private System.Windows.Forms.TrackBar YellowSlider;
+    private System.Windows.Forms.Panel panel12;
+    private System.Windows.Forms.CheckBox YellowCheckbox;
+    private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.Panel panel13;
+    private System.Windows.Forms.TrackBar KeySlider;
+    private System.Windows.Forms.Panel panel14;
+    private System.Windows.Forms.CheckBox KeyCheckbox;
+    private System.Windows.Forms.Label label6;
+
+    private System.Windows.Forms.FlowLayoutPanel HSVCompoundsFlow;
+    private System.Windows.Forms.Panel panel2;
+    private System.Windows.Forms.TrackBar trackBar1;
+    private System.Windows.Forms.Panel panel3;
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Panel panel4;
+    private System.Windows.Forms.TrackBar trackBar2;
+    private System.Windows.Forms.Panel panel5;
+    private System.Windows.Forms.CheckBox checkBox2;
+    private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.Panel panel7;
+    private System.Windows.Forms.TrackBar trackBar3;
+    private System.Windows.Forms.Panel panel8;
+    private System.Windows.Forms.CheckBox checkBox3;
+    private System.Windows.Forms.Label label3;
 
     private System.Windows.Forms.Panel ImageSizePanel;
     private System.Windows.Forms.Label ImageSizeValue;
@@ -1292,43 +2624,18 @@ partial class MainScreen {
     private System.Windows.Forms.FlowLayoutPanel ImageInfoFlow;
     private System.Windows.Forms.Label ss;
 
-    private System.Windows.Forms.CheckBox BCheckBox;
-
-    private System.Windows.Forms.Panel BLabels;
-
-    private System.Windows.Forms.Label BColorPer;
-
-    private System.Windows.Forms.Panel BCompoundPanel;
-
-    private System.Windows.Forms.Panel GCompoundPanel;
-    private System.Windows.Forms.TrackBar GSlider;
-    private System.Windows.Forms.Panel GLabels;
-    private System.Windows.Forms.CheckBox G;
-    private System.Windows.Forms.Label GColorPer;
     private System.Windows.Forms.Panel ImageTypePanel;
-    private System.Windows.Forms.TrackBar RSlider;
     private System.Windows.Forms.Panel ImageDimensionPanel;
-    private System.Windows.Forms.CheckBox RCheckBox;
-
-    private System.Windows.Forms.TrackBar BSlider;
-
-    private System.Windows.Forms.Panel RCompoundPanel;
 
     private System.Windows.Forms.CheckBox checkBox1;
 
-    private System.Windows.Forms.Label RColorPer;
-
-    private System.Windows.Forms.Panel RLabels;
-
     private System.Windows.Forms.Panel ControlStacksPanel;
-
-    private System.Windows.Forms.FlowLayoutPanel RGBCompoundsPanel;
 
     private System.Windows.Forms.Label CompoundsControlLabel;
 
     private System.Windows.Forms.FlowLayoutPanel CompoundsControlFlow;
 
-    private System.Windows.Forms.RadioButton HLSButton;
+    private System.Windows.Forms.RadioButton RGBButton;
     private System.Windows.Forms.RadioButton YUVButton;
 
     private System.Windows.Forms.RadioButton YCbCrButton;

@@ -1,4 +1,5 @@
 using Emgu.CV;
+using OpenCvSharp.Extensions;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Util;
 
@@ -135,4 +136,29 @@ public class ImageController
         _model.EditedImage = filtered;
     }
     
+    private readonly ColorQuantizer _quantizer = new();
+    private Bitmap? _quantizedBitmap;
+
+    /*public void QuantizeColors(int colorCount)
+    {
+        if (!HasImage) return;
+        var result = _quantizer.Quantize(_model.OriginalImage.ToBitmap(), colorCount);
+        _quantizedBitmap = result.ResultBitmap;
+        _model.EditedImage = result.ResultBitmap.ToMat();
+    }*/
+    
+public void QuantizeColors(int colorCount)
+    {
+        if (!HasImage) return;
+
+        Bitmap bmp = _model.OriginalImage.ToBitmap();
+
+        OpenCvSharp.Mat srcMat = BitmapConverter.ToMat(bmp);
+
+        OpenCvSharp.Mat resultMat = _quantizer.Quantize(srcMat, colorCount);
+
+        Bitmap resultBmp = BitmapConverter.ToBitmap(resultMat);
+
+        _model.EditedImage = Emgu.CV.BitmapExtension.ToMat(resultBmp);
+    }
 }

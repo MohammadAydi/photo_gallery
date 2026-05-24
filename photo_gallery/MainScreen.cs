@@ -13,6 +13,8 @@ public partial class MainScreen : Form
     {
         InitializeComponent();
         _controller = new ImageController();
+        ColorNumberSlider.ValueChanged += ColorNumberSlider_ValueChanged;
+        UpDownColorsNumber.ValueChanged += UpDownColorsNumber_ValueChanged;
 
         // [تعديل #11] استدعاء إعداد خريطة الأنظمة اللونية عند بدء النموذج
         SetupColorSpaceMap();
@@ -228,5 +230,74 @@ public partial class MainScreen : Form
         RSlider.Value = 50;
         GSlider.Value = 50;
         BSlider.Value = 50;
+    }
+}
+
+
+    private void Open3DSpaceButton_Click(object sender, EventArgs e) {
+        var form = new SpacesViewr();
+        form.Show();
+    }
+
+    private void Open3DSpaceButton_Click_1(object sender, EventArgs e) {
+        var form = new SpacesViewr();
+        form.Show();
+    }
+
+
+    private void ColorNumberSlider_ValueChanged(object sender, EventArgs e)
+    {
+        UpDownColorsNumber.Value = ColorNumberSlider.Value;
+        _controller.QuantizeColors(ColorNumberSlider.Value);
+        RefreshImage();
+    }
+
+    private void UpDownColorsNumber_ValueChanged(object sender, EventArgs e)
+    {
+        ColorNumberSlider.Value = (int)UpDownColorsNumber.Value;
+        _controller.QuantizeColors((int)UpDownColorsNumber.Value);
+        RefreshImage();
+    }
+
+    private void ResetButton_Click(object sender, EventArgs e) {
+        _controller.ResetImage();
+        RefreshImage();
+    }
+
+
+    private void HSVButton_CheckedChanged(object sender, EventArgs e) {
+        if (HSVButton.Checked) {
+            HSVCompoundsFlow.BringToFront();
+        }
+    }
+
+    private void RGBButton_CheckedChanged(object sender, EventArgs e) {
+        if (RGBButton.Checked) {
+            RGBFlow.BringToFront();
+        }
+    }
+
+    private void CMYKButton_CheckedChanged(object sender, EventArgs e) {
+        if (CMYKButton.Checked) {
+            CMYKFlow.BringToFront();
+        }
+    }
+
+    private void YUVButton_CheckedChanged_1(object sender, EventArgs e) {
+        if (YUVButton.Checked) {
+            YUVFlow.BringToFront();
+        }
+    }
+
+    private void LABButton_CheckedChanged(object sender, EventArgs e) {
+        if (LABButton.Checked) {
+            LABFlow.BringToFront();
+        }
+    }
+
+    private void YCbCrButton_CheckedChanged(object sender, EventArgs e) {
+        if (YCbCrButton.Checked) {
+            YCbCrFlow.BringToFront();
+        }
     }
 }
