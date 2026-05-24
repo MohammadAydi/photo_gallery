@@ -60,9 +60,9 @@ public partial class MainScreen : Form {
 
     private void SetupChannelControls() {
         // --- RGB ---
-        WireChannel(RedCheckbox, RedSlider, () => CH_R);
+        WireChannel(RedCheckbox, RedSlider, () => CH_B);
         WireChannel(GreenCheckbox, GreenSlider, () => CH_G);
-        WireChannel(BlueCheckbox, BlueSlider, () => CH_B);
+        WireChannel(BlueCheckbox, BlueSlider, () => CH_R);
 
         // --- HSV ---
         WireChannel(HueCheck, HueSlider, () => CH_H);
