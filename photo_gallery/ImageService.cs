@@ -13,7 +13,7 @@ namespace photo_gallery;
 
 public class ColorSpaceConverterService
 {
-    public ColorConversionResult Convert(Mat original, ColorSpaceType target)
+    public Mat Convert(Mat original, ColorSpaceType target)
     {
         if (original == null || original.IsEmpty)
             throw new ArgumentException("Invalid image");
@@ -31,50 +31,43 @@ public class ColorSpaceConverterService
         };
     }
 
-    private ColorConversionResult ToRGB(Mat original)
+    private Mat ToRGB(Mat original)
     {
-        Mat result = new Mat();
-        CvInvoke.CvtColor(original, result, ColorConversion.Bgr2Rgb);
-        return new ColorConversionResult(result, ColorSpaceType.RGB, new[] { "Red", "Green", "Blue" });
+        return original.Clone();
     }
 
-    private ColorConversionResult ToHSV(Mat original)
+    private Mat ToHSV(Mat original)
     {
         Mat result = new Mat();
         CvInvoke.CvtColor(original, result, ColorConversion.Bgr2Hsv);
-        return new ColorConversionResult(result, ColorSpaceType.HSV, new[] { "Hue", "Saturation", "Value" });
-    }
+        return result;    }
 
     // [إضافة] دالة ToHLS جديدة — نفس نمط باقي الدوال
-    private ColorConversionResult ToHLS(Mat original)
+    private Mat ToHLS(Mat original)
     {
         Mat result = new Mat();
         CvInvoke.CvtColor(original, result, ColorConversion.Bgr2Hls);
-        return new ColorConversionResult(result, ColorSpaceType.HLS, new[] { "Hue", "Lightness", "Saturation" });
-    }
+        return result;    }
 
-    private ColorConversionResult ToLAB(Mat original)
+    private Mat ToLAB(Mat original)
     {
         Mat result = new Mat();
         CvInvoke.CvtColor(original, result, ColorConversion.Bgr2Lab);
-        return new ColorConversionResult(result, ColorSpaceType.LAB, new[] { "L", "A", "B" });
-    }
+        return result;    }
 
-    private ColorConversionResult ToYUV(Mat original)
+    private Mat ToYUV(Mat original)
     {
         Mat result = new Mat();
         CvInvoke.CvtColor(original, result, ColorConversion.Bgr2Yuv);
-        return new ColorConversionResult(result, ColorSpaceType.YUV, new[] { "Y", "U", "V" });
-    }
+        return result;    }
 
-    private ColorConversionResult ToYCbCr(Mat original)
+    private Mat ToYCbCr(Mat original)
     {
         Mat result = new Mat();
         CvInvoke.CvtColor(original, result, ColorConversion.Bgr2YCrCb);
-        return new ColorConversionResult(result, ColorSpaceType.YCbCr, new[] { "Y", "Cr", "Cb" });
-    }
+        return result;    }
 
-    private ColorConversionResult ToCMYK(Mat original)
+    private Mat ToCMYK(Mat original)
     {
         Mat floatImg = new Mat();
         original.ConvertTo(floatImg, DepthType.Cv32F, 1.0 / 255.0);
@@ -124,6 +117,7 @@ public class ColorSpaceConverterService
         k.Dispose(); denominator.Dispose(); safeDenom.Dispose();
         c.Dispose(); m.Dispose(); yChan.Dispose();
 
-        return new ColorConversionResult(cmykImage, ColorSpaceType.CMYK, new[] { "C", "M", "Y", "K" });
+        return cmykImage;
+        
     }
 }
