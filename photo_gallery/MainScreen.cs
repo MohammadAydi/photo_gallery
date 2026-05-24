@@ -40,6 +40,7 @@ public partial class MainScreen : Form {
 
         SetupColorSpaceMap();
         SetupChannelControls();
+        OriginalImageViewer.AllowDrop = true;
     }
 
 
@@ -286,5 +287,42 @@ public partial class MainScreen : Form {
 
         foreach (var s in sliders) s.Value = 100;
         foreach (var c in checkboxes) c.Checked = true;
+    }
+    
+
+    private void OriginalImageViewer_DragEnter(object sender, DragEventArgs e) {
+        if (e.Data.GetDataPresent(DataFormats.FileDrop)) {
+            e.Effect = DragDropEffects.Copy;
+        }
+    }
+
+    private void OriginalImageViewer_DragDrop(object sender, DragEventArgs e) {
+        string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+        // Allow only one file
+        if (files.Length != 1) {
+            MessageBox.Show("Please drop only one image.");
+            return;
+        }
+
+        string filePath = files[0];
+
+        string[] validExtensions = {
+            ".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".tif"
+        };
+
+        string extension = Path.GetExtension(filePath).ToLower();
+
+        if (!validExtensions.Contains(extension)) {
+            MessageBox.Show("Please drop a valid image file.");
+            return;
+        }
+
+        _controller.LoadImage(filePath);
+
+        ResetAllSliders();
+        RefreshOriginalImage();
+        RefreshModifiedImage();
+        UpdateImageInfoPanel();
     }
 }

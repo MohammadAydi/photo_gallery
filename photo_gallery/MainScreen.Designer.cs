@@ -2300,6 +2300,7 @@ partial class MainScreen {
         // 
         // OriginalImagePanel
         // 
+        OriginalImagePanel.AllowDrop = true;
         OriginalImagePanel.Controls.Add(OriginalImageViewer);
         OriginalImagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
         OriginalImagePanel.Location = new System.Drawing.Point(0, 69);
@@ -2318,6 +2319,8 @@ partial class MainScreen {
         OriginalImageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         OriginalImageViewer.TabIndex = 0;
         OriginalImageViewer.TabStop = false;
+        OriginalImageViewer.DragDrop += OriginalImageViewer_DragDrop;
+        OriginalImageViewer.DragEnter += OriginalImageViewer_DragEnter;
         // 
         // OriginalImageLabel
         // 
